@@ -5,7 +5,7 @@ import "../css/styles.css";
 
 export default function HomeMain() {
   return (
-    <main>
+    <main className="bg-gray-700">
       <title>Home</title>
       <div className="text-center">
         <h1 className="text-blue-500 text-5xl font-bold font-rubik-glitch-pop">
@@ -52,6 +52,8 @@ export default function HomeMain() {
           <button className="bg-blue-500 text-white px-4 py-2 rounded-full">
             Button 2
           </button>
+        
+         
         </div>
       </div>
     </main>
