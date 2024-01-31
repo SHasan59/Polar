@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Rubik Glitch Pop';
+    src: url('../fonts/RubikGlitchPop-Regular.ttf') format('truetype');
+  }
+  
+  .font-rubik-glitch-pop {
+    font-family: 'Rubik Glitch Pop', sans-serif;
+  }
+  
