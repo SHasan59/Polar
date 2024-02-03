@@ -18,7 +18,7 @@ export default function HomeMain() {
         <br />
 
         {/* Image */}
-        <Link href="/polargame">
+        <Link href="/polarbearwalking">
           
             <img
               src="polarbear.webp"
@@ -54,10 +54,10 @@ export default function HomeMain() {
         {/* Rounded Buttons */}
         <div className="flex justify-center mt-4">
           <button className="bg-blue-500 text-white px-4 py-2 rounded-full mr-4">
-            Button 1
+            Search Games
           </button>
           <button className="bg-blue-500 text-white px-4 py-2 rounded-full">
-            Button 2
+            About Us
           </button>
         
          
