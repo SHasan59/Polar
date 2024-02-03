@@ -35,7 +35,7 @@ const Navigation = () => {
           <img
             src="/polar-logo.png"
             alt="Polar Logo"
-            className="cursor-pointer w-90 h-40" // Adjust size here
+            className="cursor-pointer w-80 h-40" // Adjust size here also change logo to something else
           />
         </Link>
         <div className="mobile-menu block md:hidden">
