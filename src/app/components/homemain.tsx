@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/styles.css";
+import Link from "next/link";
 
 
 
@@ -17,11 +18,15 @@ export default function HomeMain() {
         <br />
 
         {/* Image */}
-        <img
-          src="polarbear.webp"
-          alt="Polar Bear"
-          className="max-w-full max-h-64 mx-auto mb-4 rounded-lg"
-        />
+        <Link href="/polargame">
+          
+            <img
+              src="polarbear.webp"
+              alt="Polar Bear"
+              className="max-w-full max-h-64 mx-auto mb-4 rounded-lg cursor-pointer"
+            />
+          
+        </Link>
 
         <p>
           Welcome to our Home page. We are a passionate team dedicated to
