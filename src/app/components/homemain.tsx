@@ -8,9 +8,11 @@ export default function HomeMain() {
     <main className="bg-gray-700">
       <title>Home</title>
       <div className="text-center">
-        <h1 className="text-blue-500 text-5xl font-bold font-rubik-glitch-pop">
-          Polar Bear Walking
-        </h1>
+      <h1 className="text-blue-500 text-5xl font-bold font-orbitron">
+  Polar Bear Walking
+</h1>
+
+
 
         <br />
 
