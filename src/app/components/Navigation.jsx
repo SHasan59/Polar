@@ -37,6 +37,7 @@ const Navigation = () => {
             alt="Polar Logo"
             className="cursor-pointer w-80 h-40" // Adjust size here also change logo to something else
           />
+
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (

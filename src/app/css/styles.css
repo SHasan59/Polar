@@ -6,8 +6,8 @@
   .font-rubik-glitch-pop {
     font-family: 'Rubik Glitch Pop', sans-serif;
   }
-  
 
+ 
   @font-face {
     font-family: 'PixelifySans-Regular';
     src: url('../fonts/PixelifySans-Regular.ttf') format('truetype');
@@ -30,4 +30,5 @@
   .font-orbitron {
     font-family: 'Orbitron-Regular', sans-serif;
   }
+
   

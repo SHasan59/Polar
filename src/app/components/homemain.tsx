@@ -4,20 +4,25 @@ import Link from "next/link";
 
 
 
+
+
 export default function HomeMain() {
   return (
     <main className="bg-gray-700">
       <title>Home</title>
       <div className="text-center">
+
       <h1 className="text-blue-500 text-5xl font-bold font-orbitron">
   Polar Bear Walking
 </h1>
 
 
 
+
         <br />
 
         {/* Image */}
+
         <Link href="/polarbearwalking">
           
             <img
@@ -27,6 +32,7 @@ export default function HomeMain() {
             />
           
         </Link>
+
 
         <p>
           Welcome to our Home page. We are a passionate team dedicated to
@@ -54,10 +60,12 @@ export default function HomeMain() {
         {/* Rounded Buttons */}
         <div className="flex justify-center mt-4">
           <button className="bg-blue-500 text-white px-4 py-2 rounded-full mr-4">
+
             Search Games
           </button>
           <button className="bg-blue-500 text-white px-4 py-2 rounded-full">
             About Us
+
           </button>
         
          
