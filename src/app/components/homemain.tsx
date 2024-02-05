@@ -1,5 +1,8 @@
 import React from "react";
 import "../css/styles.css";
+import Link from "next/link";
+
+
 
 
 
@@ -8,18 +11,28 @@ export default function HomeMain() {
     <main className="bg-gray-700">
       <title>Home</title>
       <div className="text-center">
-        <h1 className="text-blue-500 text-5xl font-bold font-rubik-glitch-pop">
-          Polar Bear Walking
-        </h1>
+
+      <h1 className="text-blue-500 text-5xl font-bold font-orbitron">
+  Polar Bear Walking
+</h1>
+
+
+
 
         <br />
 
         {/* Image */}
-        <img
-          src="polarbear.webp"
-          alt="Polar Bear"
-          className="max-w-full max-h-64 mx-auto mb-4 rounded-lg"
-        />
+
+        <Link href="/polarbearwalking">
+          
+            <img
+              src="polarbear.webp"
+              alt="Polar Bear"
+              className="max-w-full max-h-64 mx-auto mb-4 rounded-lg cursor-pointer"
+            />
+          
+        </Link>
+
 
         <p>
           Welcome to our Home page. We are a passionate team dedicated to
@@ -47,10 +60,12 @@ export default function HomeMain() {
         {/* Rounded Buttons */}
         <div className="flex justify-center mt-4">
           <button className="bg-blue-500 text-white px-4 py-2 rounded-full mr-4">
-            Button 1
+
+            Search Games
           </button>
           <button className="bg-blue-500 text-white px-4 py-2 rounded-full">
-            Button 2
+            About Us
+
           </button>
         
          
