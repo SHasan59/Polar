@@ -5,7 +5,6 @@ import NavigationLink from './NavigationLink';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import MenuOverlay from './MenuOverlay';
 
-
 const navLinks = [
   {
     title: 'Search',
@@ -32,9 +31,8 @@ const Navigation = () => {
   return (
     <nav className='"fixed top-0 left-0 right-0 z-10 bg-black-500 bg-opacity-100'>
       <div className="flex flex-wrap items-center justify-between mx-auto px-4py-2 ">
-        <Link href={'/'} className="text-2xl font-Monospace text-white-100">
-          {' '}
-          GameBacklogManager{' '}
+      <Link href={'/'}>
+          <img src="/download.svg" alt="GameBacklogManager Logo" className="cursor-pointer" />
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
