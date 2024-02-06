@@ -9,10 +9,10 @@ const Footer = () => {
         <span>Polar</span>
         <div className="justify-center">
           <div className="flex gap-10">
-            <Link href="/terms-of-service" className="text-slate-600 font-pixelify-sans hover:text-red-500">
+            <Link href="/termsofservice" className="text-slate-600 font-pixelify-sans hover:text-red-500">
               Terms of Service
             </Link>
-            <Link href="/privacy-policy" className="text-slate-600 font-pixelify-sans hover:text-red-500">
+            <Link href="/privacypolicy" className="text-slate-600 font-pixelify-sans hover:text-red-500">
               Privacy Policy
             </Link>
           </div>
