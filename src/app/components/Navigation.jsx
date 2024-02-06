@@ -8,20 +8,20 @@ import MenuOverlay from './MenuOverlay';
 const navLinks = [
   {
     title: 'Search',
-    path: '#search',
+    path: '/search',
   },
   {
     title: 'About Us',
-    path: '#aboutus',
+    path: '/aboutus',
   },
   {
     title: 'Contact',
-    path: '#contact',
+    path: '/contact',
   },
 
   {
     title: 'Backlog',
-    path: '#mock',
+    path: '/mock',
   },
 ];
 
@@ -32,7 +32,14 @@ const Navigation = () => {
     <nav className='"fixed top-0 left-0 right-0 z-10 bg-black-500 bg-opacity-100'>
       <div className="flex flex-wrap items-center justify-between mx-auto px-4py-2 ">
       <Link href={'/'}>
-          <img src="/download.svg" alt="GameBacklogManager Logo" className="cursor-pointer" />
+
+          <img
+            src="/polar-logo.png"
+            alt="Polar Logo"
+            className="cursor-pointer w-80 h-40" // Adjust size here also change logo to something else
+          />
+
+
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
