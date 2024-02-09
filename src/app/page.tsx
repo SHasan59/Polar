@@ -5,6 +5,7 @@ import Homemain from "./components/homemain";
 
 export default function Home() {
   return (
+
   <main>
 
 <><><Navigation />
@@ -13,8 +14,6 @@ export default function Home() {
       <Homemain/>
       <></>
       <Footer /></>
-
-
 
     </main>
   );

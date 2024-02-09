@@ -21,6 +21,15 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/MenuOverlay.jsx", "src/app/components/Navigation.jsx", "src/app/components/NavigationLink.jsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/app/components/MenuOverlay.jsx",
+    "src/app/components/Navigation.jsx",
+    "src/app/components/NavigationLink.jsx",
+    "src/app/components/chatbotmain.js"
+, "src/app/chatbot/page.tsx"  ],
   "exclude": ["node_modules"]
 }
