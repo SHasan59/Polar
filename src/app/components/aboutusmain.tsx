@@ -1,11 +1,29 @@
-"use client";
-import React from "react";
-import { Helmet } from "react-helmet";
+'use client';
+import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const TeamMembers = [
-  { name: "Samith Hasan", role: "Project Manager", image: "team-member-2.jpg" },
-  { name: "Muhammad Amir", role: "Resource Manager", image: "team-member-1.jpg" },
-  { name: "Gamal Fares", role: "Business Analyst", image: "team-member-3.jpg" },
+  {
+    name: 'Samith Hasan',
+    role: 'Project Manager',
+    image: 'team-member-2.jpg',
+    linkedin: 'https://www.linkedin.com/in/samith-hasan/',
+    github: 'https://github.com/samithhasan',
+  },
+  {
+    name: 'Muhammad Amir',
+    role: 'Resource Manager',
+    image: 'team-member-1.jpg',
+    linkedin: 'https://www.linkedin.com/in/muhammad-amir/',
+    github: 'https://github.com/muhammadamir',
+  },
+  {
+    name: 'Gamal Fares',
+    role: 'Business Analyst',
+    image: 'team-member-3.jpg',
+    linkedin: 'https://www.linkedin.com/in/gamal-fares/',
+    github: 'https://github.com/gamalfares',
+  },
 ];
 
 const AboutUsMain = () => {
@@ -26,14 +44,17 @@ const AboutUsMain = () => {
 
             <div className="max-w-3xl mx-auto">
               <p className="text-gray-400 text-lg mb-6">
-                Welcome to our About Us page. We are a passionate team dedicated to providing an innovative way to organize and creating a positive impact in our community. 
-                Our mission is to make organization easier. We strive for excellence in everything we do, and our commitment to quality is unwavering.
+                Welcome to our About Us page. We are a passionate team dedicated
+                to providing an innovative way to organize and creating a
+                positive impact in our community. Our mission is to make
+                organization easier. We strive for excellence in everything we
+                do, and our commitment to quality is unwavering.
               </p>
             </div>
 
             <div className="mt-8 bg-gray-800 p-6 rounded-lg">
               <h2 className="text-xl font-bold mb-4">Our Team</h2>
-              
+
               {TeamMembers.map((member, index) => (
                 <div className="flex items-center mb-6" key={index}>
                   <img
@@ -42,8 +63,34 @@ const AboutUsMain = () => {
                     className="w-12 h-12 rounded-full mr-4"
                   />
                   <div>
-                    <h3 className="text-white font-semibold text-lg">{member.name}</h3>
+                    <h3 className="text-white font-semibold text-lg">
+                      {member.name}
+                    </h3>
                     <p className="text-gray-400">{member.role}</p>
+                    <div className="flex mt-2">
+                      <a
+                        href={member.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="linkedin.png"
+                          alt="LinkedIn"
+                          className="w-6 h-6 mr-2"
+                        />
+                      </a>
+                      <a
+                        href={member.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="github.png"
+                          alt="GitHub"
+                          className="w-6 h-6"
+                        />
+                      </a>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -52,7 +99,9 @@ const AboutUsMain = () => {
             <section className="my-8 bg-blue-800 p-6 rounded-lg">
               <h2 className="text-2xl font-bold mb-4">Our Achievements</h2>
               <p className="text-gray-400">
-                Over the years, we have successfully delivered innovative solutions to our clients, earning recognition for our commitment to excellence.
+                Over the years, we have successfully delivered innovative
+                solutions to our clients, earning recognition for our commitment
+                to excellence.
               </p>
               {/* Add more information about achievements */}
             </section>
@@ -60,7 +109,9 @@ const AboutUsMain = () => {
             <section className="my-8 bg-green-800 p-6 rounded-lg">
               <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
               <p className="text-gray-400">
-                If you have any inquiries or would like to collaborate, feel free to reach out to us through our contact form or the provided contact details.
+                If you have any inquiries or would like to collaborate, feel
+                free to reach out to us through our contact form or the provided
+                contact details.
               </p>
               {/* Add your contact form here */}
             </section>
@@ -69,7 +120,6 @@ const AboutUsMain = () => {
       </main>
     </>
   );
-}
+};
 
 export default AboutUsMain;
-
