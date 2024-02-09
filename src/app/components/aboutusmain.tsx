@@ -74,7 +74,7 @@ const AboutUsMain = () => {
                         rel="noopener noreferrer"
                       >
                         <img
-                          src="linkedin.png"
+                          src="/linkedin-icon.svg"
                           alt="LinkedIn"
                           className="w-6 h-6 mr-2"
                         />
@@ -85,7 +85,7 @@ const AboutUsMain = () => {
                         rel="noopener noreferrer"
                       >
                         <img
-                          src="github.png"
+                          src="/github-icon.svg"
                           alt="GitHub"
                           className="w-6 h-6"
                         />
