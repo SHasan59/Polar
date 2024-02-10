@@ -1,9 +1,20 @@
-import Image from "next/image";
+import Footer from "./components/Footer";
+import Navigation from "./components/Navigation";
+import Homemain from "./components/homemain";
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-  <div>here is the home page: assigned for ==== </div>
+
+  <main>
+
+<><><Navigation />
+      </>
+
+      <Homemain/>
+      <></>
+      <Footer /></>
+
     </main>
   );
 }
