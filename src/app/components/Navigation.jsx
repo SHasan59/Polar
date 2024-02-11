@@ -31,15 +31,12 @@ const Navigation = () => {
   return (
     <nav className='"fixed top-0 left-0 right-0 z-10 bg-black-500 bg-opacity-100'>
       <div className="flex flex-wrap items-center justify-between mx-auto px-4py-2 ">
-      <Link href={'/'}>
-
+        <Link href={'/'}>
           <img
-            src="/polar-logo.png"
+            src="/polar.png"
             alt="Polar Logo"
-            className="cursor-pointer w-80 h-40" // Adjust size here also change logo to something else
+            className="cursor-pointer w-30 h-20" // Adjust size here also change logo to something else
           />
-
-
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
