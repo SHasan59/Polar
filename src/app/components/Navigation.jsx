@@ -7,6 +7,10 @@ import MenuOverlay from './MenuOverlay';
 
 const navLinks = [
   {
+    title: 'TaskList',
+    path: '/ToDo',
+  },
+  {
     title: 'Search',
     path: '/search',
   },
@@ -15,13 +19,13 @@ const navLinks = [
     path: '/aboutus',
   },
   {
-    title: 'Contact',
-    path: '/contact',
+    title: 'Blog',
+    path: '/Blog',
   },
 
   {
-    title: 'Backlog',
-    path: '/mock',
+    title: 'SECRET',
+    path: '/polarbearwalking',
   },
 ];
 
