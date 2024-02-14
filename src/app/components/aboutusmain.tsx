@@ -6,22 +6,22 @@ const TeamMembers = [
   {
     name: 'Samith Hasan',
     role: 'Project Manager',
-    image: 'team-member-2.jpg',
+    image: 'samith.jpg',
     linkedin: 'https://www.linkedin.com/in/samith-hasan/',
-    github: 'https://github.com/samithhasan',
+    github: 'https://github.com/shasan59',
   },
   {
     name: 'Muhammad Amir',
     role: 'Resource Manager',
-    image: 'team-member-1.jpg',
-    linkedin: 'https://www.linkedin.com/in/muhammad-amir/',
-    github: 'https://github.com/muhammadamir',
+    image: 'muhammad.jpg',
+    linkedin: 'https://www.linkedin.com/in/muhammad-amir-105a52294/',
+    github: 'https://github.com/Mamir21',
   },
   {
     name: 'Gamal Fares',
     role: 'Business Analyst',
-    image: 'team-member-3.jpg',
-    linkedin: 'https://www.linkedin.com/in/gamal-fares/',
+    image: 'gamal.jpg',
+    linkedin: 'https://www.linkedin.com/in/gamal-fares-982a26248/',
     github: 'https://github.com/gamalfares',
   },
 ];
@@ -98,21 +98,13 @@ const AboutUsMain = () => {
 
             <section className="my-8 bg-blue-800 p-6 rounded-lg">
               <h2 className="text-2xl font-bold mb-4">Our Achievements</h2>
-              <p className="text-gray-400">
-                Over the years, we have successfully delivered innovative
-                solutions to our clients, earning recognition for our commitment
-                to excellence.
-              </p>
+              <p className="text-gray-400">PUT</p>
               {/* Add more information about achievements */}
             </section>
 
             <section className="my-8 bg-green-800 p-6 rounded-lg">
               <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
-              <p className="text-gray-400">
-                If you have any inquiries or would like to collaborate, feel
-                free to reach out to us through our contact form or the provided
-                contact details.
-              </p>
+              <p className="text-gray-400">ADD EMAIL</p>
               {/* Add your contact form here */}
             </section>
           </div>
