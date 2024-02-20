@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Modal from '../components/Modal';
 import '../css/styles.css';
 import Link from 'next/link';
+import { Button } from './ui/moving-border';
 
 const HomeMain = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -62,12 +63,12 @@ const HomeMain = () => {
 
         {/* Rounded Buttons */}
         <div className="flex justify-center mt-4">
-          <button
+          <Button
             className="bg-blue-500 text-white px-4 py-2 rounded-full mr-4"
             onClick={handleToggleModal}
           >
             Search Games
-          </button>
+          </Button>
           <button className="bg-blue-500 text-white px-4 py-2 rounded-full">
             About Us
           </button>
