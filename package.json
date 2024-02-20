@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tsparticles/engine": "^3.2.2",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.2.2",
     "axios": "^1.6.7",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.5",
