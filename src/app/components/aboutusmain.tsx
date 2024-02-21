@@ -100,6 +100,7 @@ const AboutUsMain = () => {
                 ))}
               </div>
 
+
               <section className="my-8 bg-blue-800 p-6 rounded-lg">
                 <h2 className="text-2xl font-bold mb-4">Our Achievements</h2>
                 <p className="text-gray-400">PUT</p>
@@ -139,6 +140,7 @@ const AboutUsMain = () => {
                 {/* Add your contact form here */}
               </section>
             </div>
+
           </div>
         </TracingBeam>
       </main>

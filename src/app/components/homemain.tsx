@@ -76,6 +76,9 @@ const HomeMain = () => {
           </div>
         </div>
       </div>
+      {isModalOpen && (
+        <Modal onClose={handleToggleModal}>Content of the modal</Modal>
+      )}
     </main>
   );
 };

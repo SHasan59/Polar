@@ -1,1 +1,9 @@
-//npm install i openai
+npm i @heroicons/react
+npm install --save-dev @types/react-helmet
+npm install i openai
+npm install react-helmet
+npm install react-spring
+npm i @heroicons/react
+npm install next
+npm i framer-motion @tsparticles/react @tsparticles/engine @tsparticles/slim
+npm i framer-motion clsx tailwind-merge
