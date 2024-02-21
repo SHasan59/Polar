@@ -45,10 +45,17 @@ export const TextGenerateEffect = ({
   return (
     <div className={cn('font-bold', className)}>
       <div className="mt-2 text-center">
-        <div className=" dark:text-white text-black text-m leading-snug tracking-wide">
+        <div className="dark:text-white text-black text-m sm:text-s leading-snug tracking-wide">
           {renderWords()}
         </div>
       </div>
+      <style jsx>{`
+        @media (max-width: 640px) {
+          .text-m {
+            font-size: 14px; /* Adjust the size as needed for mobile screens */
+          }
+        }
+      `}</style>
     </div>
   );
 };
