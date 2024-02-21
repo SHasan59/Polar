@@ -16,7 +16,8 @@
     "openai": "^4.27.0",
     "react": "^18",
     "react-dom": "^18",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {
     "@types/node": "^20",
