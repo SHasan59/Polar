@@ -62,11 +62,14 @@ const HomeMain = () => {
           <TextGenerateEffect words={words3} />
           {/* Rounded Buttons */}
           <div className="flex justify-center mt-4">
-            <Button className="bg-blue-500 text-white px-4 py-2 rounded-full mr-4">
+            <Button className="bg-slate-900 text-white  border-slate-800">
               <Link href="/search">Search Games</Link>
             </Button>
             <Link href="/aboutus">
-              <Button className="bg-blue-500 text-white px-4 py-2 rounded-full">
+              <Button
+                borderRadius="1.75rem"
+                className="bg-slate-900 text-white  border-slate-800"
+              >
                 About Us
               </Button>
             </Link>
