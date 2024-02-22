@@ -1,6 +1,4 @@
-
 "use client"
-
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Footer from '../components/Footer';
@@ -20,16 +18,14 @@ interface GameCardProps {
   game: Game;
 }
 
-
-
 const GameCard: React.FC<GameCardProps> = ({ game }) => {
-  const defaultImage = '/beargame.png'; 
+  const defaultImage = '/beargame.png';
 
   return (
     <div
       key={game.id}
       className="max-w-xs mx-auto bg-lightblue shadow-lg rounded-lg overflow-hidden m-4 h-96 overflow-y-auto"
-      style={{ backgroundColor: 'lightblue' }} // Set background color
+      style={{ backgroundColor: 'lightblue' }}
     >
       <img src={game.background_image || defaultImage} alt={game.name} className="w-full h-64 object-cover" />
       <div className="p-4">
@@ -41,26 +37,19 @@ const GameCard: React.FC<GameCardProps> = ({ game }) => {
     </div>
   );
 };
-
-
 // Import statements...
 
 export default function Search() {
   const [games, setGames] = useState<Game[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [platformFilter, setPlatformFilter] = useState<string | null>(null);
-  const [currentPage, setCurrentPage] = useState<number>(1);
-  const [totalPages, setTotalPages] = useState<number>(1);
 
-  const handleSearch = async (query: string, page: number = 1) => {
+  const handleSearch = async (query: string) => {
     try {
       setLoading(true);
       const response = await axios.get(
-        `https://api.rawg.io/api/games?key=6f8bc6b721774d8cbbd30e53acf01e4f&search=${query}&page=${page}`
+        `https://api.rawg.io/api/games?key=6f8bc6b721774d8cbbd30e53acf01e4f&search=${query}`
       );
-
-      setTotalPages(Math.ceil(response.data.count / 10));
-      
 
       const gamesWithDetails = await Promise.all(
         response.data.results.map(async (game: any) => {
@@ -81,7 +70,6 @@ export default function Search() {
       );
 
       setGames(gamesWithDetails);
-      setCurrentPage(page);
     } catch (error) {
       console.error('Error fetching games:', error);
     } finally {
@@ -93,20 +81,12 @@ export default function Search() {
     setPlatformFilter(selectedPlatform);
   };
 
-  const handleNextPage = () => {
-    if (currentPage < totalPages) {
-      handleSearch('', currentPage + 1);
-    }
-  };
-
-  const handlePrevPage = () => {
-    if (currentPage > 1) {
-      handleSearch('', currentPage - 1);
-    }
-  };
+  const filteredGames = platformFilter
+    ? games.filter((game) => game.platforms.includes(platformFilter))
+    : games;
 
   useEffect(() => {
-    handleSearch('Fortnite');
+    handleSearch('Zelda');
   }, []);
 
   return (
@@ -114,7 +94,7 @@ export default function Search() {
       <Navigation />
       <div className="flex flex-col items-center">
         <SearchBar onSearch={handleSearch} />
-
+        
         {/* Platform filter dropdown */}
         <div className="mb-4">
           <label className="text-lg font-semibold mr-2">Filter by Platform:</label>
@@ -126,16 +106,6 @@ export default function Search() {
             <option value="">All Platforms</option>
             <option value="PC">PC</option>
             <option value="Xbox">Xbox</option>
-            <option value="PlayStation 1">PlayStation 1</option>
-            <option value="PlayStation 2">PlayStation 2</option>
-            <option value="PlayStation 3">PlayStation 3</option>
-            <option value="PlayStation 4">PlayStation 4</option>
-            <option value="PlayStation 5">PlayStation 5</option>
-            <option value="Wii">Wii</option>
-            <option value="Wii U">Wii U</option>
-            <option value="NES">NES</option>
-            <option value="Nintendo 64">Nintendo 64</option>
-            <option value="Nintendo Switch">Nintendo Switch</option>
             {/* Add more options for other platforms as needed */}
           </select>
         </div>
@@ -144,34 +114,11 @@ export default function Search() {
           <p>Loading...</p>
         ) : (
           <div className="flex flex-wrap justify-center overflow-y-auto max-h-screen">
-            {games.map((game) => (
+            {filteredGames.map((game) => (
               <GameCard key={game.id} game={game} />
             ))}
           </div>
         )}
-
-        {/* Pagination */}
-        <div className="mt-4">
-          <p className="text-gray-600">
-            Page {currentPage} of {totalPages}
-          </p>
-          <div className="flex mt-2">
-            <button
-              onClick={handlePrevPage}
-              className="bg-gray-200 text-gray-700 rounded px-2 py-1 mr-2"
-              disabled={currentPage === 1}
-            >
-              Prev
-            </button>
-            <button
-              onClick={handleNextPage}
-              className="bg-gray-200 text-gray-700 rounded px-2 py-1"
-              disabled={currentPage === totalPages}
-            >
-              Next
-            </button>
-          </div>
-        </div>
       </div>
       <Footer />
     </main>
