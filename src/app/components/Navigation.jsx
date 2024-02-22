@@ -7,6 +7,10 @@ import MenuOverlay from './MenuOverlay';
 
 const navLinks = [
   {
+    title: 'Chatbot',
+    path: '/chatbot',
+  },
+  {
     title: 'TaskList',
     path: '/ToDo',
   },
