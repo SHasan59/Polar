@@ -66,12 +66,12 @@ const HomeMain = () => {
             <Button className="bg-slate-900 text-white  border-slate-800">
               <Link href="/search">Search Games</Link>
             </Button>
-            <Link href="/aboutus">
+            <Link href="/features">
               <Button
                 borderRadius="1.75rem"
                 className="bg-slate-900 text-white  border-slate-800"
               >
-                About Us
+                Features
               </Button>
             </Link>
           </div>
@@ -81,7 +81,6 @@ const HomeMain = () => {
       {isModalOpen && (
         <Modal onClose={handleToggleModal}>Content of the modal</Modal>
       )}
-      <TabsDemo />
     </main>
   );
 };
