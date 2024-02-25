@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import { motion } from 'framer-motion'; // Import motion from Framer Motion
 import Modal from '../components/Modal';
 import '../css/styles.css';
 import Link from 'next/link';
@@ -48,15 +49,29 @@ const HomeMain = () => {
             Polar
           </h1>
           <br />
-          {/* Image */}
-          <Link href="/polarbearwalking">
-            <img
-              src="polarbear.webp"
-              alt="Polar Bear"
-              className="max-w-80 max-h-80 mx-auto mb-4 rounded-full cursor-pointer"
-            />
-          </Link>
-          <p>hello IM LAGGING</p>
+          {/* Image with Framer Motion animation */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }} // Initial state
+            animate={{ opacity: 1, scale: 1 }} // Animation state
+            transition={{ duration: 0.9 }} // Animation duration
+          >
+            <Link href="/polarbearwalking">
+              <img
+                src="polarbear.webp"
+                alt="Polar Bear"
+                className="max-w-80 max-h-80 mx-auto mb-4 rounded-full cursor-pointer"
+              />
+            </Link>
+          </motion.div>
+          <p className="text-center ">
+            Welcome to our Home page. We are a passionate team dedicated to
+            providing an innovative way to organize and creating a positive
+            impact in our community. Our mission is to make organization easier.
+            We strive for excellence in everything we do, and our commitment to
+            quality is unwavering. Feel free to explore our website and learn
+            more about what makes us unique. If you have any questions or would
+            like to get in touch, please don't hesitate to contact us.
+          </p>
 
           {/* Rounded Buttons */}
           <div className="flex justify-center mt-4">
