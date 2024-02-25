@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Footer from '../components/Footer';
@@ -27,17 +27,25 @@ const GameCard: React.FC<GameCardProps> = ({ game }) => {
       className="max-w-xs mx-auto bg-lightblue shadow-lg rounded-lg overflow-hidden m-4 h-96 overflow-y-auto"
       style={{ backgroundColor: 'lightblue' }}
     >
-      <img src={game.background_image || defaultImage} alt={game.name} className="w-full h-64 object-cover" />
+      <img
+        src={game.background_image || defaultImage}
+        alt={game.name}
+        className="w-full h-64 object-cover"
+      />
       <div className="p-4">
         <h3 className="text-xl text-black font-medium mb-2">{game.name}</h3>
         <p className="text-sm text-black mb-2">Released: {game.released}</p>
-        <p className="text-sm text-black mb-2">Platforms: {game.platforms.join(', ')}</p>
-        <p className="text-sm text-black" dangerouslySetInnerHTML={{ __html: game.about }} />
+        <p className="text-sm text-black mb-2">
+          Platforms: {game.platforms.join(', ')}
+        </p>
+        <p
+          className="text-sm text-black"
+          dangerouslySetInnerHTML={{ __html: game.about }}
+        />
       </div>
     </div>
   );
 };
-// Import statements...
 
 export default function Search() {
   const [games, setGames] = useState<Game[]>([]);
@@ -63,7 +71,9 @@ export default function Search() {
             name: gameDetails.name,
             background_image: gameDetails.background_image,
             released: gameDetails.released,
-            platforms: gameDetails.platforms.map((platform: any) => platform.platform.name),
+            platforms: gameDetails.platforms.map(
+              (platform: any) => platform.platform.name
+            ),
             about: gameDetails.description || 'No information available',
           };
         })
@@ -92,21 +102,22 @@ export default function Search() {
   return (
     <main>
       <Navigation />
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col ">
         <SearchBar onSearch={handleSearch} />
-        
+
         {/* Platform filter dropdown */}
-        <div className="mb-4">
-          <label className="text-lg font-semibold mr-2">Filter by Platform:</label>
+        <div className="mb-4 text-right">
+          <label className="text-lg font-semibold mr-2">
+            Filter by Platform:
+          </label>
           <select
             onChange={(e) => handlePlatformFilterChange(e.target.value)}
             value={platformFilter || ''}
-            className="border rounded px-2 py-1"
+            className="border rounded px-2 py-1 text-black"
           >
             <option value="">All Platforms</option>
             <option value="PC">PC</option>
             <option value="Xbox">Xbox</option>
-            {/* Add more options for other platforms as needed */}
           </select>
         </div>
 
