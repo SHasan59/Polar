@@ -1,4 +1,4 @@
-//npm install i openai
+
 'use client';
 import { useState, useEffect } from 'react';
 import OpenAi from 'openai';
@@ -16,7 +16,6 @@ export default function ChatBot() {
   const handleUserInput = async () => {
     setIsLoading(true);
 
-    // Use the functional form of setChatHistory to correctly update the state
     setChatHistory((prevChat) => [
       ...prevChat,
       { role: 'user', content: userInput },
@@ -37,14 +36,14 @@ export default function ChatBot() {
   };
 
   return (
-    <div className="bg-gray-500 min-h-screen flex flex-col justify-center items-center">
-      <div className="w-full max-w-screen-md bg-white p-4 rounded-lg shadow-md">
+    <div className="bg-blue-900 min-h-screen flex flex-col justify-center items-center">
+      <div className="w-full max-w-screen-md bg-black p-5 rounded-lg shadow-md">
         <div className="mb-4">
-          <div className="text-4xl font-bold text-blue-800 mb-2">NAVi</div>
+          <div className="text-4xl font-bold text-blue-200 mb-2">NAVi</div>
         </div>
-        <p className="text-gray-600 text-lg">ASK ANYTHING</p>
+        <p className="text-blue-600 text-lg">ASK ANYTHING</p>
 
-        <div className="mb-4" style={{ height: '400px', overflow: 'auto' }}>
+        <div className="mb-4 overflow-auto" style={{ height: '400px' }}>
           {chatHistory.map((message, index) => (
             <div
               key={index}
@@ -73,23 +72,24 @@ export default function ChatBot() {
             </div>
           ))}
         </div>
-        <div className="flex">
+
+        <div className="flex gap-2">
           <input
             type="text"
-            placeholder="ask me anything"
+            placeholder="Ask me anything"
             value={userInput}
             onChange={(e) => setUserInput(e.target.value)}
-            className="flex-1 p-2 rounded-lg border border-black" // Add border style here
+            className="flex-1 p-2 rounded-lg  text-black"
           />
 
           {isLoading ? (
-            <div className="bg-blue-500 text-white p-2 rounded-r-lg animate-pulse">
+            <div className="bg-blue-500 text-white p-2 rounded-lg animate-pulse">
               Loading..
             </div>
           ) : (
             <button
               onClick={handleUserInput}
-              className="bg-blue-500 text-white p-2 rounded-r-lg border border-black hover:bg-blue-600" // Add border style here
+              className="bg-blue-500 text-white p-2 rounded-lg   hover:bg-blue-600"
             >
               Ask
             </button>
