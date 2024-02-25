@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { Button } from './ui/moving-border';
 import { SparklesCore } from './ui/sparkles';
 import { TextGenerateEffect } from './ui/text-generate-effect';
+import TabsDemo from './feature';
 
 const HomeMain = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -76,9 +77,11 @@ const HomeMain = () => {
           </div>
         </div>
       </div>
+
       {isModalOpen && (
         <Modal onClose={handleToggleModal}>Content of the modal</Modal>
       )}
+      <TabsDemo />
     </main>
   );
 };
