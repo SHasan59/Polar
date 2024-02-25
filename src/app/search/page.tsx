@@ -122,7 +122,7 @@ export default function Search() {
         </div>
 
         {loading ? (
-          <p>Loading...</p>
+          <p className="text-center">Loading...</p>
         ) : (
           <div className="flex flex-wrap justify-center overflow-y-auto max-h-screen">
             {filteredGames.map((game) => (
