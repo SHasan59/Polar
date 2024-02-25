@@ -1,4 +1,3 @@
-
 'use client';
 import { useState, useEffect } from 'react';
 import OpenAi from 'openai';
@@ -79,7 +78,7 @@ export default function ChatBot() {
             placeholder="Ask me anything"
             value={userInput}
             onChange={(e) => setUserInput(e.target.value)}
-            className="flex-1 p-2 rounded-lg  text-black"
+            className="flex-1 p-2 rounded-lg  text-black bg-slate-500"
           />
 
           {isLoading ? (
