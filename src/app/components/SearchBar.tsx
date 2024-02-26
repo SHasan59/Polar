@@ -18,7 +18,9 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   return (
     <div className="text-center mt-8">
       <h1 className="text-3xl font-bold mb-4">SEARCH GAMES HERE</h1>
-      <p className="text-gray-500 text-lg mb-8">HERE U CAN SEARCH ANY GAME YOU WANT AND I MEAN ANY GAME</p>
+      <p className="text-gray-500 text-lg mb-8">
+        HERE U CAN SEARCH ANY GAME YOU WANT AND I MEAN ANY GAME
+      </p>
       <div className="flex justify-center">
         <input
           type="text"
