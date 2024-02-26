@@ -119,7 +119,7 @@ const AboutUsMain = () => {
                   make organization easier. We strive for excellence in
                   everything we do, and our commitment to quality is unwavering.
                 </p>
-                {/* Add more information about achievements */}
+                
               </section>
 
               <section className="my-8 bg-green-800 p-6 rounded-lg">
@@ -137,7 +137,7 @@ const AboutUsMain = () => {
                   make organization easier. We strive for excellence in
                   everything we do, and our commitment to quality is unwavering.
                 </p>
-                {/* Add your contact form here */}
+            
               </section>
             </div>
 

@@ -30,7 +30,6 @@ const HomeMain = () => {
   return (
     <main>
       <div className="h-[40rem] relative w-full bg-blue-900 flex flex-col items-center justify-center overflow-hidden ">
-        {/* Sparkles in the background */}
         <div className="w-full absolute inset-0 h-screen">
           <SparklesCore
             id="tsparticlesfullpage"

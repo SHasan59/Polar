@@ -1,4 +1,3 @@
-// components/SearchBar.tsx
 import { useState, ChangeEvent } from 'react';
 
 interface SearchBarProps {
