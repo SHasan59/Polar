@@ -9,10 +9,10 @@ const Footer = () => {
         <span className="text-lg sm:text-2xl lg:text-3xl">Polar</span>
         <div className="justify-center">
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-10">
-            <Link href="/termsofservice" className="text-slate-600 font-pixelify-sans hover:text-red-500 text-md sm:text-lg lg:text-3xl">
+            <Link href="/termsofservice" className="text-slate-600 font-pixelify-sans hover:text-blue-600 text-md sm:text-lg lg:text-3xl">
               Terms of Service
             </Link>
-            <Link href="/privacypolicy" className="text-slate-600 font-pixelify-sans hover:text-red-500 text-md sm:text-lg lg:text-3xl">
+            <Link href="/privacypolicy" className="text-slate-600 font-pixelify-sans hover:text-blue-600 text-md sm:text-lg lg:text-3xl">
               Privacy Policy
             </Link>
           </div>
