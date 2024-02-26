@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { motion } from 'framer-motion'; // Import motion from Framer Motion
+import { motion } from 'framer-motion'; 
 import Modal from '../components/Modal';
 import '../css/styles.css';
 import Link from 'next/link';
@@ -49,11 +49,11 @@ const HomeMain = () => {
             Polar
           </h1>
           <br />
-          {/* Image with Framer Motion animation */}
+         
           <motion.div
-            initial={{ opacity: 0, scale: 0.5 }} // Initial state
-            animate={{ opacity: 1, scale: 1 }} // Animation state
-            transition={{ duration: 0.9 }} // Animation duration
+            initial={{ opacity: 0, scale: 0.5 }} 
+            animate={{ opacity: 1, scale: 1 }} 
+            transition={{ duration: 0.9 }} 
           >
             <Link href="/polarbearwalking">
               <img
@@ -73,7 +73,7 @@ const HomeMain = () => {
             like to get in touch, please don't hesitate to contact us.
           </p>
 
-          {/* Rounded Buttons */}
+
           <div className="flex justify-center mt-4">
             <Button className="bg-slate-900 text-white  border-slate-800">
               <Link href="/search">Search Games</Link>
