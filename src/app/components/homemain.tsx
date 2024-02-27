@@ -1,3 +1,4 @@
+
 'use client';
 import React, { useState } from 'react';
 import { motion } from 'framer-motion'; 
@@ -26,6 +27,7 @@ const HomeMain = () => {
   unique. If you have any questions or would like to get in touch,
   please don't hesitate to contact us.
   `;
+
 
   return (
     <main>
