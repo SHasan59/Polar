@@ -1,34 +1,50 @@
 @font-face {
-    font-family: 'Rubik Glitch Pop';
-    src: url('../fonts/RubikGlitchPop-Regular.ttf') format('truetype');
-  }
-  
-  .font-rubik-glitch-pop {
-    font-family: 'Rubik Glitch Pop', sans-serif;
-  }
+  font-family: 'Rubik Glitch Pop';
+  src: url('../fonts/RubikGlitchPop-Regular.ttf') format('truetype');
+}
 
- 
-  @font-face {
-    font-family: 'PixelifySans-Regular';
-    src: url('../fonts/PixelifySans-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  .font-pixelify-sans {
-    font-family: 'PixelifySans-Regular', sans-serif;
-  }
-  
+.font-rubik-glitch-pop {
+  font-family: 'Rubik Glitch Pop', sans-serif;
+}
 
-  @font-face {
-    font-family: 'Orbitron-Regular';
-    src: url('../fonts/Orbitron-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  .font-orbitron {
-    font-family: 'Orbitron-Regular', sans-serif;
-  }
+@font-face {
+  font-family: 'PixelifySans-Regular';
+  src: url('../fonts/PixelifySans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-  
+.font-pixelify-sans {
+  font-family: 'PixelifySans-Regular', sans-serif;
+}
+
+@font-face {
+  font-family: 'Orbitron-Regular';
+  src: url('../fonts/Orbitron-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-orbitron {
+  font-family: 'Orbitron-Regular', sans-serif;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 10px; 
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(
+    28,
+    108,
+    187
+  ); 
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent; 
+}
