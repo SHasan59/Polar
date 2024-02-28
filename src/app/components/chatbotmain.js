@@ -35,7 +35,15 @@ export default function ChatBot() {
   };
 
   return (
-    <div className="bg-blue-900 min-h-screen flex flex-col justify-center items-center">
+    <div
+      className="min-h-screen flex flex-col justify-center items-center bg-blue-700"
+      style={{
+        backgroundImage: 'url("POLAR BEAR STANDING.png")',
+        backgroundSize: '',
+        backgroundPosition: 'left',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
       <div className="w-full max-w-screen-md bg-black p-5 rounded-lg shadow-md">
         <div className="mb-4">
           <div className="text-4xl font-bold text-blue-200 mb-2">NAVi</div>
