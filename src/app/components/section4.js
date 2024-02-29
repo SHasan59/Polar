@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import Author from "./child/author"
 
-export default function section3() {
+export default function section4() {
     return (
         <section className="container mx-auto md:px-20 py-16">
             <div className="grid lg:grid-cols-2">
