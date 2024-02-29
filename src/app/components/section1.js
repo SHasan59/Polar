@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 import Swiper from 'swiper';
 import 'swiper/css';
 
-export default function Sction1() {
+export default function section1() {
 
     useEffect(() => {const mySwiper = new Swiper('.swiper', {});}, []);
     
@@ -68,7 +68,7 @@ export default function Sction1() {
         </div>
     </section>
     )
-}
+} 
 
 function Slide({ post }) {
     return (
