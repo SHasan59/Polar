@@ -29,18 +29,30 @@ export default function section1() {
     },
     {
       id: 2,
-      imageUrl: '/images/polarblack.png',
-      title: 'The Polar Bear Game is the best games ever.',
+      imageUrl: '/images/ff7.png',
+      title:
+        'Final Fantasy VII Rebirth and how it revisits the twist that changed video game history',
       linkUrl: '#x',
-      category: 'Sub Heading',
-      date: 'Feb 13,2024',
+      category: 'Playstation',
+      date: 'Feb 29,2024',
       content:
-        'The Polar Bear Game" is an NOOOO adventure set in the vast and unforgiving Arctic landscape, placing players in the furry paws of a courageous polar bear protagonist. As they navigate through icy terrain and face the harsh elements, players must overcome a series of challenges, from evading dangerous predators to solving puzzles and unraveling the mysteries of the Arctic wilderness. With stunning visuals and immersive storytelling, the game offers an unforgettable experience that not only entertains but also educates players about the importance of environmental conservation and the delicate balance of ecosystems. "The Polar Bear Game" promises an exhilarating journey where survival instincts and environmental awareness are key to success, inviting players to embark on an epic quest that celebrates the wonders of nature and the resilience of Arctic wildlife.',
+        'Predecessor Final Fantasy VI, for instance, has sold 3.8 million copies worldwide; to date, Final Fantasy VII has sold 14.4 million. It has inspired a CGI-animated feature film sequel; a range of middling spin-off games; and most recently, a long-anticipated project to remake the original title as a trilogy, using the full high-fidelity might of modern video game technology. The second of that trilogy, Final Fantasy VII Rebirth, is released today.',
     },
     {
       id: 3,
+      imageUrl: '/images/p3r.png',
+      title:
+        'Persona 3 Reload Becomes Fastest-Selling Game in Atlus History With 1 Million Sales',
+      linkUrl: '#',
+      category: 'Sub Heading',
+      date: 'Feb 13,2024',
+      content:
+        'Persona 3 Reload is described as “a captivating reimagining of the genre-defining RPG, reborn for the modern era.” Rumors of this games existence floated around for a long time but were mostly shunned as fake until the fire was stoked by a snippet of the games supposed trailer leaked a few months ago. Prior to its debut in the Xbox Showcase, the official ATLUS accounts posted the trailer a few days early which also contained the release date. The posts were quickly taken down, but not before it was reposted and spread throughout the community.',
+    },
+    {
+      id: 4,
       imageUrl: '/images/polarblack.png',
-      title: 'The Polar Bear Game is the best games ever.',
+      title: 'The Polar Bear Game is the best game ever.',
       linkUrl: '#',
       category: 'Sub Heading',
       date: 'Feb 13,2024',
