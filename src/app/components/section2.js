@@ -11,8 +11,8 @@ export default function section2() {
         {Post2()}
         {Post3()}
         {Post4()}
-        {Post2()}
-        {Post2()}
+        {Post5()}
+        {Post6()}
       </div>
     </section>
   );
@@ -207,6 +207,89 @@ function Post4() {
           where survival instincts and environmental awareness are key to
           success, inviting players to embark on an epic quest that celebrates
           the wonders of nature and the resilience of Arctic wildlife.
+        </p>
+        <Author></Author>
+      </div>
+    </div>
+  );
+}
+
+
+function Post5() {
+  return (
+    <div className="item">
+      <div className="immages">
+        <Link href={'#'}>
+          <Image
+            src={'/images/dragon.jpg'}
+            className="rounded"
+            width={500}
+            height={300}
+          />
+        </Link>
+      </div>
+      <div className="info flex justify-center flex-col py-4">
+        <div className="catagories">
+          <Link href={'#'} className="text-blue-300">
+            RGG
+          </Link>
+          <Link href={'#'} className="text-white-600">
+            {' '}
+            - Feb 13,2024
+          </Link>
+        </div>
+        <div className="title">
+          <Link
+            href={'#'}
+            className="text-xl font-bold text-white-800 hover:text-gray-600"
+          >
+           Like a Dragon: Infinite Wealth sold a million copies worldwide
+          </Link>
+        </div>
+        <p className="text-white-500 py-3">
+        Kiryu and friends continue to be popular as Like a Dragon: Infinite Wealth has cracked a million sales one week after its release, as revealed by publisher Sega and developer Ryu Ga Gotoku Studio. This combines digital and physical sales around the globe. This makes Like a Dragon: Infinite Wealth the fastest-selling series entry to date. Predecessor Yakuza: Like a Dragon, which came out in January 2020, sold 1.8 million copies by December 2023, making Infinite Wealth’s pace absolutely rapid by comparison.
+        </p>
+        <Author></Author>
+      </div>
+    </div>
+  );
+}
+
+
+
+function Post6() {
+  return (
+    <div className="item">
+      <div className="immages">
+        <Link href={'#'}>
+          <Image
+            src={'/images/ssquad.png'}
+            className="rounded"
+            width={500}
+            height={300}
+          />
+        </Link>
+      </div>
+      <div className="info flex justify-center flex-col py-4">
+        <div className="catagories">
+          <Link href={'#'} className="text-blue-300">
+            JRPG
+          </Link>
+          <Link href={'#'} className="text-white-600">
+            {' '}
+            - Feb 13,2024
+          </Link>
+        </div>
+        <div className="title">
+          <Link
+            href={'#'}
+            className="text-xl font-bold text-white-800 hover:text-gray-600"
+          >
+            The Joker joins Suicide Squad: Kill the Justice League at the end of March
+          </Link>
+        </div>
+        <p className="text-white-500 py-3">
+        The first season of Suicide Squad: Kill the Justice League will go live on March 28, and as promised it will see the arrival of one of DC's most infamous villains: The Joker. The date was revealed on Twitter in a very straightforward, un-Joker-like announcement: Get ready for Season 1! The jokes are coming March 28, HA! That sounds more like a triumphant in your face, Batfink! than the maniacal laughter the Joker is famed for, although given the events of Suicide Squad (which we won't get into for spoiler reasons) I suppose that might be appropriate.
         </p>
         <Author></Author>
       </div>
