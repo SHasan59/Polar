@@ -33,7 +33,7 @@ export default function section1() {
       title:
         'Final Fantasy VII Rebirth and how it revisits the twist that changed video game history',
       linkUrl: '#x',
-      category: 'Playstation',
+      category: 'Square Enix',
       date: 'Feb 29,2024',
       content:
         'Predecessor Final Fantasy VI, for instance, has sold 3.8 million copies worldwide; to date, Final Fantasy VII has sold 14.4 million. It has inspired a CGI-animated feature film sequel; a range of middling spin-off games; and most recently, a long-anticipated project to remake the original title as a trilogy, using the full high-fidelity might of modern video game technology. The second of that trilogy, Final Fantasy VII Rebirth, is released today.',
@@ -44,7 +44,7 @@ export default function section1() {
       title:
         'Persona 3 Reload Becomes Fastest-Selling Game in Atlus History With 1 Million Sales',
       linkUrl: '#',
-      category: 'Sub Heading',
+      category: 'Atlus',
       date: 'Feb 13,2024',
       content:
         'Persona 3 Reload is described as “a captivating reimagining of the genre-defining RPG, reborn for the modern era.” Rumors of this games existence floated around for a long time but were mostly shunned as fake until the fire was stoked by a snippet of the games supposed trailer leaked a few months ago. Prior to its debut in the Xbox Showcase, the official ATLUS accounts posted the trailer a few days early which also contained the release date. The posts were quickly taken down, but not before it was reposted and spread throughout the community.',
@@ -72,12 +72,12 @@ export default function section1() {
     {
       id: 6,
       imageUrl: '/images/ssquad.png',
-      title: 'The Polar Bear Game is the best game ever.',
+      title: 'The Joker joins Suicide Squad: Kill the Justice League at the end of March',
       linkUrl: '#',
-      category: 'Sub Heading',
+      category: 'Rocksteady',
       date: 'March 4,2024',
       content:
-        'The Polar Bear Game" is an YESSSSS adventure set in the vast and unforgiving Arctic landscape, placing players in the furry paws of a courageous polar bear protagonist. As they navigate through icy terrain and face the harsh elements, players must overcome a series of challenges, from evading dangerous predators to solving puzzles and unraveling the mysteries of the Arctic wilderness. With stunning visuals and immersive storytelling, the game offers an unforgettable experience that not only entertains but also educates players about the importance of environmental conservation and the delicate balance of ecosystems. "The Polar Bear Game" promises an exhilarating journey where survival instincts and environmental awareness are key to success, inviting players to embark on an epic quest that celebrates the wonders of nature and the resilience of Arctic wildlife.',
+        "The first season of Suicide Squad: Kill the Justice League will go live on March 28, and as promised it will see the arrival of one of DC's most infamous villains: The Joker. The date was revealed on Twitter in a very straightforward, un-Joker-like announcement: Get ready for Season 1! The jokes are coming March 28, HA! That sounds more like a triumphant in your face, Batfink! than the maniacal laughter the Joker is famed for, although given the events of Suicide Squad (which we won't get into for spoiler reasons) I suppose that might be appropriate.",
     },
     // more posts
   ];
