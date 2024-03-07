@@ -3,7 +3,7 @@ import Navigation from "../components/Navigation";
 import PrivacyPolicy from "../components/Privacypolicy";
 
 
-export default function Privacy() {
+export default function Home() {
   return (
   <main>
 
