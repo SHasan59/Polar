@@ -2,14 +2,13 @@ import Image from "next/image"
 import Link from "next/link"
 import Author from "./child/author"
 
-
-export default function section4() {
+export default function Section4() {
 
     return (
         <section className="container mx-auto md:px-20 py-16">
             <div className="grid lg:grid-cols-2">
                 <div className="item">
-                    <h1 className="font-bold text-4xl py-12">Business</h1>
+                    <h1 className="font-bold text-4xl py-12">Game</h1>
                     <div className="flex flex-col gap-6">
                         {/*Posts*/}
                         { Post() }
@@ -18,7 +17,7 @@ export default function section4() {
                     </div>
                 </div>
                 <div className="item">
-                    <h1 className="font-bold text-4xl py-12">Finance</h1>
+                    <h1 className="font-bold text-4xl py-12">Show</h1>
                         {/*Posts*/}
                         { Post() }
                         { Post() }
