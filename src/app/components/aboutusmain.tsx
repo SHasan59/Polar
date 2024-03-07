@@ -101,10 +101,10 @@ const AboutUsMain = () => {
 
               <section className="my-8 bg-blue-800 p-6 rounded-lg">
                 <h2 className="text-2xl font-bold mb-4">About The Team</h2>
-                <p className="text-gray-400"></p>
+                <p className="text-white"></p>
 
         
-                <p className="text-gray-400 text-lg mb-6">
+                <p className="text-white text-lg mb-6">
                  The team built out of unique members who met on the brooklyn college experience.
                  There is something about a team that comes together to work in perfect harmony. Each member of
                  the team has their own set of skills that allow  them to tackle hard tasks in quick ways. 
