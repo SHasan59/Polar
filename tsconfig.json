@@ -38,7 +38,7 @@
     "src/app/components/NavigationLink.jsx",
     "src/app/components/chatbotmain.js",
     "src/app/chatbot/page.tsx"
-  ],
+, "src/app/components/ToDoList.jsx"  ],
   "exclude": [
     "node_modules"
   ]
