@@ -57,4 +57,6 @@ function Slide(){
             </div>
         </div>
     )
+
 }
+
