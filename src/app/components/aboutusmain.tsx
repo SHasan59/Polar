@@ -2,6 +2,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { TracingBeam } from './ui/tracing-beam';
+import { EvervaultCard, Icon } from './ui/evervault-card';
 
 const TeamMembers = [
   {
@@ -30,21 +31,18 @@ const TeamMembers = [
 const AboutUsMain = () => {
   return (
     <>
-      <Helmet>
-        <title>About Us - Polar</title>
-        <meta
-          name="description"
-          content="Learn more about our passionate team and mission to make organization easier."
-        />
-      </Helmet>
+  
+     
 
       <main className="bg-gray-900 text-white min-h-screen">
         <TracingBeam>
           <div className="container mx-auto py-12">
             <div className="text-center">
-              <h1 className="text-4xl font-bold text-white-500 mb-6">
-                About Us
-              </h1>
+            <section className="border border-black/[0.2] dark:border-white/[0.2] flex items-start w-full h-[10rem]">
+
+              <EvervaultCard text="About Us" />
+             
+              </section> 
 
               <div className="max-w-3xl mx-auto">
                 <p className="text-gray-400 text-lg mb-6">
@@ -102,42 +100,35 @@ const AboutUsMain = () => {
 
 
               <section className="my-8 bg-blue-800 p-6 rounded-lg">
-                <h2 className="text-2xl font-bold mb-4">Our Achievements</h2>
-                <p className="text-gray-400">PUT</p>
+                <h2 className="text-2xl font-bold mb-4">About The Team</h2>
+                <p className="text-gray-400"></p>
 
-                <p className="text-gray-400">ADD EMAIL</p>
-                <p className="text-gray-400">ADD EMAIL</p>
-                <p className="text-gray-400">ADD EMAIL</p>
-                <p className="text-gray-400">ADD EMAIL</p>
-                <p className="text-gray-400">ADD EMAIL</p>
-                <p className="text-gray-400">ADD EMAIL</p>
-                <p className="text-gray-400">ADD EMAIL</p>
+        
                 <p className="text-gray-400 text-lg mb-6">
-                  Welcome to our About Us page. We are a passionate team
-                  dedicated to providing an innovative way to organize and
-                  creating a positive impact in our community. Our mission is to
-                  make organization easier. We strive for excellence in
-                  everything we do, and our commitment to quality is unwavering.
+                 The team built out of unique members who met on the brooklyn college experience.
+                 There is something about a team that comes together to work in perfect harmony. Each member of
+                 the team has their own set of skills that allow  them to tackle hard tasks in quick ways. 
+                 
                 </p>
                 
               </section>
 
               <section className="my-8 bg-green-800 p-6 rounded-lg">
-                <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
-                <p className="text-gray-400">ADD EMAIL</p>
-                <p className="text-gray-400">ADD EMAIL</p>
-                <p className="text-gray-400">ADD EMAIL</p>
-                <p className="text-gray-400">ADD EMAIL</p>
-                <p className="text-gray-400">ADD EMAIL</p>
-                <p className="text-gray-400">ADD EMAIL</p>
-                <p className="text-gray-400 text-lg mb-6">
-                  Welcome to our About Us page. We are a passionate team
-                  dedicated to providing an innovative way to organize and
-                  creating a positive impact in our community. Our mission is to
-                  make organization easier. We strive for excellence in
-                  everything we do, and our commitment to quality is unwavering.
+              <h1>Contact Us</h1>
+
+             
+ 
+                  <p>Email: <a href="mailto:polarteam@gmail.com">polarteam@gmail.com</a></p>
+                  <p>Instagram: <a href="https://www.instagram.com/ProjectPolar">@ProjectPolar</a></p>
+                  <p>Facebook: <a href="https://www.facebook.com/ProjectPolar">ProjectPolar</a></p>
+                  <p>Twitter: <a href="https://twitter.com/PolarTeam7">PolarTeam</a></p>
+                  
+              
+
+                <p>
+                  Have any questions, comments, or ideas to share? We'd love to hear from you! Feel free to reach out with any feedback or suggestions.
                 </p>
-            
+
               </section>
             </div>
 
