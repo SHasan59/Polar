@@ -7,15 +7,15 @@ import { useEffect } from 'react';
 import Swiper from 'swiper';
 import 'swiper/css';
 
-export default function section1() {
-  useEffect(() => {
-    const mySwiper = new Swiper('.swiper', {});
-  }, []);
+export default function Section1() {
+  
+  useEffect(() => {const mySwiper = new Swiper('.swiper', {});}, []);
 
   const bg = {
     background: "url('#') no-repeat",
     backgroundPosition: 'right',
-  };
+  }
+
   const posts = [
     {
       id: 1,
@@ -79,8 +79,7 @@ export default function section1() {
       content:
         "The first season of Suicide Squad: Kill the Justice League will go live on March 28, and as promised it will see the arrival of one of DC's most infamous villains: The Joker. The date was revealed on Twitter in a very straightforward, un-Joker-like announcement: Get ready for Season 1! The jokes are coming March 28, HA! That sounds more like a triumphant in your face, Batfink! than the maniacal laughter the Joker is famed for, although given the events of Suicide Squad (which we won't get into for spoiler reasons) I suppose that might be appropriate.",
     },
-    // more posts
-  ];
+  ]
 
   return (
     <section className="py-16" style={bg}>
@@ -102,7 +101,7 @@ export default function section1() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
 function Slide({ post }) {
@@ -135,5 +134,5 @@ function Slide({ post }) {
         <Author></Author>
       </div>
     </div>
-  );
+  )
 }
