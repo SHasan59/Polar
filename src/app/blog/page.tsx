@@ -3,6 +3,8 @@ import image from 'next/image';
 import Format from '../format/format';
 
 import Section2 from '../components/section2';
+import Section4 from '../components/section4';
+
 
 export default function Blog() {
   return (
@@ -10,6 +12,8 @@ export default function Blog() {
       <Format>
         
         <Section2></Section2>
+         
+        <Section4></Section4>
        
       </Format>
     </div>
