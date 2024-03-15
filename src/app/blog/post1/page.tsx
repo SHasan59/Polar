@@ -1,7 +1,9 @@
 import Image from "next/image"
 import Format from "../../format/format"
 import Author from "../../components/child/author"
-import Similar from "../../components/child/Similar"
+
+
+
 export default function Page() {
     return (
         <Format>
@@ -25,7 +27,6 @@ export default function Page() {
                             Content of wahtevrnakjnfakf
                         </p>
                     </div>
-                    <Similar></Similar>
                 </div>
             </section> 
         </Format>
