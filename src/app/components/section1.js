@@ -21,7 +21,7 @@ export default function Section1() {
       id: 1,
       imageUrl: '/images/pokemon z.png',
       title: 'New “Pokémon Legends Z-A” Game Announced for Switch in 2025',
-      linkUrl: 'http://localhost:3000/blog/post1',
+      linkUrl: '/blog/post1',
       category: 'Nintendo',
       date: 'Feb 28,2024',
       content:
