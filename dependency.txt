@@ -9,3 +9,4 @@ npm i framer-motion @tsparticles/react @tsparticles/engine @tsparticles/slim
 npm i framer-motion clsx tailwind-merge
 npm install framer-motion
 npm install mongodb
+npm install chart.js
