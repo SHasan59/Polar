@@ -9,16 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-
+    "@heroicons/react": "^2.1.1",
     "@tsparticles/engine": "^3.2.2",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.2.2",
     "axios": "^1.6.7",
+    "chart.js": "^4.4.2",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.5",
-
-    "@heroicons/react": "^2.1.1",
-    "axios": "^1.6.7",
     "i": "^0.3.7",
     "mongodb": "^6.4.0",
     "next": "^14.1.0",
@@ -26,11 +24,8 @@
     "react": "^18",
     "react-dom": "^18",
     "react-helmet": "^6.1.0",
-
-    "tailwind-merge": "^2.2.1",
-
-    "react-spring": "^9.7.3"
-
+    "react-spring": "^9.7.3",
+    "tailwind-merge": "^2.2.1"
   },
   "devDependencies": {
     "@types/node": "^20",
