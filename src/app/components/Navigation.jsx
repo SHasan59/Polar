@@ -31,6 +31,10 @@ const navLinks = [
     title: 'Tasks',
     path: '/ToDo',
   },
+  {
+    title: '🐻‍❄️',
+    path: '/',
+  },
 ];
 
 const Navigation = () => {
