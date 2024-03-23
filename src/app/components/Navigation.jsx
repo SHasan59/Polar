@@ -8,18 +8,6 @@ import { signOut, useSession } from 'next-auth/react';
 
 const navLinks = [
   {
-    title: 'Chatbot',
-    path: '/chatbot',
-  },
-  {
-    title: 'TaskList',
-    path: '/ToDo',
-  },
-  {
-    title: 'Search',
-    path: '/search',
-  },
-  {
     title: 'About Us',
     path: '/aboutus',
   },
@@ -27,10 +15,21 @@ const navLinks = [
     title: 'Blog',
     path: '/blog',
   },
-
   {
     title: 'Chat',
     path: '/chats',
+  },
+  {
+    title: 'Navi',
+    path: '/chatbot',
+  },
+  {
+    title: 'Search',
+    path: '/search',
+  },
+  {
+    title: 'Tasks',
+    path: '/ToDo',
   },
 ];
 
