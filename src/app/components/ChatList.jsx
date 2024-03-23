@@ -69,15 +69,15 @@ const ChatList = ({ currentChatId }) => {
   return loading ? (
     <Loader />
   ) : (
-    <div className="chat-list">
+    <div className=" h-screen flex flex-col gap-5 pb-20">
       <input
         placeholder="Search chat..."
-        className="input-search"
+        className="px-5 py-3 rounded-2xl bg-white outline-none text-black"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
 
-      <div className="chats">
+      <div className="flex-1 flex flex-col bg-white rounded-3xl py-4 px-3 overflow-y-scroll">
         {chats?.map((chat, index) => (
           <ChatBox
             chat={chat}
@@ -90,7 +90,6 @@ const ChatList = ({ currentChatId }) => {
     </div>
   );
 };
-
 
 const ChatListWrapper = ({ currentChatId }) => {
   return (
