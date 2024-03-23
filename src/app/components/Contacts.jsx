@@ -72,7 +72,7 @@ const Contacts = () => {
   ) : (
     <div className="flex flex-col gap-5">
       <input
-        placeholder="Search contact..."
+        placeholder="Search contacts🐻‍❄️"
         className=" px-5 py-3 rounded-2xl bg-white outline-none text-black"
         value={search}
         onChange={(e) => setSearch(e.target.value)}

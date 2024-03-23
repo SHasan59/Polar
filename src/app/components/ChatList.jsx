@@ -71,7 +71,7 @@ const ChatList = ({ currentChatId }) => {
   ) : (
     <div className=" h-screen flex flex-col gap-5 pb-20">
       <input
-        placeholder="Search chat..."
+        placeholder="Search chats🐻‍❄️"
         className="px-5 py-3 rounded-2xl bg-white outline-none text-black"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
