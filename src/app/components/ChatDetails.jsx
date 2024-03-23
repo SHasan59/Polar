@@ -136,8 +136,8 @@ const ChatDetails = ({ chatId }) => {
           ) : (
             <>
               <img
-                src={otherMembers[0].profileImage || '/assets/person.jpg'}
-                alt="profile photo"
+                src={otherMembers[0].profileImage || '/person.jpg'}
+                alt="profile photo individual"
                 className=" w-11 h-11 rounded-full object-cover object-center"
               />
               <div className="text-white">
@@ -146,7 +146,7 @@ const ChatDetails = ({ chatId }) => {
             </>
           )}
         </div>
-        <div className=" flex-1 flex flex-col gap-5 bg-blue-200 p-5 overflow-y-scroll">
+        <div className=" flex-1 flex flex-col gap-5 bg-blue-300 p-5 overflow-y-scroll">
           {chat?.messages?.map((message, index) => (
             <MessageBox
               key={index}
