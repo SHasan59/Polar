@@ -115,6 +115,8 @@ const ChatDetails = ({ chatId }) => {
   ) : (
     <div className="pb-20">
       <div className="h-screen flex flex-col bg-gray-700 rounded-2xl">
+        {' '}
+        //fix the len later
         <div className="flex items-center gap-4 px-8 py-3">
           {chat?.isGroup ? (
             <>
@@ -140,13 +142,12 @@ const ChatDetails = ({ chatId }) => {
                 alt="profile photo"
                 className=" w-11 h-11 rounded-full object-cover object-center"
               />
-              <div className="text-black">
+              <div className="text-white">
                 <p>{otherMembers[0].username}</p>
               </div>
             </>
           )}
         </div>
-
         <div className=" flex-1 flex flex-col gap-5 bg-blue-200 p-5 overflow-y-scroll">
           {chat?.messages?.map((message, index) => (
             <MessageBox
@@ -157,7 +158,6 @@ const ChatDetails = ({ chatId }) => {
           ))}
           <div ref={bottomRef} />
         </div>
-
         <div className=" w-full flex items-center justify-between px-7 py-3 rounded-3xl cursor-pointer bg-gray-400">
           <div className="flex items-center gap-4">
             <CldUploadButton
@@ -176,9 +176,9 @@ const ChatDetails = ({ chatId }) => {
             </CldUploadButton>
 
             <input
-              type="text"
+              type="text-white"
               placeholder="Write a message..."
-              className="w-[300px] max-sm:w-full bg-transparent outline-none"
+              className="w-[300px] max-sm:w-full bg-transparent outline-none text-black"
               value={text}
               onChange={(e) => setText(e.target.value)}
               required
