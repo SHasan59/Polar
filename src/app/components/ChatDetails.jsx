@@ -114,9 +114,7 @@ const ChatDetails = ({ chatId }) => {
     <Loader />
   ) : (
     <div className="pb-20">
-      <div className="h-screen flex flex-col bg-gray-700 rounded-2xl">
-        {' '}
-        //fix the len later
+      <div className="h-[92vh] flex flex-col bg-gray-700 rounded-2xl">
         <div className="flex items-center gap-4 px-8 py-3">
           {chat?.isGroup ? (
             <>
