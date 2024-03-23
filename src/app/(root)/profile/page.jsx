@@ -57,12 +57,11 @@ const Profile = () => {
   return loading ? (
     <Loader />
   ) : (
-    <div className="mt-16 flex flex-col gap-11 items-center justify-center">
+    <div className="profile-page">
       <h1 className="text-heading3-bold">Edit Your Profile</h1>
 
-      <form className="flex flex-col gap-9" onSubmit={handleSubmit(updateUser)}>
-        <div className=" flex items-center justify-between px-5 py-3 rounded-2xl cursor-pointer shadow-2xl">
-
+      <form className="edit-profile" onSubmit={handleSubmit(updateUser)}>
+        <div className="input">
           <input
             {...register('username', {
               required: 'Username is required',
@@ -74,8 +73,7 @@ const Profile = () => {
             })}
             type="text"
             placeholder="Username"
-            className="w-[300px] max-sm:w-full bg-transparent outline-none"
-
+            className="input-field"
           />
           <PersonOutline sx={{ color: '#737373' }} />
         </div>
@@ -98,11 +96,7 @@ const Profile = () => {
           </CldUploadButton>
         </div>
 
-        <button
-          className="flex items-center justify-center rounded-xl p-3 bg-blue-300 text-body-bold text-white"
-          type="submit"
-        >
-
+        <button className="btn" type="submit">
           Save Changes
         </button>
       </form>

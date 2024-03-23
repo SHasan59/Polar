@@ -58,17 +58,14 @@ const Form = ({ type }) => {
 
   return (
     <div className="bg-blue-900">
-      <div className="w-full h-lvh flex items-center justify-center">
-        <div className="w-1/3 py-7 px-4 max-sm:w-5/6 max-lg:w-2/3 max-xl:w-1/2 flex flex-col items-center justify-center gap-6 bg-gray-200 rounded-3xl">
-          <img src="/polar.png" alt="logo" className="w-52 h-auto" />
+      <div className="auth">
+        <div className="content">
+          <img src="/polar.png" alt="logo" className="logo" />
 
-          <form
-            className="flex flex-col items-center gap-5"
-            onSubmit={handleSubmit(onSubmit)}
-          >
+          <form className="form" onSubmit={handleSubmit(onSubmit)}>
             {type === 'register' && (
               <div>
-                <div className="flex items-center justify-between px-5 py-3 rounded-2xl cursor-pointer shadow-2xl text-black bg-sky-200 text-black">
+                <div className="input text-black">
                   <input
                     defaultValue=""
                     {...register('username', {
@@ -81,7 +78,7 @@ const Form = ({ type }) => {
                     })}
                     type="text"
                     placeholder="Username"
-                    className="w-[300px] max-sm:w-full bg-transparent outline-none"
+                    className="input-field"
                   />
                   <PersonOutline sx={{ color: '#737373' }} />
                 </div>
@@ -92,13 +89,13 @@ const Form = ({ type }) => {
             )}
 
             <div>
-              <div className="flex items-center justify-between px-5 py-3 rounded-2xl cursor-pointer shadow-2xl text-black bg-sky-200 text-black">
+              <div className="input text-black">
                 <input
                   defaultValue=""
                   {...register('email', { required: 'Email is required' })}
                   type="email"
                   placeholder="Email"
-                  className="w-[300px] max-sm:w-full bg-transparent outline-none"
+                  className="input-field"
                 />
                 <EmailOutlined sx={{ color: '#737373' }} />
               </div>
@@ -108,7 +105,7 @@ const Form = ({ type }) => {
             </div>
 
             <div>
-              <div className="flex items-center justify-between px-5 py-3 rounded-2xl cursor-pointer shadow-2xl text-black bg-sky-200 ">
+              <div className="input text-black">
                 <input
                   defaultValue=""
                   {...register('password', {
@@ -118,13 +115,13 @@ const Form = ({ type }) => {
                         value.length < 5 ||
                         !value.match(/[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]/)
                       ) {
-                        return 'Must be 5 characters and one special character';
+                        return 'Password must be at least 5 characters and contain at least one special character';
                       }
                     },
                   })}
                   type="password"
                   placeholder="Password"
-                  className="w-[300px] max-sm:w-full bg-transparent outline-none"
+                  className="input-field"
                 />
                 <LockOutlined sx={{ color: '#737373' }} />
               </div>
@@ -133,23 +130,20 @@ const Form = ({ type }) => {
               )}
             </div>
 
-            <button
-              className="w-full px-5 py-3 mt-5 mb-7 rounded-xl cursor-pointer bg-blue-800 hover:bg-blue-500 text-white"
-              type="submit"
-            >
+            <button className="button " type="submit">
               {type === 'register' ? 'Join Free' : "Let's Chat"}
             </button>
           </form>
 
           {type === 'register' ? (
             <Link href="/login" className="link">
-              <p className="text-center text-black">
+              <p className="text-center">
                 Already have an account? Sign In Here
               </p>
             </Link>
           ) : (
             <Link href="/register" className="link">
-              <p className="text-center text-black">
+              <p className="text-center">
                 Don't have an account? Register Here
               </p>
             </Link>

@@ -70,26 +70,23 @@ const Contacts = () => {
   return loading ? (
     <Loader />
   ) : (
-    <div className="flex flex-col gap-5">
+    <div className="create-chat-container">
       <input
-        placeholder="Search contacts🐻‍❄️"
-        className=" px-5 py-3 rounded-2xl bg-white outline-none text-black"
-
+        placeholder="Search contact..."
+        className="input-search"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
 
-      <div className="flex gap-7 items-start max-lg:flex-col">
-        <div className=" h-screen w-1/2 max-lg:w-full flex flex-col gap-5 bg-white rounded-3xl py-5 px-8 mb-20">
-          /* fix */
-          <p className="text-body-bold text-black">Select or Deselect</p>
+      <div className="contact-bar">
+        <div className="contact-list">
+          <p className="text-body-bold">Select or Deselect</p>
 
           <div className="flex flex-col flex-1 gap-5 overflow-y-scroll custom-scrollbar text-black">
             {contacts.map((user, index) => (
               <div
                 key={index}
-                className="flex gap-3 items-center cursor-pointer"
-
+                className="contact"
                 onClick={() => handleSelect(user)}
               >
                 {selectedContacts.find((item) => item === user) ? (
@@ -100,8 +97,7 @@ const Contacts = () => {
                 <img
                   src={user.profileImage || '/person.jpg'}
                   alt="profile"
-                  className=" w-11 h-11 rounded-full object-cover object-center"
-
+                  className="profilePhoto"
                 />
                 <p className="text-base-bold">{user.username}</p>
               </div>
@@ -109,16 +105,14 @@ const Contacts = () => {
           </div>
         </div>
 
-        <div className="w-1/2 max-lg:w-full flex flex-col gap-7">
-
+        <div className="create-chat">
           {isGroup && (
             <>
               <div className="flex flex-col gap-3">
                 <p className="text-body-bold">Group Chat Name</p>
                 <input
                   placeholder="Enter group chat name..."
-                  className="bg-white rounded-2xl px-5 py-3 outline-none text-black"
-
+                  className="input-group-name "
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
@@ -128,11 +122,7 @@ const Contacts = () => {
                 <p className="text-body-bold">Members</p>
                 <div className="flex flex-wrap gap-3">
                   {selectedContacts.map((contact, index) => (
-                    <p
-                      className="text-base-bold p-2 bg-purple-100 rounded-lg"
-                      key={index}
-                    >
-
+                    <p className="selected-contact" key={index}>
                       {contact.username}
                     </p>
                   ))}
@@ -141,8 +131,7 @@ const Contacts = () => {
             </>
           )}
           <button
-            className="flex items-center justify-center rounded-xl p-3 bg-gradient-to-l from-blue-100 to-blue-300  text-white"
-
+            className="btn"
             onClick={createChat}
             disabled={selectedContacts.length === 0}
           >
