@@ -15,7 +15,7 @@ const MessageBox = ({ message, currentUser }) => {
         </p>
 
         {message?.text ? (
-          <p className="w-fit bg-white p-3 rounded-lg text-base-medium">
+          <p className="w-fit bg-purple-800 p-3 rounded-lg text-base-medium">
             {message?.text}
           </p>
         ) : (
@@ -35,7 +35,7 @@ const MessageBox = ({ message, currentUser }) => {
         </p>
 
         {message?.text ? (
-          <p className="w-fit bg-purple-200 text-white p-3 rounded-lg text-base-medium">
+          <p className="w-fit bg-blue-800 text-white p-3 rounded-lg text-base-medium">
             {message?.text}
           </p>
         ) : (
