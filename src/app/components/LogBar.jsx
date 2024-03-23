@@ -17,7 +17,7 @@ const LogBar = () => {
   const user = session?.user;
 
   return (
-    <div className="top-0 sticky px-10 py-5 flex items-center justify-between bg-blue-200">
+    <div className="top-0 sticky px-10 py-5 flex items-center justify-between bg-blue-200 rounded-xl">
       <Link href="/chats">
         <img src="/polar.png" alt="logo" className=" w-20 h-auto" />
       </Link>
