@@ -17,7 +17,11 @@ const ChatBox = ({ chat, currentUser, currentChatId }) => {
 
   return (
     <div
-      className={`chat-box ${chat._id === currentChatId ? 'bg-blue-2' : ''}`}
+
+      className={`flex items-start justify-between p-2 rounded-2xl cursor-pointer hover:bg-grey-200 ${
+        chat._id === currentChatId ? 'bg-blue-200' : ''
+      }`}
+
       onClick={() => router.push(`/chats/${chat._id}`)}
     >
       <div className=" flex gap-3 text-black">
@@ -25,13 +29,16 @@ const ChatBox = ({ chat, currentUser, currentChatId }) => {
           <img
             src={chat?.groupPhoto || '/group.png'}
             alt="group-photo"
-            className="profilePhoto"
+
+            className=" w-11 h-11 rounded-full object-cover object-center"
+
           />
         ) : (
           <img
             src={otherMembers[0].profileImage || '/person.jpg'}
             alt="profile-photo"
-            className="profilePhoto"
+            className=" w-11 h-11 rounded-full object-cover object-center"
+
           />
         )}
 
@@ -58,7 +65,9 @@ const ChatBox = ({ chat, currentUser, currentChatId }) => {
             )
           ) : (
             <p
-              className={`last-message ${
+
+              className={` w-[120px] sm:w-[250px] truncate ${
+
                 seen ? 'text-small-medium text-grey-3' : 'text-small-bold'
               }`}
             >
