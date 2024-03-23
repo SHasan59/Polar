@@ -114,8 +114,10 @@ const ChatDetails = ({ chatId }) => {
     <Loader />
   ) : (
     <div className="pb-20">
+
       <div className="h-[92vh] flex flex-col bg-gray-700 rounded-2xl">
         <div className="flex items-center gap-4 px-8 py-3">
+
           {chat?.isGroup ? (
             <>
               <Link href={`/chats/${chatId}/group-info`}>
@@ -127,6 +129,7 @@ const ChatDetails = ({ chatId }) => {
               </Link>
 
               <div className="text-white">
+
                 <p>
                   {chat?.name} &#160; &#183; &#160; {chat?.members?.length}{' '}
                   members
@@ -136,17 +139,20 @@ const ChatDetails = ({ chatId }) => {
           ) : (
             <>
               <img
+
                 src={otherMembers[0].profileImage || '/person.jpg'}
                 alt="profile photo individual"
                 className=" w-11 h-11 rounded-full object-cover object-center"
               />
               <div className="text-white">
+
                 <p>{otherMembers[0].username}</p>
               </div>
             </>
           )}
         </div>
         <div className=" flex-1 flex flex-col gap-5 bg-blue-300 p-5 overflow-y-scroll">
+
           {chat?.messages?.map((message, index) => (
             <MessageBox
               key={index}
@@ -158,6 +164,7 @@ const ChatDetails = ({ chatId }) => {
         </div>
         <div className=" w-full flex items-center justify-between px-7 py-3 rounded-3xl cursor-pointer bg-gray-400">
           <div className="flex items-center gap-4">
+
             <CldUploadButton
               options={{ maxFiles: 1 }}
               onUpload={sendPhoto}
@@ -177,6 +184,7 @@ const ChatDetails = ({ chatId }) => {
               type="text-white"
               placeholder="Write a message..."
               className="w-[300px] max-sm:w-full bg-transparent outline-none text-black"
+
               value={text}
               onChange={(e) => setText(e.target.value)}
               required
@@ -189,6 +197,7 @@ const ChatDetails = ({ chatId }) => {
               alt="send"
               className="w-10 h-10 rounded-full hover:scale-125 ease-in-out duration-300"
             />
+
           </div>
         </div>
       </div>

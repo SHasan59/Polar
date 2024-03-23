@@ -34,6 +34,7 @@ const navLinks = [
   {
     title: '🐻‍❄️',
     path: '/',
+
   },
 ];
 

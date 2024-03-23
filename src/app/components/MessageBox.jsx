@@ -9,6 +9,7 @@ const MessageBox = ({ message, currentUser }) => {
         className="w-8 h-8 rounded-full"
       />
       <div className="flex flex-col gap-2">
+
         <p className="text-small-bold">
           {message?.sender?.username} &#160; &#183; &#160;{' '}
           {format(new Date(message?.createdAt), 'p')}
@@ -24,12 +25,15 @@ const MessageBox = ({ message, currentUser }) => {
             alt="message"
             className="w-40 h-auto rounded-lg"
           />
+
         )}
       </div>
     </div>
   ) : (
+
     <div className="flex gap-3 items-start justify-end">
       <div className="flex flex-col gap-2 items-end">
+
         <p className="text-small-bold">
           {format(new Date(message?.createdAt), 'p')}
         </p>
@@ -44,6 +48,7 @@ const MessageBox = ({ message, currentUser }) => {
             alt="message"
             className="w-40 h-auto rounded-lg"
           />
+
         )}
       </div>
     </div>

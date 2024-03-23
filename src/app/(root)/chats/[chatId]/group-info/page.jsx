@@ -75,6 +75,7 @@ const GroupInfo = () => {
   return loading ? (
     <Loader />
   ) : (
+
     <div className=" mt-16 flex flex-col gap-11 items-center justify-center">
       <h1 className="text-heading3-bold">Edit Group Info</h1>
 
@@ -83,6 +84,7 @@ const GroupInfo = () => {
         onSubmit={handleSubmit(updateGroupChat)}
       >
         <div className="flex items-center justify-between px-5 py-3 rounded-2xl cursor-pointer shadow-2xl text-black bg-sky-200">
+
           <input
             {...register('name', {
               required: 'Group chat name is required',
