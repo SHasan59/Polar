@@ -23,6 +23,7 @@ const LogBar = () => {
       </Link>
 
       <div className="flex items-center gap-8 max-sm:hidden">
+
         <Link
           href="/chats"
           className={`${
@@ -50,6 +51,7 @@ const LogBar = () => {
             src={user?.profileImage || '/person.jpg'}
             alt="profile"
             className=" w-11 h-11 rounded-full object-cover object-center"
+
           />
         </Link>
       </div>

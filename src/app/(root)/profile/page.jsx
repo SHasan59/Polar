@@ -62,6 +62,7 @@ const Profile = () => {
 
       <form className="flex flex-col gap-9" onSubmit={handleSubmit(updateUser)}>
         <div className=" flex items-center justify-between px-5 py-3 rounded-2xl cursor-pointer shadow-2xl">
+
           <input
             {...register('username', {
               required: 'Username is required',
@@ -74,6 +75,7 @@ const Profile = () => {
             type="text"
             placeholder="Username"
             className="w-[300px] max-sm:w-full bg-transparent outline-none"
+
           />
           <PersonOutline sx={{ color: '#737373' }} />
         </div>
@@ -100,6 +102,7 @@ const Profile = () => {
           className="flex items-center justify-center rounded-xl p-3 bg-blue-300 text-body-bold text-white"
           type="submit"
         >
+
           Save Changes
         </button>
       </form>
