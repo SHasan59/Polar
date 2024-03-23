@@ -58,14 +58,17 @@ const Form = ({ type }) => {
 
   return (
     <div className="bg-blue-900">
-      <div className="auth">
-        <div className="content">
-          <img src="/polar.png" alt="logo" className="logo" />
+      <div className="w-full h-lvh flex items-center justify-center">
+        <div className="w-1/3 py-7 px-4 max-sm:w-5/6 max-lg:w-2/3 max-xl:w-1/2 flex flex-col items-center justify-center gap-6 bg-gray-200 rounded-3xl">
+          <img src="/polar.png" alt="logo" className="w-52 h-auto" />
 
-          <form className="form" onSubmit={handleSubmit(onSubmit)}>
+          <form
+            className="flex flex-col items-center gap-5"
+            onSubmit={handleSubmit(onSubmit)}
+          >
             {type === 'register' && (
               <div>
-                <div className="input text-black">
+                <div className="flex items-center justify-between px-5 py-3 rounded-2xl cursor-pointer shadow-2xl text-black bg-sky-200 text-black">
                   <input
                     defaultValue=""
                     {...register('username', {
@@ -78,7 +81,7 @@ const Form = ({ type }) => {
                     })}
                     type="text"
                     placeholder="Username"
-                    className="input-field"
+                    className="w-[300px] max-sm:w-full bg-transparent outline-none"
                   />
                   <PersonOutline sx={{ color: '#737373' }} />
                 </div>
@@ -89,13 +92,13 @@ const Form = ({ type }) => {
             )}
 
             <div>
-              <div className="input text-black">
+              <div className="flex items-center justify-between px-5 py-3 rounded-2xl cursor-pointer shadow-2xl text-black bg-sky-200 text-black">
                 <input
                   defaultValue=""
                   {...register('email', { required: 'Email is required' })}
                   type="email"
                   placeholder="Email"
-                  className="input-field"
+                  className="w-[300px] max-sm:w-full bg-transparent outline-none"
                 />
                 <EmailOutlined sx={{ color: '#737373' }} />
               </div>
@@ -105,7 +108,7 @@ const Form = ({ type }) => {
             </div>
 
             <div>
-              <div className="input text-black">
+              <div className="flex items-center justify-between px-5 py-3 rounded-2xl cursor-pointer shadow-2xl text-black bg-sky-200 text-black">
                 <input
                   defaultValue=""
                   {...register('password', {
@@ -121,7 +124,7 @@ const Form = ({ type }) => {
                   })}
                   type="password"
                   placeholder="Password"
-                  className="input-field"
+                  className="w-[300px] max-sm:w-full bg-transparent outline-none"
                 />
                 <LockOutlined sx={{ color: '#737373' }} />
               </div>
@@ -130,7 +133,10 @@ const Form = ({ type }) => {
               )}
             </div>
 
-            <button className="button " type="submit">
+            <button
+              className="w-full px-5 py-3 mt-5 mb-7 rounded-xl cursor-pointer bg-blue-100 hover:bg-blue-100 text-white"
+              type="submit"
+            >
               {type === 'register' ? 'Join Free' : "Let's Chat"}
             </button>
           </form>
