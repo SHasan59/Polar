@@ -29,7 +29,7 @@ const navLinks = [
   },
 
   {
-    title: 'Dashboard',
+    title: 'ChatRoom',
     path: '/login',
   },
 ];
