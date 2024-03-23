@@ -108,7 +108,7 @@ const Form = ({ type }) => {
             </div>
 
             <div>
-              <div className="flex items-center justify-between px-5 py-3 rounded-2xl cursor-pointer shadow-2xl text-black bg-sky-200 text-black">
+              <div className="flex items-center justify-between px-5 py-3 rounded-2xl cursor-pointer shadow-2xl text-black bg-sky-200 ">
                 <input
                   defaultValue=""
                   {...register('password', {
@@ -118,7 +118,7 @@ const Form = ({ type }) => {
                         value.length < 5 ||
                         !value.match(/[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]/)
                       ) {
-                        return 'Password must be at least 5 characters and contain at least one special character';
+                        return 'Must be 5 characters and one special character';
                       }
                     },
                   })}
@@ -134,7 +134,7 @@ const Form = ({ type }) => {
             </div>
 
             <button
-              className="w-full px-5 py-3 mt-5 mb-7 rounded-xl cursor-pointer bg-blue-100 hover:bg-blue-100 text-white"
+              className="w-full px-5 py-3 mt-5 mb-7 rounded-xl cursor-pointer bg-blue-800 hover:bg-blue-500 text-white"
               type="submit"
             >
               {type === 'register' ? 'Join Free' : "Let's Chat"}
@@ -143,13 +143,13 @@ const Form = ({ type }) => {
 
           {type === 'register' ? (
             <Link href="/login" className="link">
-              <p className="text-center">
+              <p className="text-center text-black">
                 Already have an account? Sign In Here
               </p>
             </Link>
           ) : (
             <Link href="/register" className="link">
-              <p className="text-center">
+              <p className="text-center text-black">
                 Don't have an account? Register Here
               </p>
             </Link>
