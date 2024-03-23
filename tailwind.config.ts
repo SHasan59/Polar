@@ -23,7 +23,10 @@ module.exports = {
     },
   },
   plugins: [
- 
+
     // Add other plugins if needed
   ],
 };
+
+// Export an empty object to make the file a module
+export {};
