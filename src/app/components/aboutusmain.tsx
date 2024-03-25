@@ -7,21 +7,21 @@ import { EvervaultCard, Icon } from './ui/evervault-card';
 const TeamMembers = [
   {
     name: 'Samith Hasan',
-    role: 'Project Manager',
+    role: 'Lead Developer',
     image: 'samith.jpg',
     linkedin: 'https://www.linkedin.com/in/samith-hasan/',
     github: 'https://github.com/shasan59',
   },
   {
     name: 'Muhammad Amir',
-    role: 'Resource Manager',
+    role: 'Developer',
     image: 'muhammad.jpg',
     linkedin: 'https://www.linkedin.com/in/muhammad-amir-105a52294/',
     github: 'https://github.com/Mamir21',
   },
   {
     name: 'Gamal Fares',
-    role: 'Business Analyst',
+    role: 'Developer',
     image: 'gamal.jpg',
     linkedin: 'https://www.linkedin.com/in/gamal-fares-982a26248/',
     github: 'https://github.com/gamalfares',
