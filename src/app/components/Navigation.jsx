@@ -8,7 +8,7 @@ import { signOut, useSession } from 'next-auth/react';
 
 const navLinks = [
   {
-    title: 'About Us',
+    title: 'About',
     path: '/aboutus',
   },
   {
