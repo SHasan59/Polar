@@ -116,6 +116,29 @@ const AboutUsMain = () => {
                 </p>
               </section>
 
+              <section className="my-8 bg-blue-800 p-6 rounded-lg">
+      <h2 className="text-2xl font-bold mb-4">Our Inspo</h2>
+      <p className="text-gray-400"></p>
+      <div className="flex justify-center"> {/* Added flex container */}
+        <div className="max-w-2xl rounded-lg overflow-hidden"> {/* Added max-width container and rounded corners */}
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/M0a_68xnboc?si=IRZh2oPeobYvyJTS"
+            title="YouTube video player"
+            frameBorder={0}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div>
+      <p className="text-gray-400 text-lg mb-6">
+        POLAR BEAR WALKING
+      </p>
+    </section>
+
+
               <section className="my-8 bg-green-800 p-6 rounded-lg">
                 <h1>Contact Us</h1>
                 <p>
