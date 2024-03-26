@@ -1,7 +1,6 @@
-
 'use client';
 import React, { useState } from 'react';
-import { motion } from 'framer-motion'; 
+import { motion } from 'framer-motion';
 import Modal from '../components/Modal';
 import '../css/styles.css';
 import Link from 'next/link';
@@ -28,7 +27,6 @@ const HomeMain = () => {
   please don't hesitate to contact us.
   `;
 
-
   return (
     <main>
       <div className="h-[40rem] relative w-full bg-blue-900 flex flex-col items-center justify-center overflow-hidden ">
@@ -50,17 +48,17 @@ const HomeMain = () => {
             Polar
           </h1>
           <br />
-         
+
           <motion.div
-            initial={{ opacity: 0, scale: 0.5 }} 
-            animate={{ opacity: 1, scale: 1 }} 
-            transition={{ duration: 0.9 }} 
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.9 }}
           >
             <Link href="/polarbearwalking">
               <img
-                src="polarbear.webp"
+                src="bearcub.jpg"
                 alt="Polar Bear"
-                className="max-w-80 max-h-80 mx-auto mb-4 rounded-full cursor-pointer"
+                className="w-80 h-80 mx-auto mb-4 rounded-full cursor-pointer object-cover"
               />
             </Link>
           </motion.div>
@@ -73,7 +71,6 @@ const HomeMain = () => {
             more about what makes us unique. If you have any questions or would
             like to get in touch, please don't hesitate to contact us.
           </p>
-
 
           <div className="flex justify-center mt-4">
             <Button className="bg-slate-900 text-white  border-slate-800">
