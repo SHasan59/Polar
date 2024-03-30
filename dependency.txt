@@ -8,3 +8,14 @@ npm install next
 npm i framer-motion @tsparticles/react @tsparticles/engine @tsparticles/slim
 npm i framer-motion clsx tailwind-merge
 npm install framer-motion
+npm install mongodb
+npm install bcryptjs
+npm install @mui/icons-material
+npm install @emotion/react
+npm install react-hook-form
+npm install react-hot-toast
+npm install date-fns
+npm install next-cloudinary
+
+
+//Error: A Cloudinary Cloud name is required, please make sure NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME is set and configured in your environment.

@@ -4,32 +4,37 @@ import React, { useState } from 'react';
 import NavigationLink from './NavigationLink';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import MenuOverlay from './MenuOverlay';
+import { signOut, useSession } from 'next-auth/react';
 
 const navLinks = [
   {
-    title: 'Chatbot',
-    path: '/chatbot',
-  },
-  {
-    title: 'TaskList',
-    path: '/ToDo',
-  },
-  {
-    title: 'Search',
-    path: '/search',
-  },
-  {
-    title: 'About Us',
+    title: 'About',
     path: '/aboutus',
   },
   {
     title: 'Blog',
     path: '/blog',
   },
-
   {
-    title: 'SECRET',
-    path: '/polarbearwalking',
+    title: 'Chat',
+    path: '/chats',
+  },
+  {
+    title: 'Navi',
+    path: '/chatbot',
+  },
+  {
+    title: 'Search',
+    path: '/search',
+  },
+  {
+    title: 'Tasks',
+    path: '/ToDo',
+  },
+  {
+    title: '🐻‍❄️',
+    path: '/',
+
   },
 ];
 
