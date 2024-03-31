@@ -21,7 +21,6 @@
     "cloudinary-core": "^2.13.0",
     "clsx": "^2.1.0",
     "date-fns": "^3.3.1",
-    "framer-motion": "^11.0.6",
     "framer-motion": "^11.0.5",
     "i": "^0.3.7",
     "mongodb": "^6.4.0",
@@ -39,6 +38,7 @@
     "react-hot-toast": "^2.4.1",
     "react-slick": "^0.30.2",
     "react-spring": "^9.7.3",
+    "recharts": "^2.12.3",
     "swiper": "^11.0.7",
     "tailwind-merge": "^2.2.1"
   },
