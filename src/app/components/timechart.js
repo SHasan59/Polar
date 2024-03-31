@@ -11,7 +11,6 @@ import {
 } from 'recharts';
 
 export default function TimeChart({ logs }) {
-  // Prepare data for the chart
   const chartData = logs.map((log, index) => ({
     date: log.date,
     totalTime: log.totalTime,

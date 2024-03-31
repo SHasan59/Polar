@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
-import LogEntry from '../components/LogEntry';
-import TimeChart from '../components/TimeChart';
+import LogEntry from '../components/logentry';
+import TimeChart from '../components/timechart';
 
 export default function TimelogMain() {
   const [logs, setLogs] = useState([]);
