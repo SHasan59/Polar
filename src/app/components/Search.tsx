@@ -34,13 +34,15 @@ const GameCard: React.FC<GameCardProps> = ({ game }) => {
         className="w-full h-64 object-cover"
       />
       <div className="p-4">
-        <h3 className="text-xl text-black font-medium mb-2">{game.name}</h3>
-        <p className="text-sm text-black mb-2">Released: {game.released}</p>
-        <p className="text-sm text-black mb-2">
+        <h3 className="text-xl text-black font-semibold mb-2">{game.name}</h3>
+        <p className="text-sm text-black font-medium mb-2">
+          Released: {game.released}
+        </p>
+        <p className="text-sm text-black font-medium  mb-2">
           Platforms: {game.platforms.join(', ')}
         </p>
         <p
-          className="text-sm text-black"
+          className="text-sm text-black font-medium "
           dangerouslySetInnerHTML={{ __html: game.about }}
         />
       </div>
@@ -128,7 +130,7 @@ export default function Search() {
           <select
             onChange={(e) => handlePlatformFilterChange(e.target.value)}
             value={platformFilter || ''}
-            className="border rounded px-2 py-1 text-black"
+            className=" rounded-3xl px-2 py-1 text-black bg-gray-200"
           >
             <option value="">All Platforms</option>
             <option value="PC">PC</option>

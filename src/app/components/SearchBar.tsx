@@ -17,21 +17,23 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
 
   return (
     <div className="text-center mt-8">
-      <h1 className="text-3xl font-bold mb-4">SEARCH GAMES HERE</h1>
-      <p className="text-gray-500 text-lg mb-8">
-        HERE U CAN SEARCH ANY GAME YOU WANT AND I MEAN ANY GAME
+      <h1 className="text-3xl font-bold mb-4 ">Discover Your Next Adventure</h1>
+      <p className="text-white text-lg mb-8">
+        Dive into an endless array of gaming experiences. Search for any game
+        you desire, from beloved classics to the latest releases, right here.
       </p>
+
       <div className="flex justify-center">
         <input
           type="text"
-          placeholder="Search video games..."
+          placeholder="Search video games"
           value={query}
           onChange={handleInputChange}
-          className="border rounded px-4 py-2 mr-2 w-64 text-black" // Set text color to black
+          className="border rounded-3xl px-4 py-2 mr-2 w-64 text-black" // Set text color to black
         />
         <button
           onClick={handleSearch}
-          className="bg-blue-500 text-white rounded px-4 py-2"
+          className="bg-blue-500 text-white rounded-3xl px-4 py-2 transition duration-300 transform hover:scale-110"
         >
           Search
         </button>
