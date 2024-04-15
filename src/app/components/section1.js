@@ -32,7 +32,7 @@ export default function Section1() {
       imageUrl: '/images/ff7.png',
       title:
         'Final Fantasy VII Rebirth and how it revisits the twist that changed video game history',
-      linkUrl: '#x',
+      linkUrl: '/blog/post2',
       category: 'Square Enix',
       date: 'Feb 29,2024',
       content:
@@ -43,7 +43,7 @@ export default function Section1() {
       imageUrl: '/images/p3r.png',
       title:
         'Persona 3 Reload Becomes Fastest-Selling Game in Atlus History With 1 Million Sales',
-      linkUrl: '#',
+      linkUrl: '/blog/post3',
       category: 'Atlus',
       date: 'Feb 13,2024',
       content:
@@ -51,29 +51,19 @@ export default function Section1() {
     },
     {
       id: 4,
-      imageUrl: '/images/polarblack.png',
-      title: 'The Polar Bear Game is the best game ever.',
-      linkUrl: '#',
-      category: 'Sub Heading',
-      date: 'Feb 13,2024',
-      content:
-        'The Polar Bear Game" is an YESSSSS adventure set in the vast and unforgiving Arctic landscape, placing players in the furry paws of a courageous polar bear protagonist. As they navigate through icy terrain and face the harsh elements, players must overcome a series of challenges, from evading dangerous predators to solving puzzles and unraveling the mysteries of the Arctic wilderness. With stunning visuals and immersive storytelling, the game offers an unforgettable experience that not only entertains but also educates players about the importance of environmental conservation and the delicate balance of ecosystems. "The Polar Bear Game" promises an exhilarating journey where survival instincts and environmental awareness are key to success, inviting players to embark on an epic quest that celebrates the wonders of nature and the resilience of Arctic wildlife.',
-    },
-    {
-      id: 5,
       imageUrl: '/images/dragon.jpg',
       title: 'Like a Dragon: Infinite Wealth sold a million copies worldwide',
-      linkUrl: '#',
+      linkUrl: '/blog/post4',
       category: 'RGG',
       date: 'March 1,2024',
       content:
         "Kiryu and friends continue to be popular as Like a Dragon: Infinite Wealth has cracked a million sales one week after its release, as revealed by publisher Sega and developer Ryu Ga Gotoku Studio. This combines digital and physical sales around the globe. This makes Like a Dragon: Infinite Wealth the fastest-selling series entry to date. Predecessor Yakuza: Like a Dragon, which came out in January 2020, sold 1.8 million copies by December 2023, making Infinite Wealth’s pace absolutely rapid by comparison.",
     },
     {
-      id: 6,
+      id: 5,
       imageUrl: '/images/ssquad.png',
       title: 'The Joker joins Suicide Squad: Kill the Justice League at the end of March',
-      linkUrl: '#',
+      linkUrl: '/blog/post5',
       category: 'Rocksteady',
       date: 'March 4,2024',
       content:
