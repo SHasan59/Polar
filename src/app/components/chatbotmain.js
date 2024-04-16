@@ -46,10 +46,17 @@ export default function ChatBot() {
     >
       <div className="w-full max-w-screen-md bg-black p-5 rounded-lg shadow-md">
         <div className="mb-4">
-          <div className="text-4xl font-bold text-blue-200 mb-2">NAVi</div>
+          <div className="text-4xl font-bold text-blue-200 mb-2 text-center">
+            NAVi
+          </div>
         </div>
-        <p className="text-blue-600 text-lg">ASK ANYTHING</p>
+        <p className="text-white-600 text-m text-center">
+          Powered by advanced AI technology, Navi is constantly learning and
+          evolving to provide you with the most relevant and personalized
+          assistance. With Navi by your side, you'll never game alone again!{' '}
+        </p>
 
+        <div class="h-1 w-full bg-gray-500 rounded"></div>
         <div className="mb-4 overflow-auto" style={{ height: '400px' }}>
           {chatHistory.map((message, index) => (
             <div
