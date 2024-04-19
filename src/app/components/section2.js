@@ -10,7 +10,9 @@ export default function Section2() {
       imageUrl: '/images/pokemon z.png',
       title: 'New “Pokémon Legends Z-A” Game Announced for Switch in 2025',
       linkUrl: '#',
+      authorId: 1,
       category: 'Nintendo',
+
       date: 'Feb 28,2024',
       content:
         'The Pokémon Company International announced a new game titled Pokémon Legends Z-A that will be released in 2025 for Nintendo Switch. The game news was announced during the Pokémon Presents stream on February 27th, known as Pokémon Day. The game’s official website describes the game as a new adventure within Lumiose City, where an urban redevelopment plan is underway to shape the city into a place that belongs to both people and Pokémon. The website also confirms that the game will be released simultaneously worldwide in 2025.',
@@ -21,6 +23,7 @@ export default function Section2() {
       title:
         'Final Fantasy VII Rebirth and how it revisits the twist that changed video game history',
       linkUrl: '#',
+      authorId: 1,
       category: 'Square Enix',
       date: 'Feb 29,2024',
       content:
@@ -32,6 +35,7 @@ export default function Section2() {
       title:
         'Persona 3 Reload Becomes Fastest-Selling Game in Atlus History With 1 Million Sales',
       linkUrl: '#',
+      authorId: 1,
       category: 'Atlus',
       date: 'Feb 13,2024',
       content:
@@ -42,6 +46,7 @@ export default function Section2() {
       imageUrl: '/images/polarblack.png',
       title: 'The Polar Bear Game is the best games ever.',
       linkUrl: '#',
+      authorId: 1,
       category: 'Sub Heading',
       date: 'Feb 13,2024',
       content:
@@ -52,6 +57,7 @@ export default function Section2() {
       imageUrl: '/images/dragon.jpg',
       title: 'Like a Dragon: Infinite Wealth sold a million copies worldwide',
       linkUrl: '#',
+      authorId: 1,
       category: 'RGG',
       date: 'Feb 13,2024',
       content:
@@ -62,6 +68,7 @@ export default function Section2() {
       imageUrl: '/images/ssquad.png',
       title: 'The Joker joins Suicide Squad: Kill the Justice League at the end of March',
       linkUrl: '#',
+      authorId: 1,
       category: 'JRPG',
       date: 'Feb 13,2024',
       content:
@@ -113,7 +120,7 @@ function Post({ post }) {
           </Link>
         </div>
         <p className="text-white-500 py-3">{post.content}</p>
-        <Author></Author>
+        <Author authorId={post.authorId} />
       </div>
     </div>
   )

@@ -22,6 +22,7 @@ export default function Section1() {
       imageUrl: '/images/pokemon z.png',
       title: 'New “Pokémon Legends Z-A” Game Announced for Switch in 2025',
       linkUrl: '/blog/post1',
+      authorId: 1,
       category: 'Nintendo',
       date: 'Feb 28,2024',
       content:
@@ -33,6 +34,7 @@ export default function Section1() {
       title:
         'Final Fantasy VII Rebirth and how it revisits the twist that changed video game history',
       linkUrl: '#x',
+      authorId: 1,
       category: 'Square Enix',
       date: 'Feb 29,2024',
       content:
@@ -44,6 +46,7 @@ export default function Section1() {
       title:
         'Persona 3 Reload Becomes Fastest-Selling Game in Atlus History With 1 Million Sales',
       linkUrl: '#',
+      authorId: 1,
       category: 'Atlus',
       date: 'Feb 13,2024',
       content:
@@ -54,6 +57,7 @@ export default function Section1() {
       imageUrl: '/images/polarblack.png',
       title: 'The Polar Bear Game is the best game ever.',
       linkUrl: '#',
+      authorId: 1,
       category: 'Sub Heading',
       date: 'Feb 13,2024',
       content:
@@ -64,6 +68,7 @@ export default function Section1() {
       imageUrl: '/images/dragon.jpg',
       title: 'Like a Dragon: Infinite Wealth sold a million copies worldwide',
       linkUrl: '#',
+      authorId: 1,
       category: 'RGG',
       date: 'March 1,2024',
       content:
@@ -74,6 +79,7 @@ export default function Section1() {
       imageUrl: '/images/ssquad.png',
       title: 'The Joker joins Suicide Squad: Kill the Justice League at the end of March',
       linkUrl: '#',
+      authorId: 1,
       category: 'Rocksteady',
       date: 'March 4,2024',
       content:
@@ -82,26 +88,26 @@ export default function Section1() {
   ]
 
   return (
-    <section className="py-16" style={bg}>
-      <div className="container mx-auto md:px-20">
-        <h1 className="font-bold text-4xl pb-12 text-center">Trending</h1>
+  <section className="py-16" style={bg}>
+    <div className="container mx-auto md:px-20">
+      <h1 className="font-bold text-4xl pb-12 text-center">Trending</h1>
 
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            {posts.map((post) => (
-              <div key={post.id} className="swiper-slide">
-                <Slide post={post} />
-              </div>
-            ))}
-          </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-scrollbar"></div>
+      <div className="swiper">
+        <div className="swiper-wrapper">
+          {posts.map((post) => (
+            <div key={post.id} className="swiper-slide">
+              <Slide post={post}/>
+            </div>
+          ))}
         </div>
+        <div className="swiper-pagination"></div>
+        <div className="swiper-button-prev"></div>
+        <div className="swiper-button-next"></div>
+        <div className="swiper-scrollbar"></div>
       </div>
-    </section>
-  )
+    </div>
+  </section>
+)
 }
 
 function Slide({ post }) {
@@ -131,7 +137,7 @@ function Slide({ post }) {
           </Link>
         </div>
         <p className="text-white-500 py-3">{post.content}</p>
-        <Author></Author>
+        <Author authorId={post.authorId} />
       </div>
     </div>
   )
