@@ -8,12 +8,13 @@ const Chats = () => {
     <>
       <Navigation />
       <div className="h-screen flex justify-between gap-5 px-10 py-3 max-lg:gap-8 bg-blue-900">
-
-        <TopBar />
         <div className="w-1/3 max-lg:w-1/2 max-md:w-full">
+          <TopBar />
+
+          <br></br>
           <ChatList />
         </div>
-        <div className="w-1/3 max-lg:w-1/2 max-md:w-full">
+        <div className="w-2/3 max-lg:w-1/2 max-md:w-full">
           <Contacts />
         </div>
       </div>

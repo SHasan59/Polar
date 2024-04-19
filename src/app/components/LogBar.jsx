@@ -17,13 +17,12 @@ const LogBar = () => {
   const user = session?.user;
 
   return (
-    <div className="top-0 sticky px-10 py-5 flex items-center justify-between bg-blue-200 rounded-xl">
+    <div className="top-0  px-10 py-5 flex items-center justify-between bg-blue-200 rounded-xl">
       <Link href="/chats">
         <img src="/polar.png" alt="logo" className=" w-20 h-auto" />
       </Link>
 
       <div className="flex items-center gap-8 max-sm:hidden">
-
         <Link
           href="/chats"
           className={`${
@@ -51,7 +50,6 @@ const LogBar = () => {
             src={user?.profileImage || '/person.jpg'}
             alt="profile"
             className=" w-11 h-11 rounded-full object-cover object-center"
-
           />
         </Link>
       </div>
