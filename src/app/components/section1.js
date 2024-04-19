@@ -24,30 +24,25 @@ export default function Section1() {
       linkUrl: '/blog/post1',
       category: 'Nintendo',
       date: 'Feb 28,2024',
-      content:
-        'The Pokémon Company International announced a new game titled Pokémon Legends Z-A that will be released in 2025 for Nintendo Switch. The game news was announced during the Pokémon Presents stream on February 27th, known as Pokémon Day. The game’s official website describes the game as a new adventure within Lumiose City, where an urban redevelopment plan is underway to shape the city into a place that belongs to both people and Pokémon. The website also confirms that the game will be released simultaneously worldwide in 2025.',
+      content: 'The Pokémon Company International announced a new game titled Pokémon Legends Z-A that will be released in 2025 for Nintendo Switch. The game news was announced during the Pokémon Presents stream on February 27th, known as Pokémon Day. The game’s official website describes the game as a new adventure within Lumiose City, where an urban redevelopment plan is underway to shape the city into a place that belongs to both people and Pokémon. The website also confirms that the game will be released simultaneously worldwide in 2025.',
     },
     {
       id: 2,
       imageUrl: '/images/ff7.png',
-      title:
-        'Final Fantasy VII Rebirth and how it revisits the twist that changed video game history',
+      title: 'Final Fantasy VII Rebirth and how it revisits the twist that changed video game history',
       linkUrl: '/blog/post2',
       category: 'Square Enix',
       date: 'Feb 29,2024',
-      content:
-        'Predecessor Final Fantasy VI, for instance, has sold 3.8 million copies worldwide; to date, Final Fantasy VII has sold 14.4 million. It has inspired a CGI-animated feature film sequel; a range of middling spin-off games; and most recently, a long-anticipated project to remake the original title as a trilogy, using the full high-fidelity might of modern video game technology. The second of that trilogy, Final Fantasy VII Rebirth, is released today.',
+      content: 'Predecessor Final Fantasy VI, for instance, has sold 3.8 million copies worldwide; to date, Final Fantasy VII has sold 14.4 million. It has inspired a CGI-animated feature film sequel; a range of middling spin-off games; and most recently, a long-anticipated project to remake the original title as a trilogy, using the full high-fidelity might of modern video game technology. The second of that trilogy, Final Fantasy VII Rebirth, is released today.',
     },
     {
       id: 3,
       imageUrl: '/images/p3r.png',
-      title:
-        'Persona 3 Reload Becomes Fastest-Selling Game in Atlus History With 1 Million Sales',
+      title:'Persona 3 Reload Becomes Fastest-Selling Game in Atlus History With 1 Million Sales',
       linkUrl: '/blog/post3',
       category: 'Atlus',
       date: 'Feb 13,2024',
-      content:
-        'Persona 3 Reload is described as “a captivating reimagining of the genre-defining RPG, reborn for the modern era.” Rumors of this games existence floated around for a long time but were mostly shunned as fake until the fire was stoked by a snippet of the games supposed trailer leaked a few months ago. Prior to its debut in the Xbox Showcase, the official ATLUS accounts posted the trailer a few days early which also contained the release date. The posts were quickly taken down, but not before it was reposted and spread throughout the community.',
+      content: 'Persona 3 Reload is described as “a captivating reimagining of the genre-defining RPG, reborn for the modern era.” Rumors of this games existence floated around for a long time but were mostly shunned as fake until the fire was stoked by a snippet of the games supposed trailer leaked a few months ago. Prior to its debut in the Xbox Showcase, the official ATLUS accounts posted the trailer a few days early which also contained the release date. The posts were quickly taken down, but not before it was reposted and spread throughout the community.',
     },
     {
       id: 4,
@@ -56,8 +51,7 @@ export default function Section1() {
       linkUrl: '/blog/post4',
       category: 'RGG',
       date: 'March 1,2024',
-      content:
-        "Kiryu and friends continue to be popular as Like a Dragon: Infinite Wealth has cracked a million sales one week after its release, as revealed by publisher Sega and developer Ryu Ga Gotoku Studio. This combines digital and physical sales around the globe. This makes Like a Dragon: Infinite Wealth the fastest-selling series entry to date. Predecessor Yakuza: Like a Dragon, which came out in January 2020, sold 1.8 million copies by December 2023, making Infinite Wealth’s pace absolutely rapid by comparison.",
+      content: "Kiryu and friends continue to be popular as Like a Dragon: Infinite Wealth has cracked a million sales one week after its release, as revealed by publisher Sega and developer Ryu Ga Gotoku Studio. This combines digital and physical sales around the globe. This makes Like a Dragon: Infinite Wealth the fastest-selling series entry to date. Predecessor Yakuza: Like a Dragon, which came out in January 2020, sold 1.8 million copies by December 2023, making Infinite Wealth’s pace absolutely rapid by comparison.",
     },
     {
       id: 5,
@@ -66,8 +60,7 @@ export default function Section1() {
       linkUrl: '/blog/post5',
       category: 'Rocksteady',
       date: 'March 4,2024',
-      content:
-        "The first season of Suicide Squad: Kill the Justice League will go live on March 28, and as promised it will see the arrival of one of DC's most infamous villains: The Joker. The date was revealed on Twitter in a very straightforward, un-Joker-like announcement: Get ready for Season 1! The jokes are coming March 28, HA! That sounds more like a triumphant in your face, Batfink! than the maniacal laughter the Joker is famed for, although given the events of Suicide Squad (which we won't get into for spoiler reasons) I suppose that might be appropriate.",
+      content: "The first season of Suicide Squad: Kill the Justice League will go live on March 28, and as promised it will see the arrival of one of DC's most infamous villains: The Joker. The date was revealed on Twitter in a very straightforward, un-Joker-like announcement: Get ready for Season 1! The jokes are coming March 28, HA! That sounds more like a triumphant in your face, Batfink! than the maniacal laughter the Joker is famed for, although given the events of Suicide Squad (which we won't get into for spoiler reasons) I suppose that might be appropriate.",
     },
   ]
 
