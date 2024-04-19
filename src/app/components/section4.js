@@ -9,6 +9,7 @@ export default function Section4() {
             id: 1,
             imageUrl: '/images/polarblack.png',
             title: 'The Polar Bear Game is the best games ever.',
+            authorId: 1,
             category: 'Sub Heading',
             date: 'Feb 13,2024',
         },
@@ -16,6 +17,7 @@ export default function Section4() {
             id: 2,
             imageUrl: '/images/polarblack.png',
             title: 'The Polar Bear Game is the best games ever.',
+            authorId: 1,
             category: 'Sub Heading',
             date: 'Feb 13,2024',
         },
@@ -23,6 +25,7 @@ export default function Section4() {
             id: 3,
             imageUrl: '/images/polarblack.png',
             title: 'The Polar Bear Game is the best games ever.',
+            authorId: 1,
             category: 'Sub Heading',
             date: 'Feb 13,2024',
         },
@@ -30,6 +33,7 @@ export default function Section4() {
             id: 4,
             imageUrl: '/images/polarblack.png',
             title: 'The Polar Bear Game is the best games ever.',
+            authorId: 1,
             category: 'Sub Heading',
             date: 'Feb 13,2024',
         },
@@ -37,6 +41,7 @@ export default function Section4() {
             id: 5,
             imageUrl: '/images/polarblack.png',
             title: 'The Polar Bear Game is the best games ever.',
+            authorId: 1,
             category: 'Sub Heading',
             date: 'Feb 13,2024',
         },
@@ -44,6 +49,7 @@ export default function Section4() {
             id: 6,
             imageUrl: '/images/polarblack.png',
             title: 'The Polar Bear Game is the best games ever.',
+            authorId: 1,
             category: 'Sub Heading',
             date: 'Feb 13,2024',
         },
@@ -90,7 +96,7 @@ function Post({ post }) {
                 <div className="title">
                     <Link href={"#"} className="text-xl font-bold text-white-800 hover:text-gray-600">{post.title}</Link>
                 </div>
-                <Author></Author>
+                <Author authorId={post.authorId} />
             </div>
         </div>
     )
