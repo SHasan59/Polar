@@ -69,7 +69,7 @@ const ChatList = ({ currentChatId }) => {
   return loading ? (
     <Loader />
   ) : (
-    <div className=" h-[100vh] flex flex-col gap-5 pb-20">
+    <div className=" h-[99.5vh] flex flex-col gap-5 pb-20">
       <input
         placeholder="Search chats🐻‍❄️"
         className="px-5 py-3 rounded-2xl bg-white outline-none text-black"
