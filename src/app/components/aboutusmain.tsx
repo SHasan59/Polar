@@ -40,7 +40,7 @@ const AboutUsMain = () => {
               </section>
 
               <div className="max-w-3xl mx-auto">
-                <p className="text-gray-400 text-lg mb-6">
+                <p className="text-white text-lg mb-6">
                   Welcome to our About Us page. We are a passionate team
                   dedicated to providing an innovative way to organize and
                   creating a positive impact in our community. Our mission is to
@@ -50,10 +50,10 @@ const AboutUsMain = () => {
               </div>
 
               <div className="mt-8 bg-gray-800 p-6 rounded-lg">
-                <h2 className="text-xl font-bold mb-4">Our Team</h2>
+                <h2 className="text-2xl font-bold mb-4">Our Team</h2>
 
                 {TeamMembers.map((member, index) => (
-                  <motion.div 
+                  <motion.div
                     className="flex items-center mb-6"
                     key={index}
                     initial={{ opacity: 0, y: 20 }} // Initial animation properties
@@ -107,7 +107,7 @@ const AboutUsMain = () => {
               <section className="my-8 bg-blue-800 p-6 rounded-lg">
                 <h2 className="text-2xl font-bold mb-4">About The Team</h2>
                 <p className="text-gray-400"></p>
-                <p className="text-gray-400 text-lg mb-6">
+                <p className="text-white text-m mb-6">
                   The team built out of unique members who met on the Brooklyn
                   College experience. There is something about a team that comes
                   together to work in perfect harmony. Each member of the team
@@ -117,30 +117,35 @@ const AboutUsMain = () => {
               </section>
 
               <section className="my-8 bg-blue-800 p-6 rounded-lg">
-      <h2 className="text-2xl font-bold mb-4">Our Inspo</h2>
-      <p className="text-gray-400"></p>
-      <div className="flex justify-center"> {/* Added flex container */}
-        <div className="max-w-2xl rounded-lg overflow-hidden"> {/* Added max-width container and rounded corners */}
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/M0a_68xnboc?si=IRZh2oPeobYvyJTS"
-            title="YouTube video player"
-            frameBorder={0}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
-        </div>
-      </div>
-      <p className="text-gray-400 text-lg mb-6">
-        POLAR BEAR WALKING
-      </p>
-    </section>
+                <h2 className="text-2xl font-bold mb-4">Our Inspiration</h2>
+                <p className="text-gray-400"></p>
+                <div className="flex justify-center">
+                  {' '}
+                  {/* Added flex container */}
+                  <div className="max-w-2xl rounded-lg overflow-hidden mb-4">
+                    {' '}
+                    {/* Added max-width container and rounded corners */}
+                    <iframe
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/M0a_68xnboc?si=IRZh2oPeobYvyJTS"
+                      title="YouTube video player"
+                      frameBorder={0}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                </div>
+                <p className="text-white- text-m mb-6">
+                  This video had inspired us to create this website andx notify
+                  users of the dangers that polar bears are facing while
+                  creating a fucntional website for videogames.{' '}
+                </p>
+              </section>
 
-
-              <section className="my-8 bg-green-800 p-6 rounded-lg">
-                <h1>Contact Us</h1>
+              <section className="my-8 bg-gray-800 p-6 rounded-lg">
+                <h1 className="text-2xl font-bold mb-4">Contact Us</h1>
                 <p>
                   Email:{' '}
                   <a href="mailto:polarteam@gmail.com">polarteam@gmail.com</a>
