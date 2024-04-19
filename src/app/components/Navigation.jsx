@@ -23,6 +23,10 @@ const navLinks = [
     path: '/climatechange',
   },
   {
+    title: 'Gamelog',
+    path: '/Yourgames',
+  },
+  {
     title: 'Navi',
     path: '/chatbot',
   },
@@ -37,10 +41,6 @@ const navLinks = [
   {
     title: 'Timelog',
     path: '/timelog',
-  },
-  {
-    title: '🐻‍❄️',
-    path: '/',
   },
 ];
 
