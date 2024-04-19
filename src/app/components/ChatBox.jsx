@@ -31,7 +31,7 @@ const ChatBox = ({ chat, currentUser, currentChatId }) => {
           />
         ) : (
           <img
-            src={otherMembers[0].profileImage || '/polarpfp.png'}
+            src={otherMembers[0].profileImage || '/polarpfp2.png'}
             alt="profile-photo"
             className=" w-11 h-11 rounded-full object-cover object-center"
           />
