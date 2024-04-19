@@ -77,7 +77,7 @@ const ChatList = ({ currentChatId }) => {
         onChange={(e) => setSearch(e.target.value)}
       />
 
-      <div className="flex-1 flex flex-col bg-white rounded-3xl py-4 px-3 overflow-y-scroll">
+      <div className="flex-1 flex flex-col bg-blue-200 rounded-3xl py-4 px-3 overflow-y-scroll">
         {chats?.map((chat, index) => (
           <ChatBox
             chat={chat}
