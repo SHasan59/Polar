@@ -79,7 +79,7 @@ const Contacts = () => {
       />
 
       <div className="flex gap-7 items-start max-lg:flex-col">
-        <div className=" h-[95vh] w-1/2 max-lg:w-full flex flex-col gap-5 bg-white rounded-3xl py-5 px-8 mb-20">
+        <div className=" h-[95vh] w-1/2 max-lg:w-full flex flex-col gap-5 bg-blue-200 rounded-3xl py-5 px-8 mb-20">
           <p className="text-body-bold text-black">Select or Deselect</p>
 
           <div className="flex flex-col flex-1 gap-5 overflow-y-scroll custom-scrollbar text-black">
@@ -123,7 +123,7 @@ const Contacts = () => {
                 <div className="flex flex-wrap gap-3">
                   {selectedContacts.map((contact, index) => (
                     <p
-                      className="text-base-bold p-2 bg-purple-100 rounded-lg"
+                      className="text-base-bold p-2 bg-green-300 rounded-lg text-slate"
                       key={index}
                     >
                       {contact.username}
@@ -134,11 +134,11 @@ const Contacts = () => {
             </>
           )}
           <button
-            className="flex items-center justify-center rounded-xl p-3 bg-gradient-to-l from-blue-100 to-blue-300  text-white mb-2"
+            className="flex items-center justify-center rounded-xl p-3 bg-blue-500  text-white mb-2"
             onClick={createChat}
             disabled={selectedContacts.length === 0}
           >
-            FIND OR START A NEW CHAT
+            Find or Start a new chat
           </button>
         </div>
       </div>
