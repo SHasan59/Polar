@@ -25,7 +25,7 @@ const ChatBox = ({ chat, currentUser, currentChatId }) => {
       <div className=" flex gap-3 text-black">
         {chat?.isGroup ? (
           <img
-            src={chat?.groupPhoto || '/group.png'}
+            src={chat?.groupPhoto || '/group2.jpg'}
             alt="group-photo"
             className=" w-11 h-11 rounded-full object-cover object-center"
           />

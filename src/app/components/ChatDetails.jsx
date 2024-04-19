@@ -120,7 +120,7 @@ const ChatDetails = ({ chatId }) => {
             <>
               <Link href={`/chats/${chatId}/group-info`}>
                 <img
-                  src={chat?.groupPhoto || '/group.png'}
+                  src={chat?.groupPhoto || '/group2.jpg'}
                   alt="group-photo"
                   className=" w-11 h-11 rounded-full object-cover object-center"
                 />
