@@ -12,25 +12,25 @@ export default function Page() {
 
                 <div className="post py-10">
                     <h1 className="font-bold text-5xl text-center pb-5">
-                        New “Pokémon Legends Z-A” Game Announced for Switch in 2025
+                        Persona 3 Reload Becomes Fastest-Selling Game in Atlus History With 1 Million Sales
                     </h1>
-                    <p className="text-blue-100 text-xl text-center">The Pokémon Company announces a groundbreaking new addition to the Pokémon series that promises to redefine the way players experience the world of Pokémon.</p>
+                    <p className="text-blue-100 text-xl text-center">Experience the rebirth of a classic RPG in Persona 3 Reload, hailed as the fastest-selling game in Atlus history, with over 1 million copies sold worldwide.</p>
 
                     <div className="py-10">
-                        <Image src="/images/polarblack.png" width={900} height={600} alt="Placeholder Image" />
+                        <Image src="/images/p3r.png" width={900} height={600} alt="Persona 3 Reload" />
                     </div>
                     
-                    <div className ="content text-gray-200 text-lg flex-col gap-3">
+                    <div className="content text-gray-200 text-lg flex-col gap-3">
                         <p>
-                            The Pokémon Company will release Pokémon Legends: Z-A, an ambitious new entry to the Pokémon video game series, on Nintendo Switch systems simultaneously worldwide in 2025. A new adventure awaits within Lumiose City, where an urban redevelopment plan is under way to shape the city into a place that belongs to both people and Pokémon. Please look forward to seeing it for yourself.
+                            Persona 3 Reload is described as “a captivating reimagining of the genre-defining RPG, reborn for the modern era.” Rumors of this game's existence floated around for a long time but were mostly shunned as fake until the fire was stoked by a snippet of the game's supposed trailer leaked a few months ago. Prior to its debut in the Xbox Showcase, the official ATLUS accounts posted the trailer a few days early which also contained the release date. The posts were quickly taken down, but not before it was reposted and spread throughout the community.
                         </p>
                         <br />
                         <p>
-                            In Pokémon Legends: Z-A, players will embark on a journey like never before. As they explore the vibrant streets of Lumiose City, they will encounter a wide variety of Pokémon, both old and new. The game promises to deliver an immersive experience with stunning visuals and engaging gameplay mechanics. Get ready to dive into the world of Pokémon like never before!
+                            The announcement of Persona 3 Reload's success has sent shockwaves through the gaming industry, solidifying its place as a landmark title in Atlus's history. With its captivating storyline, innovative gameplay, and stunning visuals, the game has garnered widespread acclaim from critics and fans alike, further cementing Atlus's reputation as a leading developer in the RPG genre.
                         </p>
                         <br />
                         <p>
-                            The announcement of Pokémon Legends: Z-A has generated immense excitement among fans worldwide. With its innovative gameplay mechanics, captivating storyline, and stunning visuals, it's poised to become one of the most memorable entries in the Pokémon series. Stay tuned for more updates and prepare to embark on an unforgettable adventure in the world of Pokémon!
+                            As Persona 3 Reload continues to fly off shelves and dominate sales charts, it serves as a testament to the enduring appeal of the Persona series and the dedication of its fanbase. With its rich narrative, complex characters, and engaging gameplay mechanics, Persona 3 Reload is sure to be remembered as a classic in the annals of gaming history, leaving an indelible mark on players for years to come.
                         </p>
                     </div>
                 </div>
