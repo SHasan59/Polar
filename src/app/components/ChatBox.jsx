@@ -18,7 +18,7 @@ const ChatBox = ({ chat, currentUser, currentChatId }) => {
   return (
     <div
       className={`flex items-start justify-between p-2 rounded-2xl cursor-pointer hover:bg-grey-200 ${
-        chat._id === currentChatId ? 'bg-blue-200' : ''
+        chat._id === currentChatId ? 'bg-blue-400' : ''
       }`}
       onClick={() => router.push(`/chats/${chat._id}`)}
     >
