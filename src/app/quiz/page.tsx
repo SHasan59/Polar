@@ -1,11 +1,11 @@
 'use client';
 
+import React, { useState } from "react";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
-import { useState } from "react";
 
-const Quiz = () => {
-  const quizQuestions = [
+const Quiz: React.FC = () => {
+  const quizQuestions: { question: string; answers: string[] }[] = [
     {
       question: "What is your favorite season?",
       answers: ["Winter", "Spring", "Summer", "Autumn"],
@@ -16,24 +16,24 @@ const Quiz = () => {
     },
   ];
 
-  const bearTypes = {
+  const bearTypes: { [key: string]: string } = {
     Winter: "Polar Bear",
     Spring: "Panda Bear",
     Summer: "Grizzly Bear",
     Autumn: "Sun Bear",
   };
 
-  const [answers, setAnswers] = useState({});
-  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [answers, setAnswers] = useState<{ [key: number]: string }>({});
+  const [currentQuestion, setCurrentQuestion] = useState<number>(0);
 
-  const handleAnswerChange = (answer) => {
+  const handleAnswerChange = (answer: string) => {
     setAnswers({
       ...answers,
       [currentQuestion]: answer,
     });
   };
 
-  const handleNextQuestion = (e) => {
+  const handleNextQuestion = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (currentQuestion < quizQuestions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
@@ -48,9 +48,18 @@ const Quiz = () => {
     alert(`You are a ${bearType}!`);
   };
 
-  const renderQuestion = (questionData, index) => (
-    <form onSubmit={handleNextQuestion} key={index} className="quiz-form bg-white p-8 rounded-lg shadow-lg">
-      <h2 className="question-title text-2xl text-blue-800 mb-4 font-bold">{questionData.question}</h2>
+  const renderQuestion = (
+    questionData: { question: string; answers: string[] },
+    index: number
+  ) => (
+    <form
+      onSubmit={handleNextQuestion}
+      key={index}
+      className="quiz-form bg-white p-8 rounded-lg shadow-lg"
+    >
+      <h2 className="question-title text-2xl text-blue-800 mb-4 font-bold">
+        {questionData.question}
+      </h2>
       {questionData.answers.map((answer) => (
         <div key={answer} className="answer-option mt-4">
           <label className="flex items-center cursor-pointer text-blue-600 hover:text-blue-900">
@@ -70,25 +79,32 @@ const Quiz = () => {
         type="submit"
         className="submit-button w-full bg-blue-700 text-white py-3 rounded-lg hover:bg-blue-800 transition-colors mt-6 font-bold"
       >
-        {currentQuestion < quizQuestions.length - 1 ? 'Next' : 'Submit'}
+        {currentQuestion < quizQuestions.length - 1 ? "Next" : "Submit"}
       </button>
     </form>
   );
 
   return (
-    
     <>
       <Navigation />
-      <main className=" " > 
-      <div
-        className="quiz-container bg-cover bg-center bg-no-repeat p-10 rounded-lg max-w-md mx-auto border-4 border-blue-300"
-        style={{ backgroundImage: 'url("/")', backgroundSize: 'cover', backgroundBlendMode: 'overlay' }}
-      >
-        <h1 className="quiz-title text-center text-4xl font-bold text-blue-900 mb-8">Fun Bear Quiz!</h1>
-        {renderQuestion(quizQuestions[currentQuestion], currentQuestion)}
-      </div>
-      </main> 
+      <main className=" ">
+        <div
+          className="quiz-container bg-cover bg-center bg-no-repeat p-10 rounded-lg max-w-md mx-auto border-4 border-blue-300"
+          style={{
+            backgroundImage: 'url("/")',
+            backgroundSize: "cover",
+            backgroundBlendMode: "overlay",
+          }}
+        >
+          <h1 className="quiz-title text-center text-4xl font-bold text-blue-900 mb-8">
+            Fun Bear Quiz!
+          </h1>
+          {renderQuestion(quizQuestions[currentQuestion], currentQuestion)}
+        </div>
+      </main>
       <Footer />
     </>
   );
 };
+
+export default Quiz;
