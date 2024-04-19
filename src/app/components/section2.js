@@ -7,66 +7,63 @@ export default function Section2() {
   const posts = [
     {
       id: 1,
-      imageUrl: '/images/pokemon z.png',
-      title: 'New “Pokémon Legends Z-A” Game Announced for Switch in 2025',
+      imageUrl: '/images/zelda_awakening.jpg',
+      title: 'The Legend of Zelda: Hyrule\'s Awakening Announced for Nintendo Switch',
       linkUrl: '#',
       category: 'Nintendo',
-      date: 'Feb 28,2024',
+      date: 'Mar 15, 2024',
       content:
-        'The Pokémon Company International announced a new game titled Pokémon Legends Z-A that will be released in 2025 for Nintendo Switch. The game news was announced during the Pokémon Presents stream on February 27th, known as Pokémon Day. The game’s official website describes the game as a new adventure within Lumiose City, where an urban redevelopment plan is underway to shape the city into a place that belongs to both people and Pokémon. The website also confirms that the game will be released simultaneously worldwide in 2025.',
-    },
+        'Nintendo has announced a new installment in The Legend of Zelda series titled "Hyrule\'s Awakening" for the Nintendo Switch. In this game, players will embark on a journey to awaken the sleeping guardians of Hyrule and restore peace to the land. With stunning visuals, innovative gameplay mechanics, and a captivating storyline, "Hyrule\'s Awakening" promises to be an unforgettable adventure for fans of the franchise.',
+    },    
     {
       id: 2,
-      imageUrl: '/images/ff7.png',
-      title:
-        'Final Fantasy VII Rebirth and how it revisits the twist that changed video game history',
+      imageUrl: '/images/masseffect_rebirth.jpg',
+      title: 'Mass Effect: Andromeda - Rebirth Set to Revolutionize the Franchise',
       linkUrl: '#',
-      category: 'Square Enix',
-      date: 'Feb 29,2024',
+      category: 'BioWare',
+      date: 'Apr 5, 2024',
       content:
-        'Predecessor Final Fantasy VI, for instance, has sold 3.8 million copies worldwide; to date, Final Fantasy VII has sold 14.4 million. It has inspired a CGI-animated feature film sequel; a range of middling spin-off games; and most recently, a long-anticipated project to remake the original title as a trilogy, using the full high-fidelity might of modern video game technology. The second of that trilogy, Final Fantasy VII Rebirth, is released today.',
-    },
+        'BioWare has unveiled the latest installment in the Mass Effect series titled "Mass Effect: Andromeda - Rebirth." Set in the distant future, players will explore the uncharted regions of the Andromeda galaxy and encounter new civilizations, threats, and mysteries. With enhanced graphics, improved gameplay mechanics, and a vast open world to explore, "Andromeda - Rebirth" aims to redefine the franchise and deliver an epic sci-fi adventure like never before.',
+    },    
     {
       id: 3,
-      imageUrl: '/images/p3r.png',
-      title:
-        'Persona 3 Reload Becomes Fastest-Selling Game in Atlus History With 1 Million Sales',
+      imageUrl: '/images/uncharted_realms.jpg',
+      title: 'Uncharted Realms: Forgotten Treasures Unveiled by Naughty Dog',
       linkUrl: '#',
-      category: 'Atlus',
-      date: 'Feb 13,2024',
+      category: 'Naughty Dog',
+      date: 'Mar 20, 2024',
       content:
-        'Persona 3 Reload is described as “a captivating reimagining of the genre-defining RPG, reborn for the modern era.” Rumors of this games existence floated around for a long time but were mostly shunned as fake until the fire was stoked by a snippet of the games supposed trailer leaked a few months ago. Prior to its debut in the Xbox Showcase, the official ATLUS accounts posted the trailer a few days early which also contained the release date. The posts were quickly taken down, but not before it was reposted and spread throughout the community.',
-    },
+        'Naughty Dog has announced a new entry in the Uncharted series titled "Uncharted Realms: Forgotten Treasures." In this thrilling adventure, players will join Nathan Drake on a quest to uncover ancient artifacts and lost civilizations across the globe. With stunning visuals, cinematic storytelling, and heart-pounding action, "Forgotten Treasures" promises to be a worthy addition to the acclaimed Uncharted franchise.',
+    },    
     {
       id: 4,
-      imageUrl: '/images/polarblack.png',
-      title: 'The Polar Bear Game is the best games ever.',
+      imageUrl: '/images/cyberpunk.jpg',
+      title: 'Cyberpunk 2077: Rise of Night City sets new records with immersive open-world gameplay',
       linkUrl: '#',
-      category: 'Sub Heading',
-      date: 'Feb 13,2024',
-      content:
-        'The Polar Bear Game" is an enthralling adventure set in the vast and unforgiving Arctic landscape, placing players in the furry paws of a courageous polar bear protagonist. As they navigate through icy terrain and face the harsh elements, players must overcome a series of challenges, from evading dangerous predators to solving puzzles and unraveling the mysteries of the Arctic wilderness. With stunning visuals and immersive storytelling, the game offers an unforgettable experience that not only entertains but also educates players about the importance of environmental conservation and the delicate balance of ecosystems. "The Polar Bear Game" promises an exhilarating journey where survival instincts and environmental awareness are key to success, inviting players to embark on an epic quest that celebrates the wonders of nature and the resilience of Arctic wildlife.',
+      category: 'CD Projekt Red',
+      date: 'March 15, 2024',
+      content: 'Step into the neon-lit streets of Night City once again as Cyberpunk 2077: Rise of Night City takes players on an unforgettable journey through a dystopian future. With its immersive open-world gameplay, jaw-dropping visuals, and compelling storyline, the game sets new records for the RPG genre. Explore the vibrant districts of Night City, forge alliances with powerful factions, and shape the fate of the city with your choices. Cyberpunk 2077: Rise of Night City is a testament to CD Projekt Red\'s commitment to delivering groundbreaking gaming experiences.'
     },
     {
       id: 5,
-      imageUrl: '/images/dragon.jpg',
-      title: 'Like a Dragon: Infinite Wealth sold a million copies worldwide',
+      imageUrl: '/images/reddead_legends.jpg',
+      title: 'Red Dead Redemption: Legends of the West Unveiled by Rockstar Games',
       linkUrl: '#',
-      category: 'RGG',
-      date: 'Feb 13,2024',
+      category: 'Rockstar Games',
+      date: 'Mar 25, 2024',
       content:
-        'Kiryu and friends continue to be popular as Like a Dragon: Infinite Wealth has cracked a million sales one week after its release, as revealed by publisher Sega and developer Ryu Ga Gotoku Studio. This combines digital and physical sales around the globe. This makes Like a Dragon: Infinite Wealth the fastest-selling series entry to date. Predecessor Yakuza: Like a Dragon, which came out in January 2020, sold 1.8 million copies by December 2023, making Infinite Wealth’s pace absolutely rapid by comparison.',
-    },
+        'Rockstar Games has announced a new installment in the Red Dead Redemption series titled "Legends of the West." Set in the final years of the American Frontier, players will experience the untamed wilderness, confront outlaws, and forge their own path in a world on the brink of change. With breathtaking visuals, immersive gameplay, and a richly detailed open world, "Legends of the West" promises to capture the spirit of the Old West like never before.',
+    },    
     {
       id: 6,
-      imageUrl: '/images/ssquad.png',
-      title: 'The Joker joins Suicide Squad: Kill the Justice League at the end of March',
+      imageUrl: '/images/witcher_conqueror.jpg',
+      title: 'The Witcher: Blood of the Conqueror Revealed by CD Projekt Red',
       linkUrl: '#',
-      category: 'JRPG',
-      date: 'Feb 13,2024',
+      category: 'CD Projekt Red',
+      date: 'Mar 30, 2024',
       content:
-        'The first season of Suicide Squad: Kill the Justice League will go live on March 28, and as promised it will see the arrival of one of DC\'s most infamous villains: The Joker. The date was revealed on Twitter in a very straightforward, un-Joker-like announcement: Get ready for Season 1! The jokes are coming March 28, HA! That sounds more like a triumphant in your face, Batfink! than the maniacal laughter the Joker is famed for, although given the events of Suicide Squad (which we won\'t get into for spoiler reasons) I suppose that might be appropriate.',
-    },
+        'CD Projekt Red has unveiled the latest entry in The Witcher series titled "Blood of the Conqueror." Set in a world torn apart by war and political intrigue, players will assume the role of Geralt of Rivia as he embarks on a quest to uncover the truth behind a dark conspiracy threatening the realm. With immersive storytelling, deep character development, and thrilling combat, "Blood of the Conqueror" promises to be an epic RPG experience for fans of the franchise.',
+    },    
   ]
   
   return (
