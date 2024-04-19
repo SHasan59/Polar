@@ -18,8 +18,12 @@ const LogBar = () => {
 
   return (
     <div className="top-0  px-10 py-5 flex items-center justify-between bg-blue-200 rounded-xl">
-      <Link href="/chats">
-        <img src="/polar.png" alt="logo" className=" w-20 h-auto" />
+      <Link href="/profile">
+        <img
+          src={user?.profileImage || '/person.jpg'}
+          alt="profile"
+          className=" w-11 h-11 rounded-full object-cover object-center"
+        />
       </Link>
 
       <div className="flex items-center gap-8 max-sm:hidden">
@@ -44,14 +48,6 @@ const LogBar = () => {
           sx={{ color: '#737373', cursor: 'pointer' }}
           onClick={handleLogout}
         />
-
-        <Link href="/profile">
-          <img
-            src={user?.profileImage || '/person.jpg'}
-            alt="profile"
-            className=" w-11 h-11 rounded-full object-cover object-center"
-          />
-        </Link>
       </div>
     </div>
   );
