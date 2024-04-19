@@ -38,7 +38,7 @@
     "src/app/components/NavigationLink.jsx",
     "src/app/components/chatbotmain.js",
     "src/app/chatbot/page.tsx"
-, "src/app/components/ToDoList.jsx", "src/app/ToDo/page.jsx", "src/middleware.js"  ],
+, "src/app/components/ToDoList.jsx", "src/app/ToDo/page.jsx", "src/middleware.js", "src/app/quiz/page.tsx", "src/app/components/yourgame.jsx", "src/app/components/yourgame.jsx", "src/app/components/yourgame.jsx", "src/app/components/yourgame.jsx", "src/app/components/yourgame.jsx"  ],
 
   "exclude": [
     "node_modules"

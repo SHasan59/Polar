@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import NavigationLink from './NavigationLink';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import MenuOverlay from './MenuOverlay';
-import { signOut, useSession } from 'next-auth/react';
 
 const navLinks = [
   {

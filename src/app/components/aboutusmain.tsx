@@ -35,7 +35,7 @@ const AboutUsMain = () => {
         <TracingBeam>
           <div className="container mx-auto py-12">
             <div className="text-center">
-              <section className="border border-black/[0.2] dark:border-white/[0.2] flex items-start w-full h-[10rem]">
+              <section className="border border-black/[0.0] dark:border-white/[0.2] flex items-start w-full h-[10rem]">
                 <EvervaultCard text="About Us" />
               </section>
 
