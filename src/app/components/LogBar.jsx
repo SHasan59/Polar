@@ -20,7 +20,7 @@ const LogBar = () => {
     <div className="top-0  px-10 py-5 flex items-center justify-between bg-blue-200 rounded-xl">
       <Link href="/profile">
         <img
-          src={user?.profileImage || '/person.jpg'}
+          src={user?.profileImage || '/polarpfp.png'}
           alt="profile"
           className=" w-11 h-11 rounded-full object-cover object-center"
         />

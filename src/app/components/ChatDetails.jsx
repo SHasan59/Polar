@@ -136,7 +136,7 @@ const ChatDetails = ({ chatId }) => {
           ) : (
             <>
               <img
-                src={otherMembers[0].profileImage || '/person.jpg'}
+                src={otherMembers[0].profileImage || '/polarpfp.png'}
                 alt="profile photo individual"
                 className=" w-11 h-11 rounded-full object-cover object-center"
               />
