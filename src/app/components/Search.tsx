@@ -119,7 +119,7 @@ export default function Search() {
 
   return (
     <main>
-      <div className="flex flex-col bg-blue-900 ">
+      <div className="flex flex-col bg-gray-900 ">
         <SearchBar onSearch={handleSearch} />
 
         {/* Platform filter dropdown */}
