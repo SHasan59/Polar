@@ -36,7 +36,7 @@ export default function ChatBot() {
 
   return (
     <div
-      className="min-h-screen flex flex-col justify-center items-center bg-blue-700"
+      className="min-h-screen flex flex-col justify-center items-center bg-gray-900"
       style={{
         backgroundImage: 'url("POLAR BEAR STANDING.png")',
         backgroundSize: '',
