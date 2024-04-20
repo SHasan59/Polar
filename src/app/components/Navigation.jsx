@@ -54,7 +54,7 @@ const Navigation = () => {
           <img
             src="/polar.png"
             alt="Polar Logo"
-            className="cursor-pointer w-30 h-20 mt-4 mb-4" 
+            className="cursor-pointer w-24 h-34"
           />
         </Link>
         <div className="mobile-menu block md:hidden">
