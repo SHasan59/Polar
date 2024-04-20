@@ -57,7 +57,7 @@ const Form = ({ type }) => {
   };
 
   return (
-    <div className="bg-blue-900">
+    <div className="bg-gray-900">
       <div className="w-full h-lvh flex items-center justify-center">
         <div className="w-1/3 py-7 px-4 max-sm:w-5/6 max-lg:w-2/3 max-xl:w-1/2 flex flex-col items-center justify-center gap-6 bg-gray-200 rounded-3xl">
           <img src="/polar.png" alt="logo" className="w-52 h-auto" />
