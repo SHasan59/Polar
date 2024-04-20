@@ -73,13 +73,13 @@ const HomeMain = () => {
           </p>
 
           <div className="flex justify-center mt-4">
-            <Button className="bg-slate-900 text-white  border-slate-800">
+            <Button className="bg-blue-900 text-white  border-slate-800">
               <Link href="/search">Search Games</Link>
             </Button>
             <Link href="/features">
               <Button
                 borderRadius="1.75rem"
-                className="bg-slate-900 text-white  border-slate-800"
+                className="bg-blue-900 text-white  border-slate-800"
               >
                 Features
               </Button>
