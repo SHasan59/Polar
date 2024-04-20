@@ -52,12 +52,20 @@ export default function GameCollection() {
     const removeGame = (genre, game) => {
         setGameCollection((prevCollection) => {
             const updatedCollection = { ...prevCollection };
-            updatedCollection[genre].delete(game);
-
-            if (updatedCollection[genre].size === 0) {
-                delete updatedCollection[genre];
+            
+            // Check if the genre exists
+            if (updatedCollection[genre]) {
+                // Check if the game exists in the genre set
+                if (updatedCollection[genre].has(game)) {
+                    updatedCollection[genre].delete(game);
+                    
+                    // Remove the genre if it's empty
+                    if (updatedCollection[genre].size === 0) {
+                        delete updatedCollection[genre];
+                    }
+                }
             }
-
+            
             return updatedCollection;
         });
     };
@@ -110,6 +118,7 @@ function AddGameForm({
     newGenre,
     newPlatform,
     newType,
+    newImage,
     setNewGame,
     setNewGenre,
     setNewPlatform,
@@ -206,7 +215,11 @@ function GameList({ gameCollection, onRemoveGame }) {
                             <ul className="list-disc pl-6 mt-2">
                                 {[...gameCollection[genre]].map((game) => (
                                     <li key={game.name} className="flex items-center space-x-2">
-                                        <GameDetails game={game} onRemoveGame={onRemoveGame} />
+                                        <GameDetails
+                                            game={game}
+                                            genre={genre}
+                                            onRemoveGame={onRemoveGame}
+                                        />
                                     </li>
                                 ))}
                             </ul>
@@ -218,7 +231,7 @@ function GameList({ gameCollection, onRemoveGame }) {
     );
 }
 
-function GameDetails({ game, onRemoveGame }) {
+function GameDetails({ game, genre, onRemoveGame }) {
     return (
         <div className="flex items-center space-x-2">
             <div className="text-white">
@@ -232,7 +245,7 @@ function GameDetails({ game, onRemoveGame }) {
                 />
             )}
             <button
-                onClick={() => onRemoveGame(game)}
+                onClick={() => onRemoveGame(genre, game)}
                 className="bg-red-500 text-white p-1 rounded"
             >
                 Remove
