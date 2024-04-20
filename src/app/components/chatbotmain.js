@@ -86,7 +86,7 @@ export default function ChatBot() {
             placeholder="Ask me anything"
             value={userInput}
             onChange={(e) => setUserInput(e.target.value)}
-            className="flex-1 p-2 rounded-lg  text-black bg-slate-500"
+            className="flex-1 p-2 rounded-lg  text-white bg-slate-500"
           />
 
           {isLoading ? (
