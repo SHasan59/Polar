@@ -12,25 +12,25 @@ export default function Page() {
 
                 <div className="post py-10">
                     <h1 className="font-bold text-5xl text-center pb-5">
-                        New “Pokémon Legends Z-A” Game Announced for Switch in 2025
+                        The Joker joins Suicide Squad: Kill the Justice League at the end of March
                     </h1>
-                    <p className="text-blue-100 text-xl text-center">The Pokémon Company announces a groundbreaking new addition to the Pokémon series that promises to redefine the way players experience the world of Pokémon.</p>
+                    <p className="text-blue-100 text-xl text-center">Get ready for chaos as The Joker makes his explosive debut in Suicide Squad: Kill the Justice League, arriving at the end of March in the highly anticipated first season.</p>
 
                     <div className="py-10">
-                        <Image src="/images/polarblack.png" width={900} height={600} alt="Placeholder Image" />
+                        <Image src="/images/ssquad.png" width={900} height={500} alt="Suicide Squad: Kill the Justice League" />
                     </div>
                     
-                    <div className ="content text-gray-200 text-lg flex-col gap-3">
+                    <div className="content text-gray-200 text-lg flex-col gap-3">
                         <p>
-                            The Pokémon Company will release Pokémon Legends: Z-A, an ambitious new entry to the Pokémon video game series, on Nintendo Switch systems simultaneously worldwide in 2025. A new adventure awaits within Lumiose City, where an urban redevelopment plan is under way to shape the city into a place that belongs to both people and Pokémon. Please look forward to seeing it for yourself.
+                            The first season of Suicide Squad: Kill the Justice League will go live on March 28, and as promised it will see the arrival of one of DC's most infamous villains: The Joker. The date was revealed on Twitter in a very straightforward, un-Joker-like announcement: Get ready for Season 1! The jokes are coming March 28, HA! That sounds more like a triumphant in your face, Batfink! than the maniacal laughter the Joker is famed for, although given the events of Suicide Squad (which we won't get into for spoiler reasons) I suppose that might be appropriate.
                         </p>
                         <br />
                         <p>
-                            In Pokémon Legends: Z-A, players will embark on a journey like never before. As they explore the vibrant streets of Lumiose City, they will encounter a wide variety of Pokémon, both old and new. The game promises to deliver an immersive experience with stunning visuals and engaging gameplay mechanics. Get ready to dive into the world of Pokémon like never before!
+                            The addition of The Joker to the Suicide Squad lineup marks a significant turning point in the game's narrative, promising unexpected twists and thrilling encounters as players navigate the chaotic streets of Metropolis. With his trademark blend of insanity and unpredictability, The Joker is sure to shake up the status quo and leave players on the edge of their seats as they battle against the forces of the Justice League.
                         </p>
                         <br />
                         <p>
-                            The announcement of Pokémon Legends: Z-A has generated immense excitement among fans worldwide. With its innovative gameplay mechanics, captivating storyline, and stunning visuals, it's poised to become one of the most memorable entries in the Pokémon series. Stay tuned for more updates and prepare to embark on an unforgettable adventure in the world of Pokémon!
+                            As anticipation for The Joker's arrival reaches a fever pitch, fans eagerly await the chance to step into the shoes of their favorite DC antiheroes and wreak havoc on the streets of Metropolis. With its dynamic gameplay, stunning visuals, and immersive storyline, Suicide Squad: Kill the Justice League promises an exhilarating gaming experience that will leave players craving more. Get ready to join the Suicide Squad and unleash chaos like never before!
                         </p>
                     </div>
                 </div>

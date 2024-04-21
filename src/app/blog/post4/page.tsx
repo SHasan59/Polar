@@ -12,25 +12,25 @@ export default function Page() {
 
                 <div className="post py-10">
                     <h1 className="font-bold text-5xl text-center pb-5">
-                        New “Pokémon Legends Z-A” Game Announced for Switch in 2025
+                        Like a Dragon: Infinite Wealth sold a million copies worldwide
                     </h1>
-                    <p className="text-blue-100 text-xl text-center">The Pokémon Company announces a groundbreaking new addition to the Pokémon series that promises to redefine the way players experience the world of Pokémon.</p>
+                    <p className="text-blue-100 text-xl text-center">Join Kazuma Kiryu and his companions on an epic journey in Like a Dragon: Infinite Wealth, the fastest-selling entry in the series with over a million copies sold worldwide.</p>
 
                     <div className="py-10">
-                        <Image src="/images/polarblack.png" width={900} height={600} alt="Placeholder Image" />
+                        <Image src="/images/dragon.jpg" width={900} height={600} alt="Like a Dragon: Infinite Wealth" />
                     </div>
                     
-                    <div className ="content text-gray-200 text-lg flex-col gap-3">
+                    <div className="content text-gray-200 text-lg flex-col gap-3">
                         <p>
-                            The Pokémon Company will release Pokémon Legends: Z-A, an ambitious new entry to the Pokémon video game series, on Nintendo Switch systems simultaneously worldwide in 2025. A new adventure awaits within Lumiose City, where an urban redevelopment plan is under way to shape the city into a place that belongs to both people and Pokémon. Please look forward to seeing it for yourself.
+                            Kiryu and friends continue to be popular as Like a Dragon: Infinite Wealth has cracked a million sales one week after its release, as revealed by publisher Sega and developer Ryu Ga Gotoku Studio. This combines digital and physical sales around the globe. This makes Like a Dragon: Infinite Wealth the fastest-selling series entry to date. Predecessor Yakuza: Like a Dragon, which came out in January 2020, sold 1.8 million copies by December 2023, making Infinite Wealth’s pace absolutely rapid by comparison.
                         </p>
                         <br />
                         <p>
-                            In Pokémon Legends: Z-A, players will embark on a journey like never before. As they explore the vibrant streets of Lumiose City, they will encounter a wide variety of Pokémon, both old and new. The game promises to deliver an immersive experience with stunning visuals and engaging gameplay mechanics. Get ready to dive into the world of Pokémon like never before!
+                            As the game continues to captivate players worldwide, it underscores the enduring popularity of the Yakuza series and the unique charm of its protagonist, Kazuma Kiryu. With its immersive storyline, dynamic combat system, and vibrant open-world setting, Like a Dragon: Infinite Wealth offers an unparalleled gaming experience that resonates with both longtime fans and newcomers to the series.
                         </p>
                         <br />
                         <p>
-                            The announcement of Pokémon Legends: Z-A has generated immense excitement among fans worldwide. With its innovative gameplay mechanics, captivating storyline, and stunning visuals, it's poised to become one of the most memorable entries in the Pokémon series. Stay tuned for more updates and prepare to embark on an unforgettable adventure in the world of Pokémon!
+                            Join Kazuma Kiryu on an unforgettable journey through the streets of Kamurocho and beyond as he navigates the criminal underworld and confronts his past. With its blend of action, drama, and humor, Like a Dragon: Infinite Wealth delivers a gaming experience unlike any other, solidifying its place as a must-play title for fans of the Yakuza series and newcomers alike.
                         </p>
                     </div>
                 </div>

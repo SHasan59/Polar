@@ -12,25 +12,25 @@ export default function Page() {
 
                 <div className="post py-10">
                     <h1 className="font-bold text-5xl text-center pb-5">
-                        New “Pokémon Legends Z-A” Game Announced for Switch in 2025
+                        Final Fantasy VII Rebirth and how it revisits the twist that changed video game history
                     </h1>
-                    <p className="text-blue-100 text-xl text-center">The Pokémon Company announces a groundbreaking new addition to the Pokémon series that promises to redefine the way players experience the world of Pokémon.</p>
+                    <p className="text-blue-100 text-xl text-center">Final Fantasy VII Rebirth, the highly anticipated remake of the iconic title, is set to redefine the gaming landscape with its groundbreaking visuals and immersive storytelling.</p>
 
                     <div className="py-10">
-                        <Image src="/images/polarblack.png" width={900} height={600} alt="Placeholder Image" />
+                        <Image src="/images/ff7.png" width={900} height={600} alt="Placeholder Image" />
                     </div>
                     
                     <div className ="content text-gray-200 text-lg flex-col gap-3">
                         <p>
-                            The Pokémon Company will release Pokémon Legends: Z-A, an ambitious new entry to the Pokémon video game series, on Nintendo Switch systems simultaneously worldwide in 2025. A new adventure awaits within Lumiose City, where an urban redevelopment plan is under way to shape the city into a place that belongs to both people and Pokémon. Please look forward to seeing it for yourself.
+                            Final Fantasy VII has left an indelible mark on the gaming industry, with over 14.4 million copies sold worldwide. Its impact extends beyond sales figures, inspiring a CGI-animated feature film sequel and a range of spin-off games. Now, with Final Fantasy VII Rebirth, fans can experience the beloved story in a whole new light.
                         </p>
                         <br />
                         <p>
-                            In Pokémon Legends: Z-A, players will embark on a journey like never before. As they explore the vibrant streets of Lumiose City, they will encounter a wide variety of Pokémon, both old and new. The game promises to deliver an immersive experience with stunning visuals and engaging gameplay mechanics. Get ready to dive into the world of Pokémon like never before!
+                            The remake promises to leverage modern technology to deliver a truly immersive experience. From the bustling streets of Midgar to the epic battles against the forces of Shinra, players will rediscover the magic of Final Fantasy VII in stunning detail. With enhanced graphics and revamped gameplay mechanics, Final Fantasy VII Rebirth is poised to captivate both longtime fans and newcomers alike.
                         </p>
                         <br />
                         <p>
-                            The announcement of Pokémon Legends: Z-A has generated immense excitement among fans worldwide. With its innovative gameplay mechanics, captivating storyline, and stunning visuals, it's poised to become one of the most memorable entries in the Pokémon series. Stay tuned for more updates and prepare to embark on an unforgettable adventure in the world of Pokémon!
+                            As anticipation for Final Fantasy VII Rebirth reaches a fever pitch, fans around the world eagerly await its release. With each new trailer and gameplay reveal, excitement continues to build, setting the stage for what promises to be an unforgettable gaming experience. Get ready to embark on a journey through Midgar like never before and immerse yourself in the epic tale of Cloud Strife and the fight against tyranny.
                         </p>
                     </div>
                 </div>
