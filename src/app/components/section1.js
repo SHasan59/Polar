@@ -38,7 +38,7 @@ export default function Section1() {
     {
       id: 3,
       imageUrl: '/images/p3r.png',
-      title:'Persona 3 Reload Becomes Fastest-Selling Game in Atlus History With 1 Million Sales',
+      title:'Persona 3 Reload Becomes Fastest Selling Game in Atlus History With 1 Million Sales',
       linkUrl: '/blog/post3',
       category: 'Atlus',
       date: 'Feb 13,2024',

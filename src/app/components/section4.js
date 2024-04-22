@@ -7,17 +7,17 @@ export default function Section4() {
     const posts = [
         {
             id: 1,
-            imageUrl: '/images/polarblack.png',
-            title: 'The Polar Bear Game is the best games ever.',
-            category: 'Sub Heading',
-            date: 'Feb 13,2024',
+            imageUrl: '/images/fortnite.jpg',
+            title: 'Fortnite Battle Royale.',
+            category: 'Epic Games',
+            date: 'Sept 26, 2017',
         },
         {
             id: 2,
             imageUrl: '/images/polarblack.png',
             title: 'The Polar Bear Game is the best games ever.',
-            category: 'Sub Heading',
-            date: 'Feb 13,2024',
+            category: 'Epic Games',
+            date: 'Sept 26, 2017',
         },
         {
             id: 3,
@@ -52,7 +52,7 @@ return (
         <section className="container mx-auto md:px-20 py-16">
             <div className="grid lg:grid-cols-2">
                 <div className="item">
-                    <h1 className="font-bold text-4xl py-12">Business</h1>
+                    <h1 className="font-bold text-4xl py-12">FPS Shooter</h1>
                     <div className="flex flex-col gap-6">
 
                         {posts.filter(post => post.id <= 3).map(post => (
@@ -61,7 +61,7 @@ return (
                     </div>
                 </div>
                 <div className="item">
-                    <h1 className="font-bold text-4xl py-12">Finance</h1>
+                    <h1 className="font-bold text-4xl py-12">Open World</h1>
                     <div className="flex flex-col gap-6">
 
                         {posts.filter(post => post.id > 3).map(post => (
