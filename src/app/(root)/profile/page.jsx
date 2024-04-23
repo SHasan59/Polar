@@ -61,7 +61,7 @@ const Profile = () => {
       <h1 className="text-heading3-bold">Edit Your Profile</h1>
 
       <form className="flex flex-col gap-9" onSubmit={handleSubmit(updateUser)}>
-        <div className=" flex items-center justify-between px-5 py-3 rounded-2xl cursor-pointer shadow-2xl">
+        <div className=" flex items-center justify-between px-5 py-3 rounded-2xl cursor-pointer shadow-2xl bg-blue-300">
           <input
             {...register('username', {
               required: 'Username is required',
@@ -73,7 +73,7 @@ const Profile = () => {
             })}
             type="text"
             placeholder="Username"
-            className="w-[300px] max-sm:w-full bg-transparent outline-none"
+            className="w-[300px] max-sm:w-full bg-transparent outline-none placeholder-white"
           />
           <PersonOutline sx={{ color: '#737373' }} />
         </div>
