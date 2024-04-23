@@ -156,7 +156,7 @@ const ChatDetails = ({ chatId }) => {
           ))}
           <div ref={bottomRef} />
         </div>
-        <div className=" w-full flex items-center justify-between px-7 py-3 rounded-3xl cursor-pointer bg-gray-400">
+        <div class="w-full flex items-center justify-between px-7 py-3 cursor-pointer bg-gray-400 rounded-bl-2xl rounded-br-2xl">
           <div className="flex items-center gap-4">
             <CldUploadButton
               options={{ maxFiles: 1 }}
@@ -174,9 +174,9 @@ const ChatDetails = ({ chatId }) => {
             </CldUploadButton>
 
             <input
-              type="text-white"
+              type="text"
               placeholder="Write a message..."
-              className="w-[300px] max-sm:w-full bg-transparent outline-none text-black"
+              className="w-[600px] max-sm:w-full  text-black placeholder-gray-500 border border-gray-300 rounded-md px-3 py-2 outline-none"
               value={text}
               onChange={(e) => setText(e.target.value)}
               required
@@ -185,7 +185,7 @@ const ChatDetails = ({ chatId }) => {
 
           <div onClick={sendText}>
             <img
-              src="/send.jpg"
+              src="/send.png"
               alt="send"
               className="w-10 h-10 rounded-full hover:scale-125 ease-in-out duration-300"
             />
