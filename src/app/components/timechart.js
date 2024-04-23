@@ -2,11 +2,10 @@ import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 export default function TimeChart({ logs }) {
-  // Prepare data for the chart
   const chartData = logs.map((log, index) => ({
     date: log.date,
     totalTime: log.totalTime,
-  }));
+  }))
 
   return (
     <div className="bg-white p-4 rounded-lg">
@@ -29,5 +28,5 @@ export default function TimeChart({ logs }) {
         </LineChart>
       </ResponsiveContainer>
     </div>
-  );
+  )
 }
