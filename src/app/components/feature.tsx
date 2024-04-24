@@ -65,12 +65,13 @@ export default function TabsDemo() {
     <>
       <div className="flex items-center justify-center flex-col my-20">
         <h2 className="text-5xl font-bold mb-8">Features</h2>
-        <p className="mt-8 text-lg text-center">
+        <p className="mt-4 text-lg text-center mx-auto px-40">
           Welcome to our feature page, where excitement meets exploration! This
           is the place to discover the details about Polar, There are many
           features to explore. Click on the titles to go through each card and
-          look at each unqiue component.
+          look at each unique component.
         </p>
+
         <br></br>
         <br></br>
         <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full items-start justify-start mb-20">
