@@ -29,7 +29,7 @@ export default function Section2() {
     },    
     {
       id: 3,
-      imageUrl: '/images/uncharted_realms.jpg',
+      imageUrl: '/images/uncharteddog.jpg',
       title: 'Uncharted Realms: Forgotten Treasures Unveiled by Naughty Dog',
       linkUrl: '#',
       authorId: 1,
