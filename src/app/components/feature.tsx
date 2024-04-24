@@ -10,8 +10,11 @@ export default function TabsDemo() {
       value: 'chatbot',
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-900 to-blue-200">
-          <p>Chatbot</p>
-          <p>hello</p>
+          <p className="text-center">Chatbot</p>
+          <p className="text-lg text-center  font-normal">
+            Our chatbot Navi had information on every console and game
+            available. Ask and your questions will be answered!
+          </p>
           <DummyContent />
         </div>
       ),
@@ -85,7 +88,7 @@ const DummyContent = () => {
       alt="dummy image"
       width="1000"
       height="1000"
-      className="object-center object-left-top h-[80%]  md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
+      className="rounded-3xl"
     />
   );
 };
