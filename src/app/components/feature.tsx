@@ -6,11 +6,11 @@ import { Tabs } from './ui/tab';
 export default function TabsDemo() {
   const tabs = [
     {
-      title: 'Chatbot',
-      value: 'chatbot',
+      title: 'Navi',
+      value: 'Navi',
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-900 to-blue-200">
-          <p className="text-center text-3xl">Chatbot</p>
+          <p className="text-center text-3xl">Navi</p>
           <p className="text-lg text-center  font-normal mt-2 mb-2">
             Our chatbot Navi had information on every console and game
             available. Ask and your questions will be answered!
@@ -20,8 +20,8 @@ export default function TabsDemo() {
       ),
     },
     {
-      title: 'TaskList',
-      value: 'tasklist',
+      title: 'Timelog',
+      value: 'timelog',
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
           <p>TaskList</p>
@@ -50,8 +50,48 @@ export default function TabsDemo() {
       ),
     },
     {
-      title: 'Backlog',
-      value: 'backlog',
+      title: 'Gamelog',
+      value: 'gamelog',
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+          <p>Backlog</p>
+          <DummyContent />
+        </div>
+      ),
+    },
+    {
+      title: 'Chat',
+      value: 'chat',
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+          <p>Backlog</p>
+          <DummyContent />
+        </div>
+      ),
+    },
+    {
+      title: 'About',
+      value: 'about',
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+          <p>Backlog</p>
+          <DummyContent />
+        </div>
+      ),
+    },
+    {
+      title: 'Climate',
+      value: 'climate',
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+          <p>Backlog</p>
+          <DummyContent />
+        </div>
+      ),
+    },
+    {
+      title: 'Task',
+      value: 'task',
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
           <p>Backlog</p>
