@@ -2,9 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 const authors = [
-  { id: 1, name: "Gamal Fares", image: "/images/fortpeely.png", link: "#", bio: "Homosapian" },
-  { id: 2, name: "Samith Hassan", image: "/images/*.png", link: "*", bio: "Dev" },
-  
+  { id: 1, name: "Polar", image: "/group2.jpg", link: "#", bio: "News Reporter" },
+  { id: 2, name: "Test", image: "/images/#.png", link: "*", bio: "Placeholder" },
 ]
 
 export default function Author({ authorId }) {
