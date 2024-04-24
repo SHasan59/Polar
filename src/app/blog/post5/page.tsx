@@ -16,7 +16,7 @@ export default function Page() {
                     </h1>
                     <p className="text-blue-100 text-xl text-center">Get ready for chaos as The Joker makes his explosive debut in Suicide Squad: Kill the Justice League, arriving at the end of March in the highly anticipated first season.</p>
 
-                    <div className="py-10">
+                    <div className="flex justify-center py-10">
                         <Image src="/images/ssquad.png" width={900} height={500} alt="Suicide Squad: Kill the Justice League" />
                     </div>
                     

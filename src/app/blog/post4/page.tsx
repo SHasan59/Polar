@@ -16,7 +16,7 @@ export default function Page() {
                     </h1>
                     <p className="text-blue-100 text-xl text-center">Join Kazuma Kiryu and his companions on an epic journey in Like a Dragon: Infinite Wealth, the fastest-selling entry in the series with over a million copies sold worldwide.</p>
 
-                    <div className="py-10">
+                    <div className="flex justify-center py-10">
                         <Image src="/images/dragon.jpg" width={900} height={600} alt="Like a Dragon: Infinite Wealth" />
                     </div>
                     

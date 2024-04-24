@@ -16,7 +16,7 @@ export default function Page() {
                     </h1>
                     <p className="text-blue-100 text-xl text-center">Final Fantasy VII Rebirth, the highly anticipated remake of the iconic title, is set to redefine the gaming landscape with its groundbreaking visuals and immersive storytelling.</p>
 
-                    <div className="py-10">
+                    <div className="flex justify-center py-10">
                         <Image src="/images/ff7.png" width={900} height={600} alt="Placeholder Image" />
                     </div>
                     

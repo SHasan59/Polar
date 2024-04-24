@@ -16,7 +16,7 @@ export default function Page() {
                     </h1>
                     <p className="text-blue-100 text-xl text-center">The Pokémon Company announces a groundbreaking new addition to the Pokémon series that promises to redefine the way players experience the world of Pokémon.</p>
 
-                    <div className="py-10">
+                    <div className="flex justify-center py-10">
                         <Image src="/images/pokemon z.png" width={900} height={600} alt="Placeholder Image" />
                     </div>
                     

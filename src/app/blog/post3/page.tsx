@@ -16,7 +16,7 @@ export default function Page() {
                     </h1>
                     <p className="text-blue-100 text-xl text-center">Experience the rebirth of a classic RPG in Persona 3 Reload, hailed as the fastest-selling game in Atlus history, with over 1 million copies sold worldwide.</p>
 
-                    <div className="py-10">
+                    <div className="flex justify-center py-10">
                         <Image src="/images/p3r.png" width={900} height={600} alt="Persona 3 Reload" />
                     </div>
                     
