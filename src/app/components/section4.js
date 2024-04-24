@@ -7,52 +7,53 @@ export default function Section4() {
     const posts = [
         {
             id: 1,
-            imageUrl: '/images/polarblack.png',
-            title: 'The Polar Bear Game is the best games ever.',
-            category: 'Sub Heading',
-            date: 'Feb 13,2024',
+            imageUrl: '/images/fortnite.jpg',
+            title: 'Fortnite: Battle Royale',
+            category: 'Battle Royale',
+            date: 'July 25, 2017',
         },
         {
             id: 2,
-            imageUrl: '/images/polarblack.png',
-            title: 'The Polar Bear Game is the best games ever.',
-            category: 'Sub Heading',
-            date: 'Feb 13,2024',
+            imageUrl: '/images/apex.jpg',
+            title: 'Apex Legends: The Next Legend',
+            category: 'Battle Royale',
+            date: 'Feb 4, 2019',
         },
         {
             id: 3,
-            imageUrl: '/images/polarblack.png',
-            title: 'The Polar Bear Game is the best games ever.',
-            category: 'Sub Heading',
-            date: 'Feb 13,2024',
+            imageUrl: '/images/cod.jpg',
+            title: 'Call of Duty: Modern Warfare',
+            category: 'First-Person Shooter',
+            date: 'Oct 25, 2019',
         },
         {
             id: 4,
-            imageUrl: '/images/polarblack.png',
-            title: 'The Polar Bear Game is the best games ever.',
-            category: 'Sub Heading',
-            date: 'Feb 13,2024',
+            imageUrl: '/images/minecraft.jpg',
+            title: 'Minecraft: Java Edition',
+            category: 'Sandbox',
+            date: 'May 17, 2009',
         },
         {
             id: 5,
-            imageUrl: '/images/polarblack.png',
-            title: 'The Polar Bear Game is the best games ever.',
-            category: 'Sub Heading',
-            date: 'Feb 13,2024',
+            imageUrl: '/images/elden.jpg',
+            title: 'Elden Ring: Shadow of the Frdtree',
+            category: 'Action RPG',
+            date: 'Feb 25, 2022',
         },
         {
             id: 6,
-            imageUrl: '/images/polarblack.png',
-            title: 'The Polar Bear Game is the best games ever.',
-            category: 'Sub Heading',
-            date: 'Feb 13,2024',
+            imageUrl: '/images/gta.jpg',
+            title: 'Grand Theft Auto V: The Trilogy',
+            category: 'Action-Adventure',
+            date: 'Sept 17, 2013',
         },
     ]
+
 return (
         <section className="container mx-auto md:px-20 py-16">
             <div className="grid lg:grid-cols-2">
                 <div className="item">
-                    <h1 className="font-bold text-4xl py-12">Business</h1>
+                    <h1 className="font-bold text-4xl py-12">FPS Shooter</h1>
                     <div className="flex flex-col gap-6">
 
                         {posts.filter(post => post.id <= 3).map(post => (
@@ -61,7 +62,7 @@ return (
                     </div>
                 </div>
                 <div className="item">
-                    <h1 className="font-bold text-4xl py-12">Finance</h1>
+                    <h1 className="font-bold text-4xl py-12">Open World</h1>
                     <div className="flex flex-col gap-6">
 
                         {posts.filter(post => post.id > 3).map(post => (
