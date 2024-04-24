@@ -10,8 +10,8 @@ export default function TabsDemo() {
       value: 'chatbot',
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-900 to-blue-200">
-          <p className="text-center">Chatbot</p>
-          <p className="text-lg text-center  font-normal">
+          <p className="text-center text-3xl">Chatbot</p>
+          <p className="text-lg text-center  font-normal mt-2 mb-2">
             Our chatbot Navi had information on every console and game
             available. Ask and your questions will be answered!
           </p>
@@ -88,7 +88,7 @@ const DummyContent = () => {
       src="/home.png"
       alt="dummy image"
       width="1000"
-      height="1000"
+      height="900"
       className="rounded-3xl"
     />
   );
