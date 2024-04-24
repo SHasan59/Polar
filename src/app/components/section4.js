@@ -9,6 +9,7 @@ export default function Section4() {
             id: 1,
             imageUrl: '/images/fortnite.jpg',
             title: 'Fortnite: Battle Royale',
+            authorId: 1,
             category: 'Battle Royale',
             date: 'July 25, 2017',
         },
@@ -16,6 +17,7 @@ export default function Section4() {
             id: 2,
             imageUrl: '/images/apex.jpg',
             title: 'Apex Legends: The Next Legend',
+            authorId: 1,
             category: 'Battle Royale',
             date: 'Feb 4, 2019',
         },
@@ -23,6 +25,7 @@ export default function Section4() {
             id: 3,
             imageUrl: '/images/cod.jpg',
             title: 'Call of Duty: Modern Warfare',
+            authorId: 1,
             category: 'First-Person Shooter',
             date: 'Oct 25, 2019',
         },
@@ -30,6 +33,7 @@ export default function Section4() {
             id: 4,
             imageUrl: '/images/minecraft.jpg',
             title: 'Minecraft: Java Edition',
+            authorId: 1,
             category: 'Sandbox',
             date: 'May 17, 2009',
         },
@@ -37,6 +41,7 @@ export default function Section4() {
             id: 5,
             imageUrl: '/images/elden.jpg',
             title: 'Elden Ring: Shadow of the Frdtree',
+            authorId: 1,
             category: 'Action RPG',
             date: 'Feb 25, 2022',
         },
@@ -44,6 +49,7 @@ export default function Section4() {
             id: 6,
             imageUrl: '/images/gta.jpg',
             title: 'Grand Theft Auto V: The Trilogy',
+            authorId: 1,
             category: 'Action-Adventure',
             date: 'Sept 17, 2013',
         },
@@ -91,7 +97,7 @@ function Post({ post }) {
                 <div className="title">
                     <Link href={"#"} className="text-xl font-bold text-white-800 hover:text-gray-600">{post.title}</Link>
                 </div>
-                <Author></Author>
+                <Author authorId={post.authorId} />
             </div>
         </div>
     )

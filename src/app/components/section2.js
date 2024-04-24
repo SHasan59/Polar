@@ -10,6 +10,7 @@ export default function Section2() {
       imageUrl: '/images/zelda_awakening.jpg',
       title: 'The Legend of Zelda: Hyrule\'s Awakening Announced for Nintendo Switch',
       linkUrl: '#',
+      authorId: 1,
       category: 'Nintendo',
       date: 'Mar 15, 2024',
       content:
@@ -20,6 +21,7 @@ export default function Section2() {
       imageUrl: '/images/masseffect_rebirth.jpg',
       title: 'Mass Effect: Andromeda - Rebirth Set to Revolutionize the Franchise',
       linkUrl: '#',
+      authorId: 1,
       category: 'BioWare',
       date: 'Apr 5, 2024',
       content:
@@ -30,6 +32,7 @@ export default function Section2() {
       imageUrl: '/images/uncharted_realms.jpg',
       title: 'Uncharted Realms: Forgotten Treasures Unveiled by Naughty Dog',
       linkUrl: '#',
+      authorId: 1,
       category: 'Naughty Dog',
       date: 'Mar 20, 2024',
       content:
@@ -40,6 +43,7 @@ export default function Section2() {
       imageUrl: '/images/cyberpunk.jpg',
       title: 'Cyberpunk 2077: Rise of Night City sets new records with immersive open-world gameplay',
       linkUrl: '#',
+      authorId: 1,
       category: 'CD Projekt Red',
       date: 'March 15, 2024',
       content: 'Step into the neon-lit streets of Night City once again as Cyberpunk 2077: Rise of Night City takes players on an unforgettable journey through a dystopian future. With its immersive open-world gameplay, jaw-dropping visuals, and compelling storyline, the game sets new records for the RPG genre. Explore the vibrant districts of Night City, forge alliances with powerful factions, and shape the fate of the city with your choices. Cyberpunk 2077: Rise of Night City is a testament to CD Projekt Red\'s commitment to delivering groundbreaking gaming experiences.'
@@ -49,6 +53,7 @@ export default function Section2() {
       imageUrl: '/images/reddead_legends.jpg',
       title: 'Red Dead Redemption: Legends of the West Unveiled by Rockstar Games',
       linkUrl: '#',
+      authorId: 1,
       category: 'Rockstar Games',
       date: 'Mar 25, 2024',
       content:
@@ -59,6 +64,7 @@ export default function Section2() {
       imageUrl: '/images/witcher_conqueror.jpg',
       title: 'The Witcher: Blood of the Conqueror Revealed by CD Projekt Red',
       linkUrl: '#',
+      authorId: 1,
       category: 'CD Projekt Red',
       date: 'Mar 30, 2024',
       content:
@@ -110,7 +116,7 @@ function Post({ post }) {
           </Link>
         </div>
         <p className="text-white-500 py-3">{post.content}</p>
-        <Author></Author>
+        <Author authorId={post.authorId} />
       </div>
     </div>
   )
