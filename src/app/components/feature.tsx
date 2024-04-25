@@ -93,8 +93,12 @@ export default function TabsDemo() {
       title: 'About',
       value: 'about',
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Backlog</p>
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-900 to-blue-200">
+          <p className="text-center text-3xl">About Us</p>
+          <p className="text-lg text-center  font-normal mt-2 mb-2">
+            Learn about the developers and their inspiration for making the
+            website here
+          </p>
           <DummyContent />
         </div>
       ),
@@ -103,8 +107,11 @@ export default function TabsDemo() {
       title: 'Climate',
       value: 'climate',
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Backlog</p>
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-900 to-blue-200">
+          <p className="text-center text-3xl">Climate</p>
+          <p className="text-lg text-center  font-normal mt-2 mb-2">
+            Learn about climate change and the population of polar bears here
+          </p>
           <DummyContent />
         </div>
       ),
@@ -113,8 +120,11 @@ export default function TabsDemo() {
       title: 'Task',
       value: 'task',
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Backlog</p>
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-900 to-blue-200">
+          <p className="text-center text-3xl">Tasklist</p>
+          <p className="text-lg text-center  font-normal mt-2 mb-2">
+            Add all your tasks and organize them to efficently tackle missions
+          </p>
           <DummyContent />
         </div>
       ),
