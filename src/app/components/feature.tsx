@@ -23,8 +23,12 @@ export default function TabsDemo() {
       title: 'Timelog',
       value: 'timelog',
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>TaskList</p>
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-900 to-blue-200">
+          <p className="text-center text-3xl">Timelog</p>
+          <p className="text-lg text-center  font-normal mt-2 mb-2">
+            The timelog allows you to keep track of the total hours you spend
+            playing all your games
+          </p>
           <DummyContent />
         </div>
       ),
@@ -33,8 +37,12 @@ export default function TabsDemo() {
       title: 'Search',
       value: 'search',
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Search</p>
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-900 to-blue-200">
+          <p className="text-center text-3xl">Search</p>
+          <p className="text-lg text-center  font-normal mt-2 mb-2">
+            You can search every game on any platform here, find your next game
+            here
+          </p>
           <DummyContent />
         </div>
       ),
@@ -43,8 +51,12 @@ export default function TabsDemo() {
       title: 'Blog',
       value: 'blog',
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Blog</p>
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-900 to-blue-200">
+          <p className="text-center text-3xl">Blog</p>
+          <p className="text-lg text-center  font-normal mt-2 mb-2">
+            The blog page allows you to learn about the current events of
+            videogames
+          </p>
           <DummyContent />
         </div>
       ),
@@ -53,8 +65,12 @@ export default function TabsDemo() {
       title: 'Gamelog',
       value: 'gamelog',
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Backlog</p>
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-900 to-blue-200">
+          <p className="text-center text-3xl">Gamelog</p>
+          <p className="text-lg text-center  font-normal mt-2 mb-2">
+            The gamelog allows you to keep track of all your games, regardless
+            of the platform
+          </p>
           <DummyContent />
         </div>
       ),
@@ -63,10 +79,13 @@ export default function TabsDemo() {
       title: 'Chat',
       value: 'chat',
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Backlog</p>
-          <DummyContent />
-        </div>
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-900 to-blue-200">
+        <p className="text-center text-3xl">Chat>
+        <p className="text-lg text-center  font-normal mt-2 mb-2">
+          Chatrooms allow you to message others on polar, whether its a solo or group chat. 
+        </p>
+        <DummyContent />
+      </div>
       ),
     },
     {
