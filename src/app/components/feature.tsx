@@ -80,12 +80,13 @@ export default function TabsDemo() {
       value: 'chat',
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-900 to-blue-200">
-        <p className="text-center text-3xl">Chat>
-        <p className="text-lg text-center  font-normal mt-2 mb-2">
-          Chatrooms allow you to message others on polar, whether its a solo or group chat. 
-        </p>
-        <DummyContent />
-      </div>
+          <p className="text-center text-3xl">Chat</p>
+          <p className="text-lg text-center  font-normal mt-2 mb-2">
+            Chatrooms allow you to message others on polar, whether its a solo
+            or group chat.
+          </p>
+          <DummyContent />
+        </div>
       ),
     },
     {
