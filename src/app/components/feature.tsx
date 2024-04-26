@@ -85,7 +85,7 @@ export default function TabsDemo() {
             Chatrooms allow you to message others on polar, whether its a solo
             or group chat.
           </p>
-          <DummyContent />
+          <Chat />
         </div>
       ),
     },
@@ -226,6 +226,20 @@ const Gamelog = () => {
       <Image
         src="/gamelog.png"
         alt="gamelog"
+        width={750}
+        height={800}
+        className="rounded-3xl"
+      />
+    </div>
+  );
+};
+
+const Chat = () => {
+  return (
+    <div className="flex justify-center">
+      <Image
+        src="/chat.png"
+        alt="chat"
         width={750}
         height={800}
         className="rounded-3xl"
