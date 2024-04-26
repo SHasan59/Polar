@@ -15,7 +15,7 @@ export default function TabsDemo() {
             Our chatbot Navi had information on every console and game
             available. Ask and your questions will be answered!
           </p>
-          <DummyContent />
+          <Navi />
         </div>
       ),
     },
@@ -170,6 +170,34 @@ const Search = () => {
       <Image
         src="/search.png"
         alt="search"
+        width={800}
+        height={800}
+        className="rounded-3xl"
+      />
+    </div>
+  );
+};
+
+const Navi = () => {
+  return (
+    <div className="flex justify-center">
+      <Image
+        src="/navi.png"
+        alt="Navi"
+        width={800}
+        height={800}
+        className="rounded-3xl"
+      />
+    </div>
+  );
+};
+
+const Task = () => {
+  return (
+    <div className="flex justify-center">
+      <Image
+        src="/task.png"
+        alt="task"
         width={800}
         height={800}
         className="rounded-3xl"
