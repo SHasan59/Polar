@@ -1,7 +1,7 @@
 import React from 'react';
 import {
-  LineChart,
-  Line,
+  BarChart,
+  Bar,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -13,13 +13,13 @@ import {
 export default function TimeChart({ logs }) {
   const chartData = logs.map((log, index) => ({
     date: log.date,
-    totalTime: log.totalTime,
-  }));
+    totalTime: parseInt(log.totalTime.split('h')[0]) * 60 + parseInt(log.totalTime.split(' ')[1].split('m')[0]),
+  }))
 
   return (
-    <div className="bg-white p-4 rounded-lg">
+    <div className="p-4 rounded-lg bg-purple-50">
       <ResponsiveContainer width="100%" height={400}>
-        <LineChart
+        <BarChart
           data={chartData}
           margin={{
             top: 5,
@@ -31,16 +31,27 @@ export default function TimeChart({ logs }) {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="date" />
           <YAxis />
-          <Tooltip />
+          <Tooltip content={<CustomTooltip />} />
           <Legend />
-          <Line
-            type="monotone"
+          <Bar
             dataKey="totalTime"
-            stroke="#8884d8"
-            activeDot={{ r: 8 }}
+            fill="#8884d8"
           />
-        </LineChart>
+        </BarChart>
       </ResponsiveContainer>
     </div>
-  );
+  )
+}
+
+function CustomTooltip({ active, payload, label }) {
+  if (active && payload && payload.length) {
+    return (
+      <div className="custom-tooltip">
+        <p className="label">{`Date: ${label}`}</p>
+        <p className="label">{`Total Time: ${payload[0].value} minutes`}</p>
+      </div>
+    )
+  }
+
+  return null;
 }
