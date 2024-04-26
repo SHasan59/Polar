@@ -43,7 +43,7 @@ export default function TabsDemo() {
             You can search every game on any platform here, find your next game
             here
           </p>
-          <DummyContent />
+          <Search />
         </div>
       ),
     },
@@ -161,5 +161,19 @@ const DummyContent = () => {
       height="900"
       className="rounded-3xl"
     />
+  );
+};
+
+const Search = () => {
+  return (
+    <div className="flex justify-center">
+      <Image
+        src="/search.png"
+        alt="search"
+        width={800}
+        height={800}
+        className="rounded-3xl"
+      />
+    </div>
   );
 };
