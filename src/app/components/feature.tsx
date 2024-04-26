@@ -99,7 +99,7 @@ export default function TabsDemo() {
             Learn about the developers and their inspiration for making the
             website here
           </p>
-          <DummyContent />
+          <About />
         </div>
       ),
     },
@@ -112,7 +112,7 @@ export default function TabsDemo() {
           <p className="text-lg text-center  font-normal mt-2 mb-2">
             Learn about climate change and the population of polar bears here
           </p>
-          <DummyContent />
+          <Climate />
         </div>
       ),
     },
@@ -240,7 +240,35 @@ const Chat = () => {
       <Image
         src="/chat.png"
         alt="chat"
-        width={750}
+        width={800}
+        height={800}
+        className="rounded-3xl"
+      />
+    </div>
+  );
+};
+
+const About = () => {
+  return (
+    <div className="flex justify-center">
+      <Image
+        src="/about.png"
+        alt="about"
+        width={800}
+        height={800}
+        className="rounded-3xl"
+      />
+    </div>
+  );
+};
+
+const Climate = () => {
+  return (
+    <div className="flex justify-center">
+      <Image
+        src="/climate.png"
+        alt="climate"
+        width={800}
         height={800}
         className="rounded-3xl"
       />
