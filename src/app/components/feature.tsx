@@ -6,44 +6,16 @@ import { Tabs } from './ui/tab';
 export default function TabsDemo() {
   const tabs = [
     {
-      title: 'Navi',
-      value: 'Navi',
+      title: 'About',
+      value: 'about',
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-900 to-blue-200">
-          <p className="text-center text-3xl">Navi</p>
+          <p className="text-center text-3xl">About Us</p>
           <p className="text-lg text-center  font-normal mt-2 mb-2">
-            Our chatbot Navi had information on every console and game
-            available. Ask and your questions will be answered!
+            Learn about the developers and their inspiration for making the
+            website here
           </p>
-          <Navi />
-        </div>
-      ),
-    },
-    {
-      title: 'Timelog',
-      value: 'timelog',
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-900 to-blue-200">
-          <p className="text-center text-3xl">Timelog</p>
-          <p className="text-lg text-center  font-normal mt-2 mb-2">
-            The timelog allows you to keep track of the total hours you spend
-            playing all your games
-          </p>
-          <DummyContent />
-        </div>
-      ),
-    },
-    {
-      title: 'Search',
-      value: 'search',
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-900 to-blue-200">
-          <p className="text-center text-3xl">Search</p>
-          <p className="text-lg text-center  font-normal mt-2 mb-2">
-            You can search every game on any platform here, find your next game
-            here
-          </p>
-          <Search />
+          <About />
         </div>
       ),
     },
@@ -58,6 +30,35 @@ export default function TabsDemo() {
             videogames
           </p>
           <Blog />
+        </div>
+      ),
+    },
+
+    {
+      title: 'Chat',
+      value: 'chat',
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-900 to-blue-200">
+          <p className="text-center text-3xl">Chat</p>
+          <p className="text-lg text-center  font-normal mt-2 mb-2">
+            Chatrooms allow you to message others on polar, whether its a solo
+            or group chat.
+          </p>
+          <Chat />
+        </div>
+      ),
+    },
+
+    {
+      title: 'Climate',
+      value: 'climate',
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-900 to-blue-200">
+          <p className="text-center text-3xl">Climate</p>
+          <p className="text-lg text-center  font-normal mt-2 mb-2">
+            Learn about climate change and the population of polar bears here
+          </p>
+          <Climate />
         </div>
       ),
     },
@@ -76,43 +77,30 @@ export default function TabsDemo() {
       ),
     },
     {
-      title: 'Chat',
-      value: 'chat',
+      title: 'Navi',
+      value: 'Navi',
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-900 to-blue-200">
-          <p className="text-center text-3xl">Chat</p>
+          <p className="text-center text-3xl">Navi</p>
           <p className="text-lg text-center  font-normal mt-2 mb-2">
-            Chatrooms allow you to message others on polar, whether its a solo
-            or group chat.
+            Our chatbot Navi had information on every console and game
+            available. Ask and your questions will be answered!
           </p>
-          <Chat />
+          <Navi />
         </div>
       ),
     },
     {
-      title: 'About',
-      value: 'about',
+      title: 'Search',
+      value: 'search',
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-900 to-blue-200">
-          <p className="text-center text-3xl">About Us</p>
+          <p className="text-center text-3xl">Search</p>
           <p className="text-lg text-center  font-normal mt-2 mb-2">
-            Learn about the developers and their inspiration for making the
-            website here
+            You can search every game on any platform here, find your next game
+            here
           </p>
-          <About />
-        </div>
-      ),
-    },
-    {
-      title: 'Climate',
-      value: 'climate',
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-900 to-blue-200">
-          <p className="text-center text-3xl">Climate</p>
-          <p className="text-lg text-center  font-normal mt-2 mb-2">
-            Learn about climate change and the population of polar bears here
-          </p>
-          <Climate />
+          <Search />
         </div>
       ),
     },
@@ -126,6 +114,20 @@ export default function TabsDemo() {
             Add all your tasks and organize them to efficently tackle missions
           </p>
           <Task />
+        </div>
+      ),
+    },
+    {
+      title: 'Timelog',
+      value: 'timelog',
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-900 to-blue-200">
+          <p className="text-center text-3xl">Timelog</p>
+          <p className="text-lg text-center  font-normal mt-2 mb-2">
+            The timelog allows you to keep track of the total hours you spend
+            playing all your games
+          </p>
+          <DummyContent />
         </div>
       ),
     },
