@@ -71,7 +71,7 @@ export default function TabsDemo() {
             The gamelog allows you to keep track of all your games, regardless
             of the platform
           </p>
-          <DummyContent />
+          <Gamelog />
         </div>
       ),
     },
@@ -213,6 +213,20 @@ const Blog = () => {
         src="/blog.png"
         alt="blog"
         width={800}
+        height={800}
+        className="rounded-3xl"
+      />
+    </div>
+  );
+};
+
+const Gamelog = () => {
+  return (
+    <div className="flex justify-center">
+      <Image
+        src="/gamelog.png"
+        alt="gamelog"
+        width={750}
         height={800}
         className="rounded-3xl"
       />
