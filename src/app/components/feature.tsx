@@ -125,7 +125,7 @@ export default function TabsDemo() {
           <p className="text-lg text-center  font-normal mt-2 mb-2">
             Add all your tasks and organize them to efficently tackle missions
           </p>
-          <DummyContent />
+          <Task />
         </div>
       ),
     },
