@@ -127,7 +127,7 @@ export default function TabsDemo() {
             The timelog allows you to keep track of the total hours you spend
             playing all your games
           </p>
-          <DummyContent />
+          <Timelog />
         </div>
       ),
     },
@@ -154,15 +154,17 @@ export default function TabsDemo() {
   );
 }
 
-const DummyContent = () => {
+const Timelog = () => {
   return (
-    <Image
-      src="/home.png"
-      alt="dummy image"
-      width="1000"
-      height="900"
-      className="rounded-3xl"
-    />
+    <div className="flex justify-center">
+      <Image
+        src="/timelog.png"
+        alt="timelog image"
+        width={800}
+        height={800}
+        className="rounded-3xl"
+      />
+    </div>
   );
 };
 
