@@ -57,7 +57,7 @@ export default function TabsDemo() {
             The blog page allows you to learn about the current events of
             videogames
           </p>
-          <DummyContent />
+          <Blog />
         </div>
       ),
     },
@@ -198,6 +198,20 @@ const Task = () => {
       <Image
         src="/task.png"
         alt="task"
+        width={800}
+        height={800}
+        className="rounded-3xl"
+      />
+    </div>
+  );
+};
+
+const Blog = () => {
+  return (
+    <div className="flex justify-center">
+      <Image
+        src="/blog.png"
+        alt="blog"
         width={800}
         height={800}
         className="rounded-3xl"
