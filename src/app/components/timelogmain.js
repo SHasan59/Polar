@@ -67,10 +67,11 @@ export default function TimelogMain() {
     }
     acc[date].push(totalTime);
     return acc;
-  }, {});
+  }, {})
 
   return (
     <div className="container mx-auto py-8 font-sans">
+
       {/* Timelog form */}
       <div className="bg-green-50 shadow-md rounded px-8 pt-6 pb-8 mb-8">
         <h2 className="text-xl font-bold mb-4 text-green-800">Log Entry</h2>
@@ -108,7 +109,6 @@ export default function TimelogMain() {
             step="300"
             className="border-gray-300 border rounded-lg p-2 text-black"
           />
-
           <button
             onClick={handleLogEntry}
             className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
@@ -119,11 +119,11 @@ export default function TimelogMain() {
       </div>
 
       {/* Display log entries */}
-      <div className="bg-yellow-50 shadow-md rounded-lg p-4 mb-8">
-        <h2 className="text-xl font-bold mb-4 text-yellow-800">Logged Time by Date</h2>
+      <div className="bg-blue-50 shadow-md rounded-lg p-4 mb-8">
+        <h2 className="text-xl font-bold mb-4 text-blue-800">Logged Time by Date</h2>
         <div className="grid grid-cols-3 gap-4">
           {logs.map((log, index) => (
-            <div key={index} className="flex flex-col text-yellow-800 my-4 border-t border-gray-400">
+            <div key={index} className="flex flex-col text-blue-800 my-4">
               <LogEntry log={log} />
               {(index + 1) % 3 === 0 && index !== logs.length - 1 && <div />}
               {index % 3 === 2 && index !== logs.length - 1 && <div />}
@@ -138,5 +138,5 @@ export default function TimelogMain() {
         <TimeChart logs={logs} />
       </div>
     </div>
-  );
+  )
 }
