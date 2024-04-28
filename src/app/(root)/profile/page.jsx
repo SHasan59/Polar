@@ -99,7 +99,7 @@ const Profile = () => {
             <CldUploadButton
               options={{ maxFiles: 1 }}
               onUpload={uploadPhoto}
-              uploadPreset="upecg01j"
+              uploadPreset="p8icfni4"
             >
               <p className="text-body-bold">Upload new photo</p>
             </CldUploadButton>
