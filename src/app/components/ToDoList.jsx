@@ -8,14 +8,14 @@ export default function TodoList() {
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
-  };
+  }
 
   const handleAddTodo = () => {
     if (inputValue.trim() !== '') {
       setTodos([...todos, { text: inputValue.trim(), important: false }]);
       setInputValue('');
     }
-  };
+  }
 
   const toggleImportant = (index) => {
     const updatedTodos = [...todos];
@@ -30,7 +30,7 @@ export default function TodoList() {
       updatedTodos.push(toggledTodo);
     }
     setTodos(updatedTodos);
-  };
+  }
 
   const handleExportTodos = () => {
     const content = todos
@@ -43,7 +43,7 @@ export default function TodoList() {
     document.body.appendChild(element);
     element.click();
     document.body.removeChild(element);
-  };
+  }
 
   const handleImportTodos = (event) => {
     const file = event.target.files?.[0];
@@ -55,25 +55,25 @@ export default function TodoList() {
           const newTodos = content.split('\n').map((todo) => ({
             text: todo.replace('(Important)', '').trim(),
             important: todo.includes('(Important)'),
-          }));
+          }))
           setTodos(newTodos);
         }
-      };
+      }
       reader.readAsText(file);
     }
-  };
+  }
 
   const handleTaskCompletion = (index) => {
     const taskCompleted = todos[index].text;
 
     const confirmation = window.confirm(
       `Congratulations! You have completed the task: ${taskCompleted}`
-    );
+    )
     if (confirmation) {
       const updatedTodos = todos.filter((_, i) => i !== index);
       setTodos(updatedTodos);
     }
-  };
+  }
 
   return (
     <main
