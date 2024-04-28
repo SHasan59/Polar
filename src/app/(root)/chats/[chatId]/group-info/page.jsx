@@ -75,57 +75,64 @@ const GroupInfo = () => {
   return loading ? (
     <Loader />
   ) : (
-    <div className=" mt-16 flex flex-col gap-11 items-center justify-center">
-      <h1 className="text-heading3-bold">Edit Group Info</h1>
+    <>
+      <Navigation />
+      <div className=" mt-16 flex flex-col gap-11 items-center justify-center">
+        <h1 className="text-heading3-bold">Edit Group Info</h1>
 
-      <form
-        className="flex flex-col gap-9"
-        onSubmit={handleSubmit(updateGroupChat)}
-      >
-        <div className="flex items-center justify-between px-5 py-3 rounded-2xl cursor-pointer shadow-2xl text-black bg-sky-200">
-          <input
-            {...register('name', {
-              required: 'Group chat name is required',
-            })}
-            type="text"
-            placeholder="Group chat name"
-            className="input-field text-black bg-transparent"
-          />
-          <GroupOutlined sx={{ color: '#737373' }} />
-        </div>
-        {error?.name && <p className="text-red-500">{error.name.message}</p>}
+        <form
+          className="flex flex-col gap-9"
+          onSubmit={handleSubmit(updateGroupChat)}
+        >
+          <div className="flex items-center justify-between px-5 py-3 rounded-2xl cursor-pointer shadow-2xl text-black bg-sky-200">
+            <input
+              {...register('name', {
+                required: 'Group chat name is required',
+              })}
+              type="text"
+              placeholder="Group chat name"
+              className="input-field text-black bg-transparent"
+            />
+            <GroupOutlined sx={{ color: '#737373' }} />
+          </div>
+          {error?.name && <p className="text-red-500">{error.name.message}</p>}
 
-        <div className="flex items-center justify-between">
-          <img
-            src={watch('groupPhoto') || '/group2.png'}
-            alt="profile"
-            className="w-40 h-40 rounded-full"
-          />
-          <CldUploadButton
-            options={{ maxFiles: 1 }}
-            onUpload={uploadPhoto}
-            uploadPreset="upecg01j"
-          >
-            <p className="text-body-bold">Upload new photo</p>
-          </CldUploadButton>
-        </div>
-
-        <div className="flex flex-wrap gap-3 ">
-          {chat?.members?.map((member, index) => (
-            <p
-              className="selected-contact bg-purple-500 rounded-lg px-4"
-              key={index}
+          <div className="flex items-center justify-between">
+            <img
+              src={watch('groupPhoto') || '/group2.png'}
+              alt="profile"
+              className="w-40 h-40 rounded-full"
+            />
+            <CldUploadButton
+              options={{ maxFiles: 1 }}
+              onUpload={uploadPhoto}
+              uploadPreset="upecg01j"
             >
-              {member.username}
-            </p>
-          ))}
-        </div>
+              <p className="text-body-bold">Upload new photo</p>
+            </CldUploadButton>
+          </div>
 
-        <button className="btn bg-blue-300 px-4 rounded-xl" type="submit">
-          Save Changes
-        </button>
-      </form>
-    </div>
+          <div className="flex flex-wrap gap-3 ">
+            {chat?.members?.map((member, index) => (
+              <p
+                className="selected-contact bg-purple-500 rounded-lg px-4"
+                key={index}
+              >
+                {member.username}
+              </p>
+            ))}
+          </div>
+
+          <button
+            className="btn bg-blue-300 px-4 rounded-xl mb-20"
+            type="submit"
+          >
+            Save Changes
+          </button>
+        </form>
+      </div>
+      <Footer />
+    </>
   );
 };
 
