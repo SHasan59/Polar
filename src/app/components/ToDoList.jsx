@@ -8,14 +8,14 @@ export default function TodoList() {
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
-  };
+  }
 
   const handleAddTodo = () => {
     if (inputValue.trim() !== '') {
       setTodos([...todos, { text: inputValue.trim(), important: false }]);
       setInputValue('');
     }
-  };
+  }
 
   const toggleImportant = (index) => {
     const updatedTodos = [...todos];
@@ -30,7 +30,7 @@ export default function TodoList() {
       updatedTodos.push(toggledTodo);
     }
     setTodos(updatedTodos);
-  };
+  }
 
   const handleExportTodos = () => {
     const content = todos
@@ -43,7 +43,7 @@ export default function TodoList() {
     document.body.appendChild(element);
     element.click();
     document.body.removeChild(element);
-  };
+  }
 
   const handleImportTodos = (event) => {
     const file = event.target.files?.[0];
@@ -55,29 +55,29 @@ export default function TodoList() {
           const newTodos = content.split('\n').map((todo) => ({
             text: todo.replace('(Important)', '').trim(),
             important: todo.includes('(Important)'),
-          }));
+          }))
           setTodos(newTodos);
         }
-      };
+      }
       reader.readAsText(file);
     }
-  };
+  }
 
   const handleTaskCompletion = (index) => {
     const taskCompleted = todos[index].text;
 
     const confirmation = window.confirm(
       `Congratulations! You have completed the task: ${taskCompleted}`
-    );
+    )
     if (confirmation) {
       const updatedTodos = todos.filter((_, i) => i !== index);
       setTodos(updatedTodos);
     }
-  };
+  }
 
   return (
     <main
-      className="bg-gray-900"
+      className="bg-gray-900 font-pixelify-sans"
       style={{
         backgroundImage: "url('/bear.jpg')",
         backgroundSize: 'side',
@@ -87,13 +87,12 @@ export default function TodoList() {
     >
       <div
         className="flex flex-col items-center justify-center min-h-screen py-2"
-        style={{ fontFamily: ' font-pixelify-sans' }}
       >
         <div className="bg-blue-300 shadow-md rounded px-8 pt-6 pb-8 mb-4">
-          <h1 className="text-2xl mb-4 font-pixelify-sans">Task</h1>
+          <h1 className="text-2xl mb-4">Task</h1>
           <div className="mb-4">
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline font-pixelify-sans"
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text"
               value={inputValue}
               onChange={handleInputChange}
@@ -102,13 +101,13 @@ export default function TodoList() {
           </div>
           <div className="mb-4">
             <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mr-2 font-pixelify-sans"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mr-2"
               onClick={handleAddTodo}
             >
               Add
             </button>
             <button
-              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mr-2 font-pixelify-sans"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mr-2"
               onClick={handleExportTodos}
             >
               Export
@@ -117,14 +116,14 @@ export default function TodoList() {
               type="file"
               accept=".txt"
               onChange={handleImportTodos}
-              className="bg-darkblue-700 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mr-2 font-pixelify-sans"
+              className="bg-darkblue-700 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mr-2"
             />
           </div>
           <ul>
             {todos.map((todo, index) => (
               <li
                 key={index}
-                className="flex justify-between items-center mb-2 font-pixelify-sans"
+                className="flex justify-between items-center mb-2"
               >
                 <span
                   className={
@@ -137,7 +136,7 @@ export default function TodoList() {
                 </span>
                 <div>
                   <button
-                    className={`bg-red-400 hover:bg-red-600 text-white font-bold py-1 px-2 rounded focus:outline-none focus:shadow-outline mr-2 font-pixelify-sans ${
+                    className={`bg-red-400 hover:bg-red-600 text-white font-bold py-1 px-2 rounded focus:outline-none focus:shadow-outline mr-2 ${
                       todo.important && 'bg-red-600'
                     }`}
                     onClick={() => toggleImportant(index)}
@@ -145,7 +144,7 @@ export default function TodoList() {
                     {todo.important ? 'Unmark' : 'Mark'} Important
                   </button>
                   <button
-                    className="bg-green-400 hover:bg-green-600 text-white font-bold py-1 px-2 rounded focus:outline-none focus:shadow-outline font-pixelify-sans"
+                    className="bg-green-400 hover:bg-green-600 text-white font-bold py-1 px-2 rounded focus:outline-none focus:shadow-outline"
                     onClick={() => handleTaskCompletion(index)}
                   >
                     Complete
@@ -157,5 +156,5 @@ export default function TodoList() {
         </div>
       </div>
     </main>
-  );
+  )
 }
