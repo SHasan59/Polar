@@ -137,7 +137,7 @@ const Form = ({ type }) => {
               className="w-full px-5 py-3 mt-5 mb-7 rounded-xl cursor-pointer bg-blue-800 hover:bg-blue-500 text-white"
               type="submit"
             >
-              {type === 'register' ? 'Join Free' : "Let's Chat"}
+              {type === 'register' ? 'Join Polar' : 'Dive Into Chats'}
             </button>
           </form>
 
