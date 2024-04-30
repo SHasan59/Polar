@@ -144,7 +144,7 @@ export default function GameCollection() {
     };
 
     return (
-        <div className="min-h-screen bg-cover bg-center bg-auto" style={{ backgroundImage: "url('/images/gameshelf.png')" }}>
+        <div className="min-h-screen bg-center bg-fixed" style={{ backgroundImage: "url('/images/gameshelf.png')" }}>
             <div className="max-w-lg mx-auto p-6 bg-black rounded-lg shadow-lg bg-opacity-90">
                 <h1 className="text-3xl font-bold mb-6 text-center text-white">Game Collection</h1>
 
