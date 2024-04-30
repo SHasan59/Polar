@@ -50,7 +50,7 @@ export default function ChatBot() {
         </div>
         <p className="text-blue-600 text-lg">ASK ANYTHING</p>
 
-        <div className="mb-4 overflow-auto" style={{ height: '700px' }}>
+        <div className="mb-4 overflow-auto" style={{ height: '550px' }}>
           {chatHistory.map((message, index) => (
             <div
               key={index}
