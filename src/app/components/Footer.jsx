@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer border z-10 border-[#302f2f] border-l-transparent border-r-transparent text-white text-2xl">
       <div className="container p-12 flex flex-col sm:flex-row justify-between items-center font-pixelify-sans mx-auto">
         <span className="text-2xl mb-4 sm:mb-0">Polar</span>{' '}
-        {/* Added margin bottom for spacing */}
+       
         <div className="flex flex-col sm:flex-row gap-2 sm:gap-10 items-center">
           <Link
             href="/termsofservice"

@@ -1,9 +1,9 @@
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
-import ClimateChange from '../components/climateChange'; // Corrected import
+import ClimateChange from '../components/climateChange'; 
 
 export default function ClimateChangePage() {
-  // Corrected function name
+ 
   return (
     <>
       <Navigation />

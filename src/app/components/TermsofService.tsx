@@ -7,7 +7,7 @@ const TermsOfService = () => {
         backgroundImage: `url('scene2.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        minHeight: '100vh', // Ensure background covers entire viewport height
+        minHeight: '100vh', 
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',

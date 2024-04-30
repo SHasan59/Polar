@@ -56,9 +56,9 @@ const AboutUsMain = () => {
                   <motion.div
                     className="flex items-center mb-6"
                     key={index}
-                    initial={{ opacity: 0, y: 20 }} // Initial animation properties
-                    animate={{ opacity: 1, y: 0 }} // Animation properties when component appears
-                    transition={{ duration: 0.5, delay: index * 0.1 }} // Transition properties
+                    initial={{ opacity: 0, y: 20 }} 
+                    animate={{ opacity: 1, y: 0 }} 
+                    transition={{ duration: 0.5, delay: index * 0.1 }} 
                   >
                     <img
                       src={member.image}

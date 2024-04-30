@@ -159,7 +159,6 @@ export default function Search() {
         </div>
 
         {loading ? (
-          // Render the Loader component when loading is true
           <Loader />
         ) : (
           <motion.div

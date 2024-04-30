@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import '../css/styles.css';
 
-//FIX CAPS LOCK ERROR
 
 const Polargame = () => {
   const [playerY, setPlayerY] = useState(200);
