@@ -59,7 +59,7 @@ const Form = ({ type }) => {
   return (
     <div className="bg-gray-900">
       <div className="w-full h-lvh flex items-center justify-center">
-        <div className="w-1/3 py-7 px-4 max-sm:w-5/6 max-lg:w-2/3 max-xl:w-1/2 flex flex-col items-center justify-center gap-6 bg-gray-300 rounded-3xl">
+        <div className="w-1/3 py-7 px-4 max-sm:w-5/6 max-lg:w-2/3 max-xl:w-1/2 flex flex-col items-center justify-center gap-6 bg-gray-200 rounded-3xl">
           <img src="/polar.png" alt="logo" className="w-52 h-auto" />
 
           <form
@@ -68,7 +68,7 @@ const Form = ({ type }) => {
           >
             {type === 'register' && (
               <div>
-                <div className="flex items-center justify-between px-5 py-3 rounded-2xl cursor-pointer shadow-2xl text-black bg-sky-200 text-black">
+                <div className="flex items-center justify-between px-5 py-3 rounded-2xl cursor-pointer shadow-2xl text-black bg-sky-200 ">
                   <input
                     defaultValue=""
                     {...register('username', {
@@ -92,7 +92,7 @@ const Form = ({ type }) => {
             )}
 
             <div>
-              <div className="flex items-center justify-between px-5 py-3 rounded-2xl cursor-pointer shadow-2xl text-black bg-sky-200 text-black">
+              <div className="flex items-center justify-between px-5 py-3 rounded-2xl cursor-pointer shadow-2xl text-black bg-sky-200 ">
                 <input
                   defaultValue=""
                   {...register('email', { required: 'Email is required' })}
@@ -137,20 +137,22 @@ const Form = ({ type }) => {
               className="w-full px-5 py-3 mt-5 mb-7 rounded-xl cursor-pointer bg-blue-800 hover:bg-blue-500 text-white"
               type="submit"
             >
-              {type === 'register' ? 'Join Free' : "Let's Chat"}
+              {type === 'register' ? 'Join Polar' : 'Dive Into Chats'}
             </button>
           </form>
 
           {type === 'register' ? (
             <Link href="/login" className="link">
               <p className="text-center text-black">
-                Already have an account? Login //add strong here
+                Already have an account?
+                <strong className="text-blue-500"> Login</strong>
               </p>
             </Link>
           ) : (
             <Link href="/register" className="link">
               <p className="text-center text-black">
-                Don't have an account? Sign Up
+                Don't have an account?{' '}
+                <strong className="text-blue-500">Sign Up</strong>
               </p>
             </Link>
           )}
