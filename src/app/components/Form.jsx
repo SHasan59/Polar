@@ -68,7 +68,7 @@ const Form = ({ type }) => {
           >
             {type === 'register' && (
               <div>
-                <div className="flex items-center justify-between px-5 py-3 rounded-2xl cursor-pointer shadow-2xl text-black bg-sky-200 text-black">
+                <div className="flex items-center justify-between px-5 py-3 rounded-2xl cursor-pointer shadow-2xl text-black bg-sky-200 ">
                   <input
                     defaultValue=""
                     {...register('username', {
@@ -144,13 +144,15 @@ const Form = ({ type }) => {
           {type === 'register' ? (
             <Link href="/login" className="link">
               <p className="text-center text-black">
-                Already have an account? Login //add strong here
+                Already have an account?
+                <strong className="text-blue-500"> Login</strong>
               </p>
             </Link>
           ) : (
             <Link href="/register" className="link">
               <p className="text-center text-black">
-                Don't have an account? Sign Up
+                Don't have an account?{' '}
+                <strong className="text-blue-500">Sign Up</strong>
               </p>
             </Link>
           )}
