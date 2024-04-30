@@ -3,6 +3,7 @@ import { motion, Variants } from 'framer-motion';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import SearchBar from '../components/SearchBar';
+import Loader from '../components/Loader';
 
 interface Game {
   id: number;
@@ -119,7 +120,7 @@ export default function Search() {
 
   return (
     <main>
-      <div className="flex flex-col bg-blue-900 ">
+      <div className="flex flex-col bg-gray-900 ">
         <SearchBar onSearch={handleSearch} />
 
         {/* Platform filter dropdown */}
@@ -158,7 +159,8 @@ export default function Search() {
         </div>
 
         {loading ? (
-          <p className="text-center">Loading...</p>
+          // Render the Loader component when loading is true
+          <Loader />
         ) : (
           <motion.div
             variants={containerVariants}

@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+
 const PLATFORMS = ['PC', 'PlayStation', 'Xbox', 'Nintendo Switch'];
 const GAME_TYPES = ['Single Player', 'Multiplayer'];
 const GENRES = ['Action', 'Adventure', 'RPG', 'Shooter', 'Sports', 'Strategy', 'Simulation', 'Puzzle', 'Other'];
@@ -316,4 +317,5 @@ export default function GameCollection() {
             </div>
         </div>
     );
+
 }

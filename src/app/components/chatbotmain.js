@@ -36,7 +36,7 @@ export default function ChatBot() {
 
   return (
     <div
-      className="min-h-screen flex flex-col justify-center items-center bg-blue-700"
+      className="min-h-screen flex flex-col justify-center items-center bg-gray-900"
       style={{
         backgroundImage: 'url("POLAR BEAR STANDING.png")',
         backgroundSize: '',
@@ -44,13 +44,13 @@ export default function ChatBot() {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      <div className="w-full max-w-screen-md bg-black p-5 rounded-lg shadow-md">
+      <div className="w-full max-w-5xl bg-black p-5 rounded-lg shadow-md">
         <div className="mb-4">
           <div className="text-4xl font-bold text-blue-200 mb-2">NAVi</div>
         </div>
         <p className="text-blue-600 text-lg">ASK ANYTHING</p>
 
-        <div className="mb-4 overflow-auto" style={{ height: '400px' }}>
+        <div className="mb-4 overflow-auto" style={{ height: '700px' }}>
           {chatHistory.map((message, index) => (
             <div
               key={index}
@@ -86,7 +86,7 @@ export default function ChatBot() {
             placeholder="Ask me anything"
             value={userInput}
             onChange={(e) => setUserInput(e.target.value)}
-            className="flex-1 p-2 rounded-lg  text-black bg-slate-500"
+            className="flex-1 p-2 rounded-lg  text-white bg-slate-500"
           />
 
           {isLoading ? (

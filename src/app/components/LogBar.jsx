@@ -17,17 +17,20 @@ const LogBar = () => {
   const user = session?.user;
 
   return (
-    <div className="top-0 sticky px-10 py-5 flex items-center justify-between bg-blue-200 rounded-xl">
-      <Link href="/chats">
-        <img src="/polar.png" alt="logo" className=" w-20 h-auto" />
+    <div className="top-0  px-10 py-5 flex items-center justify-between bg-blue-300 rounded-xl">
+      <Link href="/profile">
+        <img
+          src={user?.profileImage || '/polarpfp.png'}
+          alt="profile"
+          className=" w-11 h-11 rounded-full object-cover object-center"
+        />
       </Link>
 
       <div className="flex items-center gap-8 max-sm:hidden">
-
         <Link
           href="/chats"
           className={`${
-            pathname === '/chats' ? 'text-red-900' : ''
+            pathname === '/chats' ? 'text-white' : ''
           } text-heading4-bold`}
         >
           Chats
@@ -35,7 +38,7 @@ const LogBar = () => {
         <Link
           href="/contacts"
           className={`${
-            pathname === '/contacts' ? 'text-blue-900' : ''
+            pathname === '/contacts' ? 'text-white' : ''
           } text-heading4-bold`}
         >
           Contacts
@@ -45,15 +48,6 @@ const LogBar = () => {
           sx={{ color: '#737373', cursor: 'pointer' }}
           onClick={handleLogout}
         />
-
-        <Link href="/profile">
-          <img
-            src={user?.profileImage || '/person.jpg'}
-            alt="profile"
-            className=" w-11 h-11 rounded-full object-cover object-center"
-
-          />
-        </Link>
       </div>
     </div>
   );

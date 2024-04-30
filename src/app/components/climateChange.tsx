@@ -7,8 +7,6 @@ import { useState } from 'react';
 export default function ClimateChangePage() {
   const [quizCompleted, setQuizCompleted] = useState(false);
 
-
-
   return (
     <div className="climate-change-page">
       <Head>
@@ -23,72 +21,154 @@ export default function ClimateChangePage() {
 
       <main className="content">
         <section className="intro">
-          <p>Welcome to the Arctic! Embark on a journey to learn about climate change and its impacts on polar bears.</p>
+
+          <p>
+            Welcome to the Arctic! Embark on a journey to learn about climate
+            change and its impacts on polar bears.
+          </p>
+
         </section>
 
         <section className="understanding-climate-change">
           <h2>Understanding Climate Change</h2>
-          <p>Climate change, primarily caused by human activities such as burning fossil fuels and deforestation, poses a significant threat to our planet.</p>
+
+          <p>
+            Climate change, primarily caused by human activities such as burning
+            fossil fuels and deforestation, poses a significant threat to our
+            planet.
+          </p>
+
           <ul>
             <li>Accelerated melting of polar ice caps and glaciers</li>
             <li>Rising sea levels, threatening coastal communities</li>
             <li>Increased frequency and intensity of extreme weather events</li>
             <li>Disruption of ecosystems and loss of biodiversity</li>
           </ul>
-          <p>It's crucial to act now to mitigate these effects and protect vulnerable species like polar bears.</p>
+
+          <p>
+            It's crucial to act now to mitigate these effects and protect
+            vulnerable species like polar bears.
+          </p>
+
         </section>
 
         <section className="help-protect-polar-bears">
           <h2>Help Protect Polar Bears</h2>
-          <p>Polar bears, the magnificent creatures of the Arctic, are among the most affected by climate change. The melting of sea ice, their primary habitat, jeopardizes their survival.</p>
+
+          <p>
+            Polar bears, the magnificent creatures of the Arctic, are among the
+            most affected by climate change. The melting of sea ice, their
+            primary habitat, jeopardizes their survival.
+          </p>
           <ul>
             <li>Adopt eco-friendly practices to reduce carbon emissions</li>
-            <li>Support organizations working to preserve polar bear habitats</li>
+            <li>
+              Support organizations working to preserve polar bear habitats
+            </li>
+
             <li>Advocate for policies that combat climate change</li>
             <li>Reduce, reuse, and recycle to minimize waste</li>
             <li>Support renewable energy initiatives</li>
             <li>Participate in conservation efforts in your community</li>
             <li>Educate others about climate change and sustainable living</li>
-            <li>Reduce your carbon footprint by using public transportation, biking, or carpooling</li>
+
+            <li>
+              Reduce your carbon footprint by using public transportation,
+              biking, or carpooling
+            </li>
             <li>Plant trees to absorb carbon dioxide from the atmosphere</li>
           </ul>
-          <p>Every action, no matter how small, contributes to the collective effort to safeguard the Arctic ecosystem for future generations.</p>
+          <p>
+            Every action, no matter how small, contributes to the collective
+            effort to safeguard the Arctic ecosystem for future generations.
+          </p>
+
         </section>
 
         <section className="climate-change-quiz">
           <h2>Take the bear Quiz</h2>
           <p>find out what bear you are!!</p>
           <button className="bg-slate-900 text-white  border-slate-800">
-              <Link href="/quiz">Quiz</Link>
-            </button>
+
+            <Link href="/quiz">Quiz</Link>
+          </button>
           {quizCompleted && (
-            <p>Well done! You've completed the quiz. Let's work together to save polar bears!</p>
+            <p>
+              Well done! You've completed the quiz. Let's work together to save
+              polar bears!
+            </p>
+
           )}
         </section>
 
         <section className="polar-bear-facts">
           <h2>Explore Polar Bear Habitats</h2>
-          <p>Discover the Arctic regions where polar bears roam using our interactive map. Learn about the effects of climate change on their habitats and the importance of preserving these delicate ecosystems.</p>
-          {/* Include interactive map component here */}
+
+          <p>
+            Discover the Arctic regions where polar bears roam using our
+            interactive map. Learn about the effects of climate change on their
+            habitats and the importance of preserving these delicate ecosystems.
+          </p>
+
+        
         </section>
 
         <section className="interesting-facts">
           <h2>Fascinating Facts About Polar Bears</h2>
           <p>Expand your knowledge with these interesting facts:</p>
           <ul>
-            <li>Polar bears are the largest land carnivores, with males weighing up to 1,500 pounds.</li>
-            <li>They possess a thick layer of blubber and dense fur for insulation.</li>
-            <li>Sea ice serves as a vital platform for hunting seals, their primary prey.</li>
+
+            <li>
+              Polar bears are the largest land carnivores, with males weighing
+              up to 1,500 pounds.
+            </li>
+            <li>
+              They possess a thick layer of blubber and dense fur for
+              insulation.
+            </li>
+            <li>
+              Sea ice serves as a vital platform for hunting seals, their
+              primary prey.
+            </li>
           </ul>
         </section>
 
         <section className="resources">
           <h2>Learn More</h2>
-          <p>For further information and resources on climate change and polar bears, visit these websites:</p>
+
+          <p>
+            For further information and resources on climate change and polar
+            bears, visit these websites:
+          </p>
           <ul>
-            <li><a href="https://www.worldwildlife.org/species/polar-bear" target="_blank" rel="noopener noreferrer">WWF - Polar Bears</a></li>
-            <li><a href="https://www.climate.gov/" target="_blank" rel="noopener noreferrer">NOAA Climate.gov</a></li>
-            <li><a href="https://www.nationalgeographic.com/environment/article/climate-change-effects" target="_blank" rel="noopener noreferrer">National Geographic - Climate Change Effects</a></li>
+            <li>
+              <a
+                href="https://www.worldwildlife.org/species/polar-bear"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WWF - Polar Bears
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.climate.gov/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                NOAA Climate.gov
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.nationalgeographic.com/environment/article/climate-change-effects"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Geographic - Climate Change Effects
+              </a>
+            </li>
+
           </ul>
         </section>
       </main>
@@ -113,7 +193,8 @@ export default function ClimateChangePage() {
           left: 0;
           width: 100%;
           height: 100%;
-          background-image: url('/pole.jpg');
+
+          background-image: url('/aurora2.jpg');
           background-size: cover;
           background-position: center;
           background-attachment: fixed;
@@ -153,11 +234,14 @@ export default function ClimateChangePage() {
         }
 
         /* Paragraphs and Lists */
-        p, ul {
+
+        p,
+        ul {
           color: white;
         }
 
         ul {
+
           list-style-type: disc;
           padding-left: 20px;
         }
