@@ -104,7 +104,7 @@ const AboutUsMain = () => {
                 ))}
               </div>
 
-              <section className="my-8 bg-blue-800 p-6 rounded-lg">
+              <section className="my-8 bg-gray-800 p-6 rounded-lg">
                 <h2 className="text-2xl font-bold mb-4">About The Team</h2>
                 <p className="text-gray-400"></p>
                 <p className="text-white text-m mb-6">
@@ -116,7 +116,7 @@ const AboutUsMain = () => {
                 </p>
               </section>
 
-              <section className="my-8 bg-blue-800 p-6 rounded-lg">
+              <section className="my-8 bg-gray-800 p-6 rounded-lg">
                 <h2 className="text-2xl font-bold mb-4">Our Inspiration</h2>
                 <p className="text-gray-400"></p>
                 <div className="flex justify-center">
