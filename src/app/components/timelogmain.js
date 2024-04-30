@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import LogEntry from '../components/logentry';
-import TimeChart from '../components/TimeChart';
+import TimeChart from '../components/timechart'
 
 export default function TimelogMain() {
   const [logs, setLogs] = useState([]);
