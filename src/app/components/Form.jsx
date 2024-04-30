@@ -92,7 +92,7 @@ const Form = ({ type }) => {
             )}
 
             <div>
-              <div className="flex items-center justify-between px-5 py-3 rounded-2xl cursor-pointer shadow-2xl text-black bg-sky-200 text-black">
+              <div className="flex items-center justify-between px-5 py-3 rounded-2xl cursor-pointer shadow-2xl text-black bg-sky-200 ">
                 <input
                   defaultValue=""
                   {...register('email', { required: 'Email is required' })}
