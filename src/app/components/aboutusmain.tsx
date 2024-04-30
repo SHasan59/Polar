@@ -138,9 +138,9 @@ const AboutUsMain = () => {
                   </div>
                 </div>
                 <p className="text-white- text-m mb-6">
-                  This video had inspired us to create this website andx notify
+                  This video had inspired us to create this website and notify
                   users of the dangers that polar bears are facing while
-                  creating a fucntional website for videogames.{' '}
+                  creating a functional website for videogames.{' '}
                 </p>
               </section>
 
