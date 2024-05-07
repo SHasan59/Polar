@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useState } from "react";
 import Footer from "../components/Footer";
@@ -62,7 +62,7 @@ const Quiz: React.FC = () => {
       </h2>
       {questionData.answers.map((answer) => (
         <div key={answer} className="answer-option mt-4">
-          <label className="flex items-center cursor-pointer text-blue-600 hover:text-blue-900">
+          <label className="flex items-center cursor-pointer text-gray-800 hover:text-blue-600">
             <input
               type="radio"
               name={`question${index}`}
@@ -77,7 +77,7 @@ const Quiz: React.FC = () => {
       ))}
       <button
         type="submit"
-        className="submit-button w-full bg-blue-700 text-white py-3 rounded-lg hover:bg-blue-800 transition-colors mt-6 font-bold"
+        className="submit-button w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-800 transition-colors mt-6 font-bold"
       >
         {currentQuestion < quizQuestions.length - 1 ? "Next" : "Submit"}
       </button>
@@ -87,16 +87,9 @@ const Quiz: React.FC = () => {
   return (
     <>
       <Navigation />
-      <main className=" ">
-        <div
-          className="quiz-container bg-cover bg-center bg-no-repeat p-10 rounded-lg max-w-md mx-auto border-4 border-blue-300"
-          style={{
-            backgroundImage: 'url("/")',
-            backgroundSize: "cover",
-            backgroundBlendMode: "overlay",
-          }}
-        >
-          <h1 className="quiz-title text-center text-4xl font-bold text-blue-900 mb-8">
+      <main>
+        <div className="quiz-container mt-10 mb-10 bg-cover bg-center bg-no-repeat p-10 rounded-lg max-w-md mx-auto border-4 border-blue-400">
+          <h1 className="quiz-title text-center text-4xl font-bold text-blue-400 mb-8">
             Fun Bear Quiz!
           </h1>
           {renderQuestion(quizQuestions[currentQuestion], currentQuestion)}
