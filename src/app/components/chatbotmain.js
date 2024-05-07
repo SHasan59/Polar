@@ -50,9 +50,7 @@ export default function ChatBot() {
             &#60;Navi/&#62;
           </div>
         </div>
-        <p className="text-blue-600 text-lg text-center">
-          Ask any videogame question and Navi will respond
-        </p>
+        <p className="text-blue-400 text-lg text-center"> Ask any videogame question and Navi will respond </p>
 
         <div className="mb-4 overflow-auto" style={{ height: '550px' }}>
           {chatHistory.map((message, index) => (
