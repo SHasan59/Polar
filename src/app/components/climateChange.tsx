@@ -87,7 +87,7 @@ export default function ClimateChangePage() {
 
         <section className="climate-change-quiz">
           <h2>Take the bear Quiz</h2>
-          <p>find out what bear you are!!</p>
+          <p>Find out what bear you are!!</p>
           <button className="bg-slate-900 text-white  border-slate-800">
             <Link href="/quiz">Quiz</Link>
           </button>
