@@ -1,5 +1,5 @@
 'use client';
-
+//updated api key (testing right now)
 import { useState, useEffect, useRef } from 'react';
 import Loader from './Loader';
 import { AddPhotoAlternate } from '@mui/icons-material';
