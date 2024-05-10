@@ -1,4 +1,6 @@
 'use client';
+
+//testing 
 import { useState, useEffect } from 'react';
 import OpenAi from 'openai';
 
