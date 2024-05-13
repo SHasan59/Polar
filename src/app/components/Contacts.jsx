@@ -123,7 +123,7 @@ const Contacts = () => {
                 <div className="flex flex-wrap gap-3">
                   {selectedContacts.map((contact, index) => (
                     <p
-                      className="text-base-bold p-2 bg-green-300 rounded-lg text-slate"
+                      className="text-base-bold p-2 bg-green-500 rounded-lg text-slate"
                       key={index}
                     >
                       {contact.username}
