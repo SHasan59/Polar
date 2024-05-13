@@ -99,23 +99,24 @@ const GroupInfo = () => {
 
           <div className="flex items-center justify-between">
             <img
-              src={watch('groupPhoto') || '/group2.png'}
+              src={watch('groupPhoto') || '/group2.jpg'}
               alt="profile"
-              className="w-40 h-40 rounded-full"
+              className="w-40 h-40 rounded-full" 
             />
+
             <CldUploadButton
               options={{ maxFiles: 1 }}
               onUpload={uploadPhoto}
               uploadPreset="upecg01j"
             >
-              <p className="text-body-bold">Upload new photo</p>
+              <p className="text-body-bold">Upload photo</p>
             </CldUploadButton>
           </div>
 
           <div className="flex flex-wrap gap-3 ">
             {chat?.members?.map((member, index) => (
               <p
-                className="selected-contact bg-purple-500 rounded-lg px-4"
+                className="selected-contact bg-green-500 rounded-full px-4 py-2"
                 key={index}
               >
                 {member.username}
@@ -124,7 +125,7 @@ const GroupInfo = () => {
           </div>
 
           <button
-            className="btn bg-blue-300 px-4 rounded-xl mb-20"
+            className="btn bg-blue-300 px-4 py-2 rounded-full mb-20"
             type="submit"
           >
             Save Changes
