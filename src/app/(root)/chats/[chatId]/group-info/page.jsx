@@ -84,15 +84,16 @@ const GroupInfo = () => {
           className="flex flex-col gap-9"
           onSubmit={handleSubmit(updateGroupChat)}
         >
-          <div className="flex items-center justify-between px-5 py-3 rounded-2xl cursor-pointer shadow-2xl text-black bg-sky-200">
+          <div className="flex items-center justify-between px-5 py-3 rounded-2xl cursor-pointer shadow-2xl text-black bg-blue-300">
             <input
               {...register('name', {
                 required: 'Group chat name is required',
               })}
               type="text"
               placeholder="Group chat name"
-              className="input-field text-black bg-transparent"
+              className="w-[300px] max-sm:w-full bg-transparent outline-none placeholder-white"
             />
+
             <GroupOutlined sx={{ color: '#737373' }} />
           </div>
           {error?.name && <p className="text-red-500">{error.name.message}</p>}
@@ -101,7 +102,7 @@ const GroupInfo = () => {
             <img
               src={watch('groupPhoto') || '/group2.jpg'}
               alt="profile"
-              className="w-40 h-40 rounded-full" 
+              className="w-40 h-40 rounded-full"
             />
 
             <CldUploadButton
@@ -109,7 +110,7 @@ const GroupInfo = () => {
               onUpload={uploadPhoto}
               uploadPreset="upecg01j"
             >
-              <p className="text-body-bold">Upload photo</p>
+              <p className="text-body-bold">Upload new photo</p>
             </CldUploadButton>
           </div>
 
